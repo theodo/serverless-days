@@ -1,0 +1,53 @@
+.container {
+  margin: 0 32px 32px;
+  padding: 32px;
+  list-style: none;
+  height: 350px;
+  width: 398px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.hour {
+  padding: 7px 8px;
+  color: #6295ff;
+  background-color: rgba(98, 149, 255, 0.1);
+  margin-bottom: 16px;
+}
+.title {
+  color: #353e46;
+  font-family: "Source Code Pro";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-bottom: 16px;
+}
+.description {
+  color: #9a9ea2;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 16px;
+}
+.authorContainer {
+  display: flex;
+  flex-direction: row;
+}
+.authorTextContainer {
+  display: flex;
+  flex-direction: column;
+}
+.author {
+  color: #353e46;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  margin-bottom: 16px;
+}
+.company {
+  color: #9a9ea2;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+}

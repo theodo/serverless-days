@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,7 +11,6 @@ export default function Template({ data }) {
     allMarkdownRemark: { edges },
   } = data
   const talks = edges.map(element => element.node.frontmatter)
-  console.log(talks)
   return (
     <Layout>
       <SEO title="Home" />

@@ -1,5 +1,5 @@
 ---
-hour: "9:30h"
+hour: '2020-12-17T06:30:00'
 title: "Test"
 description: "Test"
 biographie: "Test"

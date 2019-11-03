@@ -1,8 +1,8 @@
 import React from "react"
 import classes from "./styles.module.scss"
 import Img from "gatsby-image"
+import format from "date-fns/format"
 
-console.log(classes)
 const TalkCard = ({
   hour,
   title,
@@ -14,7 +14,7 @@ const TalkCard = ({
 }) => (
   <li className={classes.container}>
     <p>
-      <span className={classes.hour}>{hour}</span>
+      <span className={classes.hour}>{format(new Date(hour), "hh:mm")}</span>
     </p>
     <div className={classes.descriptionContainer}>
       <h3 className={classes.title}>{title}</h3>

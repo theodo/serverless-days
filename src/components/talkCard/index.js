@@ -16,11 +16,17 @@ const TalkCard = ({
     <p>
       <span className={classes.hour}>{hour}</span>
     </p>
-    <h3 className={classes.title}>{title}</h3>
-    <p className={classes.description}>{description}</p>
+    <div className={classes.descriptionContainer}>
+      <h3 className={classes.title}>{title}</h3>
+      <p className={classes.description}>{description}</p>
+    </div>
     <div className={classes.authorContainer}>
-      <Img fixed={picture.childImageSharp.fixed} />
-      <img src="" alt="" width="43px" height="43px" />
+      <Img
+        fixed={picture.childImageSharp.fixed}
+        alt=""
+        width="43px"
+        height="43px"
+      />
       <div className={classes.authorTextContainer}>
         <p className={classes.author}>{`${name}, ${job}`}</p>
         <p className={classes.company}>{company}</p>

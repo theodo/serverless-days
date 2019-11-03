@@ -6,6 +6,9 @@
   width: 398px;
   border-radius: 4px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hour {
   padding: 7px 8px;
@@ -28,6 +31,10 @@
   line-height: 21px;
   margin-bottom: 16px;
 }
+
+.descriptionContainer {
+  flex-grow: 1;
+}
 .authorContainer {
   display: flex;
   flex-direction: row;
@@ -35,6 +42,7 @@
 .authorTextContainer {
   display: flex;
   flex-direction: column;
+  margin-left: 16px;
 }
 .author {
   color: #353e46;
@@ -42,7 +50,7 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 17px;
-  margin-bottom: 16px;
+  margin: 0px;
 }
 .company {
   color: #9a9ea2;

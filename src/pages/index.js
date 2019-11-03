@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import TalkCard from "../components/talkCard"
 import classes from "./index.module.scss"
@@ -16,7 +15,6 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title="Home" />
-      <Image />
       <ol className={classes.talksList}>
         {talks.map(talk => (
           <TalkCard {...talk} />

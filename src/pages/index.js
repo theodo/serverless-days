@@ -39,7 +39,13 @@ export const pageQuery = graphql`
             name
             job
             company
-            picture
+            picture {
+              childImageSharp {
+                fixed(width: 43, height: 43) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
             linkedin
             twitter
             instagram

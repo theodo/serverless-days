@@ -6,7 +6,7 @@ biographie:
 name: "Benjamin grandfond"
 job: "CTO"
 company: "Theodo Paris"
-picture:
+picture: ../images/Alice.jpeg
 linkedin:
 twitter:
 instagram:

@@ -6,7 +6,7 @@ biographie: "Test"
 name: "Test"
 job: "Test"
 company: "Test"
-picture: "Test"
+picture: ../images/Emyly.jpeg
 linkedin: "Test"
 twitter: "Test"
 instagram: "Test"

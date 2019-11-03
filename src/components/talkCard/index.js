@@ -1,5 +1,6 @@
 import React from "react"
 import classes from "./styles.module.scss"
+import Img from "gatsby-image"
 
 console.log(classes)
 const TalkCard = ({
@@ -18,6 +19,7 @@ const TalkCard = ({
     <h3 className={classes.title}>{title}</h3>
     <p className={classes.description}>{description}</p>
     <div className={classes.authorContainer}>
+      <Img fixed={picture.childImageSharp.fixed} />
       <img src="" alt="" width="43px" height="43px" />
       <div className={classes.authorTextContainer}>
         <p className={classes.author}>{`${name}, ${job}`}</p>

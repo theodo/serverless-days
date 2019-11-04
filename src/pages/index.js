@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 import TalkCard from "../components/talkCard"
 import Location from "../components/location"
 import Contact from "../components/contact"
+import Title from "../components/title"
+
 import classes from "./index.module.scss"
 
 export default function Template({ data }) {
@@ -16,6 +18,7 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title="Home" />
+      <Title />
       <ol className={classes.talksList} id="talks">
         {talks
           .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))

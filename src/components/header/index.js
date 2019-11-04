@@ -5,7 +5,7 @@ import logo from "../../images/logo.svg"
 const Header = () => (
   <header className={classes.header}>
     <img src={logo} alt="serverless days paris 2020" />
-    {/* <ol className={classes.shortcuts}>
+    <ol className={classes.shortcuts}>
       <li>
         <a href="#talks">talks</a>
       </li>
@@ -15,7 +15,7 @@ const Header = () => (
       <li>
         <a href="#sponsor">become a sponsor</a>
       </li>
-    </ol> */}
+    </ol>
   </header>
 )
 

@@ -15,9 +15,11 @@ export default function Template({ data }) {
     <Layout>
       <SEO title="Home" />
       <ol className={classes.talksList}>
-        {talks.map(talk => (
-          <TalkCard {...talk} />
-        ))}
+        {talks
+          .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))
+          .map(talk => (
+            <TalkCard {...talk} />
+          ))}
       </ol>
     </Layout>
   )

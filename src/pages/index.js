@@ -61,6 +61,7 @@ export const pageQuery = graphql`
             twitter
             instagram
             facebook
+            isParty
           }
         }
       }

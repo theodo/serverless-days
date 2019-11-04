@@ -2,6 +2,7 @@ import React from "react"
 import classes from "./styles.module.scss"
 import Img from "gatsby-image"
 import format from "date-fns/format"
+import partyPicture from "../../images/party.svg"
 
 const TalkCard = ({
   hour,
@@ -11,30 +12,59 @@ const TalkCard = ({
   job,
   company,
   picture,
-}) => (
-  <li className={classes.container}>
-    <p>
-      <time dateTime={format(new Date(hour), "HH:mm")} className={classes.hour}>
-        {format(new Date(hour), "hh:mm a")}
-      </time>
-    </p>
-    <div className={classes.descriptionContainer}>
-      <h3 className={classes.title}>{title}</h3>
-      <p className={classes.description}>{description}</p>
-    </div>
-    <div className={classes.authorContainer}>
-      <Img
-        fixed={picture.childImageSharp.fixed}
-        alt=""
-        width="43px"
-        height="43px"
-      />
-      <div className={classes.authorTextContainer}>
-        <p className={classes.author}>{`${name}, ${job}`}</p>
-        <p className={classes.company}>{company}</p>
+  isParty,
+}) => {
+  if (isParty) {
+    return (
+      <li className={`${classes.container} ${classes.isParty}`}>
+        <div className={classes.informationContainer}>
+          <p className={classes.hourContainer}>
+            <time
+              dateTime={format(new Date(hour), "HH:mm")}
+              className={classes.hour}
+            >
+              {format(new Date(hour), "hh:mm a")}
+            </time>
+          </p>
+          <div className={classes.descriptionContainer}>
+            <h3 className={classes.title}>{title}</h3>
+            <p className={classes.description}>{description}</p>
+          </div>
+        </div>
+        <img src={partyPicture} className={classes.partyPicture} alt="" />
+      </li>
+    )
+  }
+  return (
+    <li className={`${classes.container} ${classes.isNotParty}`}>
+      <div className={classes.informationContainer}>
+        <p className={classes.hourContainer}>
+          <time
+            dateTime={format(new Date(hour), "HH:mm")}
+            className={classes.hour}
+          >
+            {format(new Date(hour), "hh:mm a")}
+          </time>
+        </p>
+        <div className={classes.descriptionContainer}>
+          <h3 className={classes.title}>{title}</h3>
+          <p className={classes.description}>{description}</p>
+        </div>
+        <div className={classes.authorContainer}>
+          <Img
+            fixed={picture.childImageSharp.fixed}
+            alt=""
+            width="43px"
+            height="43px"
+          />
+          <div className={classes.authorTextContainer}>
+            <p className={classes.author}>{`${name}, ${job}`}</p>
+            <p className={classes.company}>{company}</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </li>
-)
+    </li>
+  )
+}
 
 export default TalkCard

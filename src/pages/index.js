@@ -10,7 +10,9 @@ import Title from "../components/title"
 import CallForPaper from "../components/callForPaper"
 import CallToAction from "../components/callToAction"
 import Sponsors from "../components/sponsors"
+
 import classes from "./index.module.scss"
+import talkLogo from "../images/talks.svg"
 
 export default function Template({ data }) {
   const {
@@ -23,6 +25,10 @@ export default function Template({ data }) {
       <Title />
       <CallForPaper />
       <ol className={classes.talksList} id="talks">
+        <li className={classes.talkHeader}>
+          <img alt="" src={talkLogo} />
+          <h2>Talks</h2>
+        </li>
         {talks
           .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))
           .map(talk => (

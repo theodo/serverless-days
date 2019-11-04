@@ -14,7 +14,9 @@ const TalkCard = ({
 }) => (
   <li className={classes.container}>
     <p>
-      <span className={classes.hour}>{format(new Date(hour), "hh:mm a")}</span>
+      <time datetime={format(new Date(hour), "HH:mm")} className={classes.hour}>
+        {format(new Date(hour), "hh:mm a")}
+      </time>
     </p>
     <div className={classes.descriptionContainer}>
       <h3 className={classes.title}>{title}</h3>

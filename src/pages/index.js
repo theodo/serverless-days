@@ -14,13 +14,15 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO title="Home" />
-      <ol className={classes.talksList}>
+      <ol className={classes.talksList} id="talks">
         {talks
           .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))
           .map(talk => (
             <TalkCard {...talk} />
           ))}
       </ol>
+      <div id="sponsor"></div>
+      <div id="contact"></div>
     </Layout>
   )
 }

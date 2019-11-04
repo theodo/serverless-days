@@ -1,0 +1,29 @@
+.container {
+  padding: 80px 91px;
+  background-color: #eff4ff;
+  text-align: center;
+  .text {
+    width: 600px;
+    color: #353e46;
+    font-family: "Source Code Pro";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin: 0 auto 24px auto;
+    text-transform: uppercase;
+  }
+  .button {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    text-align: center;
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #5267ff;
+    text-transform: uppercase;
+  }
+}

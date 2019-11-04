@@ -7,6 +7,7 @@ import TalkCard from "../components/talkCard"
 import Location from "../components/location"
 import Contact from "../components/contact"
 import Title from "../components/title"
+import CallToAction from "../components/callToAction"
 
 import classes from "./index.module.scss"
 
@@ -26,6 +27,7 @@ export default function Template({ data }) {
             <TalkCard {...talk} />
           ))}
       </ol>
+      <CallToAction />
       <div id="sponsor"></div>
       <Location />
       <Contact id="contact" />

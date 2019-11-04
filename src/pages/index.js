@@ -20,7 +20,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO title="Home" />
       <Title />
-      <ol className={classes.talksList} id="talks">
+      {/* <ol className={classes.talksList} id="talks">
         {talks
           .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))
           .map(talk => (
@@ -30,7 +30,7 @@ export default function Template({ data }) {
       <CallToAction />
       <Sponsors id="sponsor" />
       <Location />
-      <Contact id="contact" />
+      <Contact id="contact" /> */}
     </Layout>
   )
 }

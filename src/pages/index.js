@@ -8,7 +8,7 @@ import Location from "../components/location"
 import Contact from "../components/contact"
 import Title from "../components/title"
 import CallToAction from "../components/callToAction"
-
+import Sponsors from "../components/sponsors"
 import classes from "./index.module.scss"
 
 export default function Template({ data }) {
@@ -28,7 +28,7 @@ export default function Template({ data }) {
           ))}
       </ol>
       <CallToAction />
-      <div id="sponsor"></div>
+      <Sponsors id="sponsor" />
       <Location />
       <Contact id="contact" />
     </Layout>

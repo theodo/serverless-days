@@ -25,10 +25,18 @@
     }
   }
 
-  .sponspors {
+  .sponsors {
     display: flex;
+    flex-grow: 1;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    li {
+      list-style: none;
+      img {
+        height: 38px;
+      }
+    }
   }
 
   .button {

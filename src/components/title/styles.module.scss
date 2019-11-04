@@ -1,43 +1,53 @@
 .container {
   padding: 91px;
   background-color: white;
-  h1 {
-    font-family: "Source Code Pro", monospace;
-    font-size: 72px;
-    font-weight: 600;
-    line-height: 72px;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-    .location {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .informations {
+    h1 {
+      font-family: "Source Code Pro", monospace;
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 72px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      .location {
+        color: #5267ff;
+      }
+    }
+    .subtitle {
+      color: #7c7f83;
+      font-family: "Source Code Pro", monospace;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+    .rendezVous {
       color: #5267ff;
+      font-family: "Source Code Pro", monospace;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 32px;
+    }
+    .button {
+      color: #ffffff;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 17px;
+      text-align: center;
+      border: 0;
+      padding: 8px;
+      border-radius: 4px;
+      background-color: #5267ff;
     }
   }
-  .subtitle {
-    color: #7c7f83;
-    font-family: "Source Code Pro", monospace;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-bottom: 8px;
-  }
-  .rendezVous {
-    color: #5267ff;
-    font-family: "Source Code Pro", monospace;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-bottom: 32px;
-  }
-  .button {
-    color: #ffffff;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 17px;
-    text-align: center;
-    border: 0;
-    padding: 8px;
-    border-radius: 4px;
-    background-color: #5267ff;
+  .titleImage {
+    flex-grow: 1;
   }
 }

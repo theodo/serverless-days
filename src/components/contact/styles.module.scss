@@ -4,14 +4,14 @@
   padding: 56px 32px 80px;
 
   h2 {
-    font-family: "Source Code Pro";
+    font-family: "Source Code Pro", monospace;
     font-size: 40px;
     font-weight: bold;
     line-height: 50px;
     margin: 0 0 16px 0;
   }
   p {
-    font-family: "Source Code Pro";
+    font-family: "Source Code Pro", monospace;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -28,7 +28,7 @@
     address {
       margin: 0;
       a {
-        font-family: "Source Code Pro";
+        font-family: "Source Code Pro", monospace;
         color: #fff;
         font-size: 16px;
         font-weight: 600;

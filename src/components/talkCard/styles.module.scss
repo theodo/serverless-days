@@ -8,6 +8,9 @@
   border-radius: 4px;
   background-color: #ffffff;
 
+  &:hover {
+    box-shadow: 0 2px 20px 0 rgba(53, 62, 70, 0.15);
+  }
   .informationContainer {
     padding-top: 32px;
     padding-left: 32px;

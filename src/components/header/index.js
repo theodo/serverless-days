@@ -1,13 +1,11 @@
-import { Link } from "gatsby"
 import React from "react"
 import classes from "./styles.module.scss"
+import logo from "../../images/logo.svg"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header className={classes.header}>
-    <h1 style={{ margin: 0 }}>
-      <Link to="/">{siteTitle}</Link>
-    </h1>
-    <ol className={classes.shortcuts}>
+    <img src={logo} alt="serverless days paris 2020" />
+    {/* <ol className={classes.shortcuts}>
       <li>
         <a href="#talks">talks</a>
       </li>
@@ -17,7 +15,7 @@ const Header = ({ siteTitle }) => (
       <li>
         <a href="#sponsor">become a sponsor</a>
       </li>
-    </ol>
+    </ol> */}
   </header>
 )
 

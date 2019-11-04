@@ -15,7 +15,9 @@ const Title = () => (
       <p className={classes.rendezVous}>Rendez-vous TBD</p>
       {/* <button className={classes.button}>prendre sa place</button> */}
     </div>
-    <img alt="" src={titleImage} className={classes.titleImage} />
+    <div className={classes.titleImageContainer}>
+      <img alt="" src={titleImage} />
+    </div>
   </div>
 )
 

@@ -1,8 +1,12 @@
+@import "../../variables";
+
 .container {
-  background-color: #5267ff;
+  background-color: $primary;
   color: #fff;
   padding: 56px 32px 80px;
-
+  @media (min-width: $breaking-point) {
+    padding: 56px 91px 80px;
+  }
   h2 {
     font-family: "Source Code Pro", monospace;
     font-size: 40px;

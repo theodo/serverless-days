@@ -1,10 +1,15 @@
+@import "../../variables";
+
 .header {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 32px;
+  padding: 16px 24px;
+  @media (min-width: $breaking-point) {
+    padding: 16px 32px;
+  }
 }
 
 .shortcuts {
@@ -15,7 +20,7 @@
     display: inline;
     margin: 0 56px 0 0;
     a {
-      color: #353e46;
+      color: $charcoal-grey;
       font-family: "Source Code Pro", monospace;
       font-size: 16px;
       font-weight: 500;

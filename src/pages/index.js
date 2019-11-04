@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import TalkCard from "../components/talkCard"
 import Location from "../components/location"
+import Contact from "../components/contact"
 import classes from "./index.module.scss"
 
 export default function Template({ data }) {
@@ -24,7 +25,7 @@ export default function Template({ data }) {
       </ol>
       <div id="sponsor"></div>
       <Location />
-      <div id="contact"></div>
+      <Contact id="contact" />
     </Layout>
   )
 }

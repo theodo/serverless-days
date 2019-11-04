@@ -32,7 +32,13 @@ const Layout = ({ children }) => {
           padding: 0,
         }}
       >
-        <main>{children}</main>
+        <main
+          style={{
+            backgroundColor: "#eff4ff",
+          }}
+        >
+          {children}
+        </main>
         <footer>
           <p>Designed by BAM</p>
           <a href="https://www.gatsbyjs.org">Gatsby</a>

@@ -1,0 +1,64 @@
+.backgroundContainer {
+  margin-top: 200px;
+  margin-bottom: -150px;
+  background-color: #5267ff;
+  padding: 0 32px;
+}
+.container {
+  position: relative;
+  top: -150px;
+  background-color: #fff;
+}
+.informations {
+  padding: 52px 48px;
+}
+.locationInformations {
+  margin: 0;
+  list-style-type: none;
+}
+.locationTitle {
+  color: #5267ff;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.transportationList {
+  margin: 0;
+  li {
+    display: flex;
+    align-items: center;
+    color: #333333;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+
+    .logo {
+      height: 20px;
+      width: 20px;
+    }
+    span,
+    img {
+      margin: 0 8px 0 0;
+    }
+  }
+}
+
+.button {
+  color: #fff;
+  background-color: #5267ff;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #5267ff;
+  padding: 8px 16px;
+  border: 0;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}

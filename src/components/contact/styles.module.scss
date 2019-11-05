@@ -3,9 +3,9 @@
 .container {
   background-color: $primary;
   color: #fff;
-  padding: 56px 32px 80px;
+  padding: 56px $mobile-margins 80px;
   @media (min-width: $breaking-point) {
-    padding: 56px 91px 80px;
+    padding: 56px $desktop-margins 80px;
   }
   h2 {
     font-family: "Source Code Pro", monospace;

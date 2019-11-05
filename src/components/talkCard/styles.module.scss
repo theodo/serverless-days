@@ -1,7 +1,7 @@
 @import "../../variables";
 
 .container {
-  margin: 0 32px 32px;
+  margin: 0 $talk-card-margin $talk-card-margin 0;
   list-style: none;
   height: 350px;
   width: 398px;

@@ -1,13 +1,13 @@
 @import "../../variables";
 
 .container {
-  padding: 80px 24px;
+  padding: 80px $mobile-margins;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
   @media (min-width: $breaking-point) {
     flex-direction: row;
-    padding: 80px 91px;
+    padding: 80px $desktop-margins;
     justify-content: center;
   }
   background-color: white;

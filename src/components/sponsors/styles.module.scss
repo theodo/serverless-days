@@ -1,9 +1,9 @@
 @import "../../variables";
 
 .container {
-  margin: 0px 24px;
+  margin: 0 $mobile-margins;
   @media (min-width: $breaking-point) {
-    margin: 0px 91px;
+    margin: 0 $desktop-margins;
   }
   background-color: #fff;
   padding: 46px 48px;

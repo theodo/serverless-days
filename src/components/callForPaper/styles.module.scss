@@ -1,0 +1,65 @@
+@import "../../variables";
+
+.container {
+  padding: 84px 24px;
+  flex-direction: column;
+  @media (min-width: $breaking-point) {
+    padding: 84px 91px;
+    flex-direction: row;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .imageContainer {
+    text-align: center;
+    margin-bottom: 32px;
+    @media (min-width: $breaking-point) {
+      text-align: left;
+      margin-right: 86px;
+      margin-bottom: 0;
+    }
+    img {
+      width: 140px;
+    }
+    .title {
+      font-family: "Source Code Pro", monospace;
+      font-size: 40px;
+      font-weight: bold;
+      color: $charcoal-grey;
+      text-transform: uppercase;
+    }
+  }
+  .informationContainer {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 48px;
+    h3 {
+      font-family: "Source Code Pro", monospace;
+      font-size: 24px;
+      font-weight: 600;
+      color: $charcoal-grey;
+      margin-bottom: 16px;
+    }
+    p {
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 1.31;
+      color: $steel-grey;
+      margin-bottom: 16px;
+    }
+    button {
+      color: #ffffff;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 17px;
+      text-align: center;
+      border: 0;
+      padding: 8px 16px;
+      border-radius: 4px;
+      background-color: $primary;
+      text-transform: uppercase;
+    }
+  }
+}

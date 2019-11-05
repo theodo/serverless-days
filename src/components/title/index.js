@@ -24,6 +24,7 @@ const Title = () => (
         data-netlify="true"
         className={classes.contactForm}
       >
+        <input type="hidden" name="form-name" value="contact" />
         <input
           type="email"
           name="email"

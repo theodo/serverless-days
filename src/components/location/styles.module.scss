@@ -20,6 +20,7 @@
     }
     .informations {
       flex-grow: 1;
+      flex-basis: 0;
       padding: 52px 48px 0px 48px;
       @media (min-width: $breaking-point) {
         padding: 52px 48px;
@@ -53,6 +54,7 @@
     .locationMap {
       background-color: $charcoal-grey;
       flex-grow: 2;
+      flex-basis: 0;
     }
   }
 }

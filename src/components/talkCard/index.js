@@ -13,10 +13,14 @@ const TalkCard = ({
   company,
   picture,
   isParty,
+  openDialog,
 }) => {
   if (isParty) {
     return (
-      <li className={`${classes.container} ${classes.isParty}`}>
+      <li
+        className={`${classes.container} ${classes.isParty}`}
+        onClick={openDialog}
+      >
         <div className={classes.informationContainer}>
           <p className={classes.hourContainer}>
             <time
@@ -36,7 +40,10 @@ const TalkCard = ({
     )
   }
   return (
-    <li className={`${classes.container} ${classes.isNotParty}`}>
+    <li
+      className={`${classes.container} ${classes.isNotParty}`}
+      onClick={openDialog}
+    >
       <div className={classes.informationContainer}>
         <p className={classes.hourContainer}>
           <time

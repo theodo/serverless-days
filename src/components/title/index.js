@@ -17,14 +17,22 @@ const Title = () => (
         <br />
         (lieu à déterminer)
       </p>
-      <p>Tenez moi informé</p>
-      <form name="contact" method="POST" data-netlify="true">
+      <p className={classes.callToAction}>Tenez moi informé</p>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        className={classes.contactForm}
+      >
         <input
           type="email"
           name="email"
           placeholder="my.email@serverless.com"
         />
-        <button type="submit" className={classes.button}>
+        <button
+          type="submit"
+          className={`${classes.button} ${classes.submitButton}`}
+        >
           Ok
         </button>
       </form>

@@ -59,7 +59,7 @@ const TalkCard = ({
         </div>
         <div className={classes.authorContainer}>
           <Img
-            fixed={picture.childImageSharp.fixed}
+            fixed={picture.childImageSharp.small}
             alt=""
             width="43px"
             height="43px"

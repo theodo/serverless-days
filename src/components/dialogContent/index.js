@@ -2,6 +2,7 @@ import React from "react"
 import classes from "./styles.module.scss"
 import format from "date-fns/format"
 import close from "../../images/close.svg"
+import Img from "gatsby-image"
 
 const DialogContent = ({
   hour,
@@ -44,7 +45,13 @@ const DialogContent = ({
           <div className={classes.socialMediaContainer}></div>
         </div>
         <div className={classes.speekerInformation}>
-          <img className={classes.speekerPicture} src={picture} />
+          <Img
+            fixed={picture.childImageSharp.medium}
+            alt=""
+            width="164px"
+            height="164px"
+            className={classes.speekerPicture}
+          />
           <p className={classes.speekerText}>
             {`${name},`}
             <br />

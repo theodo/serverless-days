@@ -89,7 +89,10 @@ export const pageQuery = graphql`
             company
             picture {
               childImageSharp {
-                fixed(width: 43, height: 43) {
+                small: fixed(width: 43, height: 43, quality: 100) {
+                  ...GatsbyImageSharpFixed
+                }
+                medium: fixed(width: 164, height: 164, quality: 100) {
                   ...GatsbyImageSharpFixed
                 }
               }

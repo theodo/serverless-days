@@ -1,16 +1,17 @@
 @import "../../variables";
 
 .container {
-  padding: 80 24px;
+  padding: 80px 24px;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
   @media (min-width: $breaking-point) {
+    flex-direction: row;
     padding: 80px 91px;
+    justify-content: center;
   }
   background-color: white;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
   .informations {
     h1 {
       font-family: "Source Code Pro", monospace;
@@ -58,12 +59,19 @@
     }
   }
   .titleImageContainer {
-    flex-grow: 1;
+    margin: 32px 0 0 0;
     text-align: center;
+    @media (min-width: $breaking-point) {
+      margin: 0 0 0 32px;
+      text-align: left;
+    }
     img {
-      max-width: 500px;
       width: 100%;
-      height: 100%;
+      @media (min-width: $breaking-point) {
+        margin: 0 0 0 32px;
+        text-align: left;
+        height: 100%;
+      }
     }
   }
 }

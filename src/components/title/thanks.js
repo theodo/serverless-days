@@ -17,28 +17,9 @@ const Title = () => (
         <br />
         (lieu à déterminer)
       </p>
-      <p className={classes.callToAction}>Tenez moi informé</p>
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        className={classes.contactForm}
-        action="/thanks/"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <input
-          type="email"
-          name="email"
-          placeholder="my.email@serverless.com"
-        />
-        <button
-          type="submit"
-          className={`${classes.button} ${classes.submitButton}`}
-        >
-          Ok
-        </button>
-      </form>
-      {/* <button className={classes.button}>prendre sa place</button> */}
+      <p className={classes.callToAction}>
+        On vous tiens informé dés que l'on a du nouveau =)
+      </p>
     </div>
     <div className={classes.titleImageContainer}>
       <img alt="" src={titleImage} />

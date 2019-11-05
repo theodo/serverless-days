@@ -46,7 +46,15 @@ const Location = () => (
           </li>
         </ol>
       </div>
-      <div className={classes.locationMap}></div>
+      <div className={classes.locationMap}>
+        <iframe
+          width="100%"
+          height="100%"
+          frameborder="0"
+          src="https://www.google.com/maps/embed/v1/view?zoom=17&center=48.8827%2C2.3223&key=AIzaSyAtVkGSGU7sFqPq_P_P3fx8NmnBmS-CY_U"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   </div>
 )

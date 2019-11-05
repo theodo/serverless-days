@@ -55,6 +55,9 @@
       background-color: $charcoal-grey;
       flex-grow: 2;
       flex-basis: 0;
+      iframe {
+        min-height: 500px;
+      }
     }
   }
 }

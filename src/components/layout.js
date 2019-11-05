@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Footer from "./footer"
 import Header from "./header"
 import "./layout.css"
 
@@ -28,6 +29,7 @@ const Layout = ({ children }) => {
         >
           {children}
         </main>
+        <Footer />
       </div>
     </>
   )

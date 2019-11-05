@@ -28,9 +28,6 @@ const Layout = ({ children }) => {
         >
           {children}
         </main>
-        {/* <footer>
-          <p>Designed by BAM</p>
-        </footer> */}
       </div>
     </>
   )

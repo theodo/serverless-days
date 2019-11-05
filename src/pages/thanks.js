@@ -6,7 +6,7 @@ import Title from "../components/title/thanks"
 
 export default () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <Title />
   </Layout>
 )

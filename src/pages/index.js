@@ -18,7 +18,7 @@ export default function Template({ data }) {
   const talks = edges.map(element => element.node.frontmatter)
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO />
       <Title />
       {/* <ol className={classes.talksList} id="talks">
         {talks

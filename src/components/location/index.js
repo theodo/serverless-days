@@ -10,7 +10,7 @@ const Location = () => (
       <div className={classes.informations}>
         <h2>Lieu</h2>
         <ol className={classes.locationInformations}>
-          <li>
+          <li className={classes.locationInformationBlock}>
             <p className={`${classes.locationTitle} ${classes.capitalize}`}>
               Theodo
             </p>
@@ -20,7 +20,7 @@ const Location = () => (
               75017, Paris
             </p>
           </li>
-          <li>
+          <li className={classes.locationInformationBlock}>
             <p className={classes.locationTitle}>S'y rendre</p>
             <ul className={classes.transportationList}>
               <li>
@@ -36,7 +36,7 @@ const Location = () => (
               </li>
             </ul>
           </li>
-          <li>
+          <li className={classes.locationInformationBlock}>
             <p className={`${classes.locationTitle} ${classes.capitalize}`}>
               Vous venez de loin ?
             </p>
@@ -46,6 +46,7 @@ const Location = () => (
           </li>
         </ol>
       </div>
+      <div className={classes.locationMap}></div>
     </div>
   </div>
 )

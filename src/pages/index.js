@@ -21,7 +21,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
-      <CallForPaper />
+      {/* <CallForPaper /> */}
       {/* <ol className={classes.talksList} id="talks">
         {talks
           .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))

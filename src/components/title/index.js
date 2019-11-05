@@ -31,10 +31,7 @@ const Title = () => (
           name="email"
           placeholder="my.email@serverless.com"
         />
-        <button
-          type="submit"
-          className={`${classes.button} ${classes.submitButton}`}
-        >
+        <button type="submit" className={classes.submitButton}>
           Ok
         </button>
       </form>

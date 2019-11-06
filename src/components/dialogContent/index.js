@@ -13,6 +13,7 @@ const DialogContent = ({
   company,
   biographie,
   picture,
+  isParty,
   closeDialog,
 }) => (
   <>
@@ -44,22 +45,24 @@ const DialogContent = ({
           )}
           <div className={classes.socialMediaContainer}></div>
         </div>
-        <div className={classes.speekerInformation}>
-          <Img
-            fixed={picture.childImageSharp.medium}
-            alt=""
-            width="164px"
-            height="164px"
-            className={classes.speekerPicture}
-          />
-          <p className={classes.speekerText}>
-            {`${name},`}
-            <br />
-            {job}
-            <br />
-            <span className={classes.speekerCompany}>{company}</span>
-          </p>
-        </div>
+        {!isParty && (
+          <div className={classes.speekerInformation}>
+            <Img
+              fixed={picture.childImageSharp.medium}
+              alt=""
+              width="164px"
+              height="164px"
+              className={classes.speekerPicture}
+            />
+            <p className={classes.speekerText}>
+              {`${name},`}
+              <br />
+              {job}
+              <br />
+              <span className={classes.speekerCompany}>{company}</span>
+            </p>
+          </div>
+        )}
       </div>
     </div>
   </>

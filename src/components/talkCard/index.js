@@ -15,34 +15,13 @@ const TalkCard = ({
   isParty,
   openDialog,
 }) => {
-  if (isParty) {
-    return (
-      <li
-        className={`${classes.container} ${classes.isParty}`}
-        onClick={openDialog}
-      >
-        <div className={classes.informationContainer}>
-          <p className={classes.hourContainer}>
-            <time
-              dateTime={format(new Date(hour), "HH:mm")}
-              className={classes.hour}
-            >
-              {format(new Date(hour), "hh:mm a")}
-            </time>
-          </p>
-          <div className={classes.descriptionContainer}>
-            <h3 className={classes.title}>{title}</h3>
-            <p className={classes.description}>{description}</p>
-          </div>
-        </div>
-        <img src={partyPicture} className={classes.partyPicture} alt="" />
-      </li>
-    )
-  }
   return (
     <li
-      className={`${classes.container} ${classes.isNotParty}`}
+      className={`${classes.container} ${
+        isParty ? classes.isParty : classes.isNotParty
+      }`}
       onClick={openDialog}
+      tabIndex={0}
     >
       <div className={classes.informationContainer}>
         <p className={classes.hourContainer}>
@@ -57,19 +36,24 @@ const TalkCard = ({
           <h3 className={classes.title}>{title}</h3>
           <p className={classes.description}>{description}</p>
         </div>
-        <div className={classes.authorContainer}>
-          <Img
-            fixed={picture.childImageSharp.small}
-            alt=""
-            width="43px"
-            height="43px"
-          />
-          <div className={classes.authorTextContainer}>
-            <p className={classes.author}>{`${name}, ${job}`}</p>
-            <p className={classes.company}>{company}</p>
+        {!isParty && (
+          <div className={classes.authorContainer}>
+            <Img
+              fixed={picture.childImageSharp.small}
+              alt=""
+              width="43px"
+              height="43px"
+            />
+            <div className={classes.authorTextContainer}>
+              <p className={classes.author}>{`${name}, ${job}`}</p>
+              <p className={classes.company}>{company}</p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
+      {isParty && (
+        <img src={partyPicture} className={classes.partyPicture} alt="" />
+      )}
     </li>
   )
 }

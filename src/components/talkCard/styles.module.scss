@@ -21,7 +21,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
     width: 100%;
 
     .hour {
@@ -75,8 +74,8 @@
 }
 
 .isParty {
+  position: relative;
   background-color: $primary;
-  padding-bottom: 0px;
 
   .hour {
     color: $primary;
@@ -90,20 +89,26 @@
   }
 }
 .isNotParty {
-  padding-bottom: 32px;
+  .informationContainer {
+    height: 100%;
+    padding-bottom: 32px;
 
-  .hour {
-    color: $cornflower-two;
-    background-color: rgba(98, 149, 255, 0.1);
-  }
-  .title {
-    color: $charcoal-grey;
-  }
-  .description {
-    color: #9a9ea2;
+    .hour {
+      color: $cornflower-two;
+      background-color: rgba(98, 149, 255, 0.1);
+    }
+    .title {
+      color: $charcoal-grey;
+    }
+    .description {
+      color: #9a9ea2;
+    }
   }
 }
 
 .partyPicture {
-  transform: translate(0, -100%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }

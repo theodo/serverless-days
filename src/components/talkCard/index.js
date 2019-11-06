@@ -22,6 +22,11 @@ const TalkCard = ({
       }`}
       onClick={openDialog}
       tabIndex={0}
+      onKeyDown={e => {
+        if (e.key === "Enter") {
+          openDialog()
+        }
+      }}
     >
       <div className={classes.informationContainer}>
         <p className={classes.hourContainer}>

@@ -9,6 +9,6 @@ export default () => (
   <Layout>
     <SEO />
     <Title />
-    {/* <CallForPaper /> */}
+    <CallForPaper />
   </Layout>
 )

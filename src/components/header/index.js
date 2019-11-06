@@ -15,6 +15,9 @@ const Header = () => (
       <li>
         <a href="#sponsor">become a sponsor</a>
       </li>
+      <li>
+        <button>Billetterie</button>
+      </li>
     </ol>
   </header>
 )

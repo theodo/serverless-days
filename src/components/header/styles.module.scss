@@ -32,5 +32,18 @@
       text-decoration: none;
       padding: 15px 0;
     }
+    button {
+      color: #ffffff;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 17px;
+      text-align: center;
+      border: 0;
+      padding: 8px 16px;
+      border-radius: 4px;
+      background-color: $primary;
+      text-transform: uppercase;
+    }
   }
 }

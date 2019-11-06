@@ -2,6 +2,9 @@
 
 .container {
   margin: 0 $talk-card-margin $talk-card-margin 0;
+  @media (max-width: $breaking-point) {
+    margin: 0 $mobile-margins 16px 0;
+  }
   list-style: none;
   height: 350px;
   width: 398px;

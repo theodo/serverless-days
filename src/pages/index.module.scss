@@ -4,28 +4,29 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 32px ($mobile-margins - $talk-card-margin) 0 $mobile-margins;
+  padding: 32px 0 0 $mobile-margins;
   @media (min-width: $breaking-point) {
     padding: 80px ($desktop-margins - $talk-card-margin) 0 $desktop-margins;
   }
-  padding: 32px 0 0 32px;
 }
 .talkHeader {
-  margin: 0 $talk-card-margin $talk-card-margin 0;
   list-style: none;
-  height: 350px;
   width: 398px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  margin: 0 $mobile-margins 16px 0;
+  flex-direction: row;
   @media (min-width: $breaking-point) {
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
+    margin: 0 $talk-card-margin $talk-card-margin 0;
   }
-
   img {
     width: 147px;
     height: 177px;
+    margin-right: 16px;
   }
   h2 {
     font-family: "Source Code Pro", monospace;

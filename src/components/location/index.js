@@ -24,15 +24,27 @@ const Location = () => (
             <p className={classes.locationTitle}>S'y rendre</p>
             <ul className={classes.transportationList}>
               <li>
-                <img className={classes.logo} src={metroLogo} />
+                <img className={classes.logo} src={metroLogo} alt="" />
                 <span>Rome</span>
-                <img className={classes.logo} src={metro2} />
+                <img
+                  className={classes.logo}
+                  src={metro2}
+                  alt="metro ligne 2"
+                />
               </li>
               <li>
-                <img className={classes.logo} src={metroLogo} />
+                <img className={classes.logo} src={metroLogo} alt="" />
                 <span>Place de Clichy</span>
-                <img className={classes.logo} src={metro2} />
-                <img className={classes.logo} src={metro13} />
+                <img
+                  className={classes.logo}
+                  src={metro2}
+                  alt="metro ligne 2"
+                />
+                <img
+                  className={classes.logo}
+                  src={metro13}
+                  alt="metro ligne 13"
+                />
               </li>
             </ul>
           </li>
@@ -48,6 +60,7 @@ const Location = () => (
       </div>
       <div className={classes.locationMap}>
         <iframe
+          title="carte du quartier de la conférence"
           width="100%"
           height="100%"
           frameborder="0"

@@ -18,7 +18,7 @@ const DialogContent = ({
   <>
     <div className={classes.close}>
       <button onClick={closeDialog}>
-        <img src={close} />
+        <img src={close} alt="exit" />
       </button>
     </div>
     <div className={classes.container}>

@@ -7,7 +7,7 @@ const Location = ({ id }) => (
     <h2>Contact</h2>
     <p>Pour plus d’informations contactez notre équipe d’organisateurs</p>
     <div className={classes.address}>
-      <img src={mailLogo} />
+      <img src={mailLogo} alt="" />
       <address>
         <a href="mailto:contac@serverlessdaysfrance.fr">
           contac@serverlessdaysfrance.fr

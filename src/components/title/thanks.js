@@ -7,7 +7,7 @@ const Title = () => (
       <h1>
         Serverless days
         <br />
-        <span className={classes.location}>Paris 2019</span>
+        <span className={classes.location}>Paris 2020</span>
       </h1>
       <h2 className={classes.subtitle}>
         La journée de Conférence dédiée à l’architecture Serverless

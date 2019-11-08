@@ -6,8 +6,33 @@ $charcoal-grey: #353e46;
 $pale-grey: #eff4ff;
 $steel-grey: #7c7f83;
 
-$breaking-point: 1000px;
+$breaking-point: 1440px;
 
 $desktop-margins: 91px;
 $mobile-margins: 16px;
 $talk-card-margin: 32px;
+
+$break-point-1to2: 1010px;
+$break-point-2to3: 1440px;
+$break-point-3to4: 1870px;
+
+$width-1column: 398px;
+$width-2column: 828px;
+$width-3column: 1258px;
+$width-4column: 1688px;
+
+@mixin adapt-width {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: $width-1column;
+  @media (min-width: $break-point-1to2) {
+    max-width: $width-2column;
+  }
+  @media (min-width: $break-point-2to3) {
+    max-width: $width-3column;
+  }
+  @media (min-width: $break-point-3to4) {
+    max-width: $width-4column;
+  }
+}

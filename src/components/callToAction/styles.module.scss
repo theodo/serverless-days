@@ -1,10 +1,8 @@
 @import "../../variables";
 
 .container {
-  padding: 80px $mobile-margins;
-  @media (min-width: $breaking-point) {
-    padding: 80px $desktop-margins;
-  }
+  @include adapt-width;
+  padding: 80px 0;
   background-color: $pale-grey;
   text-align: center;
   .text {

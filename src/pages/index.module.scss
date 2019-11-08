@@ -3,10 +3,19 @@
 .talksList {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 32px 0 0 $mobile-margins;
-  @media (min-width: $breaking-point) {
-    padding: 80px ($desktop-margins - $talk-card-margin) 0 $desktop-margins;
+  margin: 0 auto;
+  padding: 0;
+  max-width: $width-1column;
+  @media (min-width: $break-point-1to2) {
+    transform: translateX(16px);
+    max-width: $width-2column + 32px;
+    flex-direction: row;
+  }
+  @media (min-width: $break-point-2to3) {
+    max-width: $width-3column + 32px;
+  }
+  @media (min-width: $break-point-3to4) {
+    max-width: $width-4column + 32px;
   }
 }
 .talkHeader {

@@ -1,16 +1,15 @@
 @import "../../variables";
 
 .container {
-  padding: 84px $mobile-margins;
+  @include adapt-width;
+  padding: 84px 0;
   flex-direction: column;
-  @media (min-width: $breaking-point) {
-    padding: 84px $desktop-margins;
-    flex-direction: row;
-  }
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  @media (min-width: $breaking-point) {
+    flex-direction: row;
+  }
   .imageContainer {
     text-align: center;
     margin-bottom: 32px;

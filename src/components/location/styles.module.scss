@@ -4,12 +4,10 @@
   margin-top: 200px;
   margin-bottom: -150px;
   background-color: $primary;
-  padding: 0 $mobile-margins;
-  @media (min-width: $breaking-point) {
-    padding: 0 $desktop-margins;
-  }
+  padding: 0;
 
   .container {
+    @include adapt-width;
     border-radius: 4px;
     position: relative;
     top: -150px;

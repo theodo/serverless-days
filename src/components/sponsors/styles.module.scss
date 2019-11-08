@@ -1,19 +1,15 @@
 @import "../../variables";
 
 .container {
+  @include adapt-width;
+
   border-radius: 4px;
   background-color: #fff;
   padding: 48px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin: 0 $mobile-margins;
   flex-direction: column;
-  @media (min-width: $breaking-point) {
-    margin: 0 $desktop-margins;
-    flex-direction: row;
-  }
 
   .titleContainer {
     .title {

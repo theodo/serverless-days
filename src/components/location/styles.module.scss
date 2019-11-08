@@ -10,6 +10,7 @@
   }
 
   .container {
+    border-radius: 4px;
     position: relative;
     top: -150px;
     background-color: #fff;
@@ -95,6 +96,11 @@
   background-color: $primary;
   padding: 8px 16px;
   border: 0;
+  min-height: 40px;
+  &:hover {
+    background-color: $cornflower-two;
+    cursor: pointer;
+  }
 }
 
 .capitalize {

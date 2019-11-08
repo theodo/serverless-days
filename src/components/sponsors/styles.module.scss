@@ -1,8 +1,9 @@
 @import "../../variables";
 
 .container {
+  border-radius: 4px;
   background-color: #fff;
-  padding: 46px 48px;
+  padding: 48px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,19 +31,25 @@
       font-weight: 500;
       line-height: 20px;
       text-transform: uppercase;
+      @media (max-width: $breaking-point) {
+        margin-bottom: 32px;
+      }
     }
   }
 
   .sponsors {
     display: flex;
     flex-grow: 1;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0 56px;
+    justify-content: flex-start;
+    @media (max-width: $breaking-point) {
+      flex-direction: column;
+    }
     li {
       list-style: none;
       margin: 0;
+      margin: 24px;
       img {
         height: 38px;
       }
@@ -61,5 +68,10 @@
     border-radius: 4px;
     background-color: #000;
     text-transform: uppercase;
+    min-height: 40px;
+    &:hover {
+      background-color: $cornflower-two;
+      cursor: pointer;
+    }
   }
 }

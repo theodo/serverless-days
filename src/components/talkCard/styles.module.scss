@@ -13,6 +13,9 @@
 
   &:hover {
     box-shadow: 0 2px 20px 0 rgba(53, 62, 70, 0.15);
+    transform: translate(5px, -5px);
+    transition: transform 0.2s;
+    cursor: pointer;
   }
   .informationContainer {
     padding-top: 32px;
@@ -25,9 +28,14 @@
 
     .hour {
       padding: 7px 8px;
+      font-family: Lato;
+      font-size: 16px;
+      color: $cornflower-two;
+      border-radius: 4px;
     }
     .hourContainer {
       margin-bottom: 16px;
+      border-radius: 2px;
     }
     .title {
       font-family: "Source Code Pro", monospace;

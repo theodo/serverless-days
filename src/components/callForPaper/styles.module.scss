@@ -1,10 +1,10 @@
 @import "../../variables";
 
 .container {
-  padding: 84px 24px;
+  padding: 84px $mobile-margins;
   flex-direction: column;
   @media (min-width: $breaking-point) {
-    padding: 84px 91px;
+    padding: 84px $desktop-margins;
     flex-direction: row;
   }
   display: flex;
@@ -59,6 +59,11 @@
       border-radius: 4px;
       background-color: $primary;
       text-transform: uppercase;
+      min-height: 40px;
+      &:hover {
+        background-color: $cornflower-two;
+        cursor: pointer;
+      }
     }
   }
 }

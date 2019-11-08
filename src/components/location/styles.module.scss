@@ -14,14 +14,14 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    @media (min-width: $breaking-point) {
+    @media (min-width: $break-point-1to2) {
       flex-direction: row;
     }
     .informations {
       flex-grow: 1;
       flex-basis: 0;
       padding: 52px 48px 0px 48px;
-      @media (min-width: $breaking-point) {
+      @media (min-width: $break-point-1to2) {
         padding: 52px 48px;
       }
       h2 {

@@ -26,7 +26,7 @@
   align-items: center;
   margin: 0 $mobile-margins 16px 0;
   flex-direction: row;
-  @media (min-width: $breaking-point) {
+  @media (min-width: $break-point-1to2) {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;

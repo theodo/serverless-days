@@ -7,13 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (min-width: $breaking-point) {
+  @media (min-width: $break-point-1to2) {
     flex-direction: row;
   }
   .imageContainer {
     text-align: center;
     margin-bottom: 32px;
-    @media (min-width: $breaking-point) {
+    @media (min-width: $break-point-1to2) {
       text-align: left;
       margin-right: 86px;
       margin-bottom: 0;

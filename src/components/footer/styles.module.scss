@@ -7,7 +7,7 @@
   justify-content: flex-end;
   align-items: center;
   padding: 20px $mobile-margins;
-  @media (min-width: $breaking-point) {
+  @media (min-width: $break-point-1to2) {
     padding: 20px $desktop-margins;
   }
 

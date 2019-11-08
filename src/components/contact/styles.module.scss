@@ -7,7 +7,7 @@
 
     color: #fff;
     padding: 56px 0 80px;
-    @media (min-width: $breaking-point) {
+    @media (min-width: $break-point-1to2) {
       padding: 56px 0 80px;
     }
     h2 {
@@ -29,7 +29,7 @@
       align-items: center;
       justify-content: space-between;
 
-      @media (max-width: $breaking-point) {
+      @media (max-width: $break-point-1to2) {
         align-items: flex-start;
         flex-direction: column;
       }
@@ -54,7 +54,7 @@
         }
       }
       .socials {
-        @media (max-width: $breaking-point) {
+        @media (max-width: $break-point-1to2) {
           width: 100%;
           margin-top: 16px;
           text-align: right;

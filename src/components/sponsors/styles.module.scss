@@ -27,7 +27,7 @@
       font-weight: 500;
       line-height: 20px;
       text-transform: uppercase;
-      @media (max-width: $breaking-point) {
+      @media (max-width: $break-point-1to2) {
         margin-bottom: 32px;
       }
     }
@@ -39,7 +39,7 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
-    @media (max-width: $breaking-point) {
+    @media (max-width: $break-point-1to2) {
       flex-direction: column;
     }
     li {

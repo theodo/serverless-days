@@ -7,13 +7,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px $mobile-margins;
-  @media (min-width: $breaking-point) {
+  @media (min-width: $break-point-1to2) {
     padding: 16px 32px;
   }
 }
 
 .shortcuts {
-  @media (max-width: $breaking-point) {
+  @media (max-width: $break-point-1to2) {
     display: none;
   }
   margin: 0;

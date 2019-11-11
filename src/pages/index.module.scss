@@ -3,10 +3,10 @@
 .talksList {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 $mobile-margins;
   padding: 0;
-  max-width: $width-1column;
   @media (min-width: $break-point-1to2) {
+    margin: 0 auto;
     transform: translateX(16px);
     max-width: $width-2column + 32px;
     flex-direction: row;
@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 $talk-card-margin $talk-card-margin 0;
+    margin: 0 $talk-card-margin-desktop $talk-card-margin-desktop 0;
   }
   img {
     width: 147px;

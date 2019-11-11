@@ -48,10 +48,8 @@ const DialogContent = ({
         {!isParty && (
           <div className={classes.speekerInformation}>
             <Img
-              fixed={picture.childImageSharp.medium}
+              fluid={picture.childImageSharp.medium}
               alt=""
-              width="164px"
-              height="164px"
               className={classes.speekerPicture}
             />
             <p className={classes.speekerText}>

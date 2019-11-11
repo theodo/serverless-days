@@ -1,5 +1,6 @@
 @import "../../variables";
 $space: 48px;
+$mobile-space: 16px;
 
 .close {
   background-color: #fff;
@@ -16,6 +17,9 @@ $space: 48px;
 }
 .container {
   padding: 0 $space $space $space;
+  @media (max-width: $break-point-1to2) {
+    padding: 0 $mobile-space $mobile-space $mobile-space;
+  }
   background-color: #fff;
   .hourContainer {
     margin-bottom: 16px;
@@ -31,6 +35,10 @@ $space: 48px;
   .informationContainer {
     display: flex;
     flex-direction: row;
+
+    @media (max-width: $break-point-1to2) {
+      flex-direction: column-reverse;
+    }
     .talkInformation {
       flex-grow: 1;
       margin-right: $space;
@@ -50,6 +58,12 @@ $space: 48px;
           line-height: 1.2;
           color: $charcoal-grey;
           margin-bottom: 24px;
+
+          @media (max-width: $break-point-1to2) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 16px;
+          }
         }
       }
     }
@@ -70,10 +84,19 @@ $space: 48px;
   }
   .speekerInformation {
     width: 164px;
+    @media (max-width: $break-point-1to2) {
+      width: 100%;
+      display: flex;
+    }
     .speekerPicture {
       width: 164px;
       height: 164px;
       margin-bottom: 8px;
+      @media (max-width: $break-point-1to2) {
+        width: 82px;
+        height: 82px;
+        margin-right: 8px;
+      }
     }
     .speekerText {
       font-family: Lato;

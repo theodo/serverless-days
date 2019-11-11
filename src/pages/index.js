@@ -65,7 +65,7 @@ export default function Template({ data }) {
       <Location />
       <Contact id="contact" />
 
-      <Dialog open={dialogIsOpen} onClose={closeDialog} maxWidth="lg" fullWidth>
+      <Dialog open={dialogIsOpen} onClose={closeDialog} maxWidth="xl" fullWidth>
         {dialogData && (
           <DialogContent closeDialog={closeDialog} {...dialogData} />
         )}
@@ -92,8 +92,8 @@ export const pageQuery = graphql`
                 small: fixed(width: 43, height: 43, quality: 100) {
                   ...GatsbyImageSharpFixed
                 }
-                medium: fixed(width: 164, height: 164, quality: 100) {
-                  ...GatsbyImageSharpFixed
+                medium: fluid(maxWidth: 164, quality: 100) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

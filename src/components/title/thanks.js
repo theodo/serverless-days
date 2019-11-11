@@ -9,6 +9,9 @@ const Title = () => (
         <br />
         <span className={classes.location}>Paris 2020</span>
       </h1>
+      <div className={classes.mobileTitleImageContainer}>
+        <img alt="" src={titleImage} />
+      </div>
       <h2 className={classes.subtitle}>
         La journée de conférences dédiées à l’architecture Serverless
       </h2>
@@ -21,7 +24,7 @@ const Title = () => (
         On vous tient informé dès que l'on a du nouveau =)
       </p>
     </div>
-    <div className={classes.titleImageContainer}>
+    <div className={classes.desktopTitleImageContainer}>
       <img alt="" src={titleImage} />
     </div>
   </div>

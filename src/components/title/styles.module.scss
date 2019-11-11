@@ -67,22 +67,27 @@
         }
       }
     }
-    .titleImageContainer {
-      margin: 32px 0 0 0;
+    .mobileTitleImageContainer {
+      margin: 32px 0;
       text-align: center;
       flex-grow: 1;
       @media (min-width: $break-point-1to2) {
-        margin: 0 0 0 32px;
-        text-align: left;
+        display: none;
       }
       img {
         width: 90%;
-        @media (min-width: $break-point-1to2) {
-          margin: 0 0 0 32px;
-          text-align: left;
-          // height: 100%;
-          // width: auto;
-        }
+      }
+    }
+    .desktopTitleImageContainer {
+      margin: 0 0 0 32px;
+      text-align: left;
+      visibility: visible;
+      @media (max-width: $break-point-1to2) {
+        display: none;
+      }
+      img {
+        margin: 0 0 0 32px;
+        text-align: left;
       }
     }
   }

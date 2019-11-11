@@ -12,14 +12,14 @@ $talk-card-margin-desktop: 32px;
 $talk-card-margin-mobile: 16px;
 
 $talk-card-height: 350px;
-$talk-card-width: 380px;
+$talk-card-width: 398px;
 
 $width-1column: $talk-card-width;
 $width-2column: 2 * $talk-card-width + $talk-card-margin-desktop;
 $width-3column: 3 * $talk-card-width + 2 * $talk-card-margin-desktop;
-$width-4column: 4 * $talk-card-width + 2 * $talk-card-margin-desktop;
+$width-4column: 4 * $talk-card-width + 3 * $talk-card-margin-desktop;
 
-$break-point-1to2: $width-2column + 2 * $desktop-margins;
+$break-point-1to2: $width-2column + 2 * $mobile-margins;
 $break-point-2to3: $width-3column + 2 * $desktop-margins;
 $break-point-3to4: $width-4column + 2 * $desktop-margins;
 

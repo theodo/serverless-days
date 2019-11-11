@@ -2,11 +2,13 @@
 
 .talksList {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 $mobile-margins;
   padding: 0;
   @media (min-width: $break-point-1to2) {
     margin: 0 auto;
+    justify-content: flex-start;
     transform: translateX(16px);
     max-width: $width-2column + 32px;
     flex-direction: row;
@@ -20,7 +22,7 @@
 }
 .talkHeader {
   list-style: none;
-  width: 398px;
+  width: $talk-card-width;
   display: flex;
   justify-content: flex-start;
   align-items: center;

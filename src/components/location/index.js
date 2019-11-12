@@ -14,7 +14,7 @@ const Location = () => (
             <p className={`${classes.locationTitle} ${classes.capitalize}`}>
               Theodo
             </p>
-            <p>
+            <p className={classes.locationText}>
               48 boulevard des batignoles
               <br />
               75017, Paris

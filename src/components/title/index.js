@@ -30,6 +30,7 @@ const Title = () => (
           type="email"
           name="email"
           placeholder="my.email@serverless.com"
+          required
         />
         <button type="submit" className={classes.submitButton}>
           Ok

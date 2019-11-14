@@ -9,11 +9,11 @@ const CallForPaper = () => (
       <h2 className={classes.title}>Talks</h2>
     </div>
     <div className={classes.informationContainer}>
-      <h3>Program to be announced</h3>
+      <h3>Program building...</h3>
       <p>
-        We are still looking for people to present their talks . If you want to
-        share your experiences around Serverless architecture apply for a talk
-        and become a speaker
+        Bonnes pratiques, outils, services, venez partager votre expérience
+        de Serverless avec le reste de la communauté ! Soumettez votre sujet
+        pour devenir conférencier.
       </p>
       <button>Devenir speaker</button>
     </div>

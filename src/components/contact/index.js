@@ -12,8 +12,8 @@ const Location = ({ id }) => (
         <div className={classes.email}>
           <img src={mailLogo} alt="" />
           <address>
-            <a href="mailto:contac@serverlessdaysfrance.fr">
-              contac@serverlessdaysfrance.fr
+            <a href="mailto:paris@serverlessdays.io">
+              paris@serverlessdays.io
             </a>
           </address>
         </div>

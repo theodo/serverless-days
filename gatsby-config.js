@@ -38,13 +38,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Serverless Days Paris - 24 April 2020`,
+        short_name: `sls days paris`,
         start_url: `/`,
         background_color: `#eff4ff`,
         theme_color: `#5267FF`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/unicorn_mascot.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,

@@ -2,7 +2,8 @@ import React from "react"
 import classes from "./styles.module.scss"
 import metroLogo from "../../images/metro-logo.svg"
 import metro2 from "../../images/metro2.svg"
-import metro13 from "../../images/metro13.svg"
+import metro3 from "../../images/metro3.svg"
+import metro9 from "../../images/metro9.svg"
 
 const Location = () => (
   <div className={classes.backgroundContainer}>
@@ -12,12 +13,12 @@ const Location = () => (
         <ol className={classes.locationInformations}>
           <li className={classes.locationInformationBlock}>
             <p className={`${classes.locationTitle} ${classes.capitalize}`}>
-              Theodo
+              Pan Piper
             </p>
             <p className={classes.locationText}>
-              48 boulevard des batignoles
+            2-4 Impasse Lamier
               <br />
-              75017, Paris
+              75011 Paris
             </p>
           </li>
           <li className={classes.locationInformationBlock}>
@@ -25,7 +26,7 @@ const Location = () => (
             <ul className={classes.transportationList}>
               <li>
                 <img className={classes.logo} src={metroLogo} alt="" />
-                <span>Rome</span>
+                <span>Philippe-Auguste</span>
                 <img
                   className={classes.logo}
                   src={metro2}
@@ -34,16 +35,20 @@ const Location = () => (
               </li>
               <li>
                 <img className={classes.logo} src={metroLogo} alt="" />
-                <span>Place de Clichy</span>
+                <span>Père Lachaise</span>
                 <img
                   className={classes.logo}
-                  src={metro2}
-                  alt="metro ligne 2"
+                  src={metro3}
+                  alt="metro ligne 3"
                 />
+              </li>
+              <li>
+                <img className={classes.logo} src={metroLogo} alt="" />
+                <span>Voltaire ou Charonne</span>
                 <img
                   className={classes.logo}
-                  src={metro13}
-                  alt="metro ligne 13"
+                  src={metro9}
+                  alt="metro ligne 9"
                 />
               </li>
             </ul>
@@ -64,7 +69,7 @@ const Location = () => (
           width="100%"
           height="100%"
           frameborder="0"
-          src="https://www.google.com/maps/embed/v1/view?zoom=17&center=48.8827%2C2.3223&key=AIzaSyAtVkGSGU7sFqPq_P_P3fx8NmnBmS-CY_U"
+          src="https://www.google.com/maps/embed/v1/view?zoom=17&center=48.85769%2C2.388837&key=AIzaSyAtVkGSGU7sFqPq_P_P3fx8NmnBmS-CY_U"
           allowfullscreen
         ></iframe>
       </div>

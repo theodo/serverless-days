@@ -16,7 +16,7 @@ const Location = () => (
               Pan Piper
             </p>
             <p className={classes.locationText}>
-            2-4 Impasse Lamier
+              2-4 Impasse Lamier
               <br />
               75011 Paris
             </p>
@@ -69,7 +69,7 @@ const Location = () => (
           width="100%"
           height="100%"
           frameborder="0"
-          src="https://www.google.com/maps/embed/v1/view?zoom=17&center=48.85769%2C2.388837&key=AIzaSyAtVkGSGU7sFqPq_P_P3fx8NmnBmS-CY_U"
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJM6USKPVt5kcRStjC9G4xbbY&key=AIzaSyAtVkGSGU7sFqPq_P_P3fx8NmnBmS-CY_U"
           allowfullscreen
         ></iframe>
       </div>

@@ -18,7 +18,7 @@ const Title = () => (
         (lieu à déterminer)
       </p>
       <p className={classes.callToAction}>
-        On vous tiens informé dés que l'on a du nouveau =)
+        On vous tiens informé dès que l'on a du nouveau =)
       </p>
     </div>
     <div className={classes.titleImageContainer}>

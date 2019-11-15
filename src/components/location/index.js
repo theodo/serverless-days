@@ -53,14 +53,14 @@ const Location = () => (
               </li>
             </ul>
           </li>
-          <li className={classes.locationInformationBlock}>
+          {/* <li className={classes.locationInformationBlock}>
             <p className={`${classes.locationTitle} ${classes.capitalize}`}>
               Vous venez de loin ?
             </p>
             <button className={`${classes.button} ${classes.capitalize}`}>
               Trouvez un hebergement
             </button>
-          </li>
+          </li> */}
         </ol>
       </div>
       <div className={classes.locationMap}>

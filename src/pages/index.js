@@ -43,8 +43,9 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
+      <CallToAction />
       <CallForPaper />
-      <ol className={classes.talksList} id="talks">
+      {/* <ol className={classes.talksList} id="talks">
         <li className={classes.talkHeader}>
           <img alt="" src={talkLogo} />
           <h2>Talks</h2>
@@ -59,8 +60,7 @@ export default function Template({ data }) {
               {...talk}
             />
           ))}
-      </ol>
-      <CallToAction />
+      </ol> */}
       <Sponsors id="sponsor" />
       <Location />
       <Contact id="contact" />

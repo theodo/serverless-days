@@ -21,7 +21,7 @@ const Title = () => (
           <br />
           au Pan Piper
         </p>
-        <p className={classes.callToAction}>Tenez moi informé</p>
+        {/* <p className={classes.callToAction}>Tenez moi informé</p>
         <form
           name="contact"
           method="POST"
@@ -39,7 +39,7 @@ const Title = () => (
           <button type="submit" className={classes.submitButton}>
             Ok
           </button>
-        </form>
+        </form> */}
         {/* <button className={classes.button}>prendre sa place</button> */}
       </div>
       <div className={classes.desktopTitleImageContainer}>

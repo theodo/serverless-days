@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Serverless Days`,
+    title: `Serverless Days Paris - 14 April 2020`,
     description: `La journée de conférence dédiée au serverless.`,
-    author: `Alexandre Fauquette with @gatsbyjs`,
+    author: `Theodo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -68,9 +68,9 @@ const Location = () => (
           title="carte du quartier de la conférence"
           width="100%"
           height="100%"
-          frameborder="0"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJM6USKPVt5kcRStjC9G4xbbY&key=AIzaSyAtVkGSGU7sFqPq_P_P3fx8NmnBmS-CY_U"
-          allowfullscreen
+          frameBorder="0"
+          src="https://www.google.com/maps/embed/v1/view?zoom=17&center=48.85769%2C2.388837&key=AIzaSyAtVkGSGU7sFqPq_P_P3fx8NmnBmS-CY_U"
+          allowFullScreen
         ></iframe>
       </div>
     </div>

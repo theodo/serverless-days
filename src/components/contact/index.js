@@ -18,8 +18,7 @@ const Location = ({ id }) => (
           </address>
         </div>
         <div className={classes.socials}>
-          <img src={twitterLogo} alt="Twitter" />
-          <img src={instaLogo} alt="Instagram" />
+          <a href="https://twitter.com/ServerlessParis"><img src={twitterLogo} alt="Twitter" /></a>
         </div>
       </div>
     </div>

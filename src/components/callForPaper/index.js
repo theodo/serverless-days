@@ -15,7 +15,7 @@ const CallForPaper = () => (
         de Serverless avec le reste de la communauté ! Soumettez votre sujet
         pour devenir conférencier.
       </p>
-      <button>Devenir speaker</button>
+      <a className={classes.button} href="mailto:paris+talking@serverlessdays.io?subject=I wanna talk at serverless days paris 2020&body=Tell us who you are, what you wanna talk about, why you are legitimate to talk about that and we will get back to you soon :) Thank you very much!" className={classes.button}>Devenir speaker</a>
     </div>
   </div>
 )

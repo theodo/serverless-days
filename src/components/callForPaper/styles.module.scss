@@ -46,13 +46,14 @@
       color: $steel-grey;
       margin-bottom: 16px;
     }
-    button {
+    .button {
       color: #ffffff;
       font-family: Lato;
       font-size: 14px;
       font-weight: bold;
-      line-height: 17px;
       text-align: center;
+      text-decoration: none;
+      line-height: 17px;
       border: 0;
       padding: 8px 16px;
       border-radius: 4px;

@@ -10,12 +10,12 @@ const Title = () => (
         <span className={classes.location}>Paris 2020</span>
       </h1>
       <h2 className={classes.subtitle}>
-        La journée de Conférence dédiée à l’architecture Serverless
+        La journée de conférences dédiées à l’architecture Serverless
       </h2>
       <p className={classes.rendezVous}>
         Rendez-vous le <time dateTime="2020-04-24">24/04/2020</time>
         <br />
-        (lieu à déterminer)
+        Au Pan Piper à Paris
       </p>
       <p className={classes.callToAction}>Tenez moi informé</p>
       <form

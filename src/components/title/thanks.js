@@ -10,7 +10,7 @@ const Title = () => (
         <span className={classes.location}>Paris 2020</span>
       </h1>
       <h2 className={classes.subtitle}>
-        La journée de Conférence dédiée à l’architecture Serverless
+        La journée de conférences dédiées à l’architecture Serverless
       </h2>
       <p className={classes.rendezVous}>
         Rendez-vous le <time dateTime="2020-04-24">24/04/2020</time>
@@ -18,7 +18,7 @@ const Title = () => (
         (lieu à déterminer)
       </p>
       <p className={classes.callToAction}>
-        On vous tiens informé dès que l'on a du nouveau =)
+        On vous tient informé dès que l'on a du nouveau =)
       </p>
     </div>
     <div className={classes.titleImageContainer}>

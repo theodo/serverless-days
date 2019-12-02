@@ -1,0 +1,46 @@
+@import "../variables";
+
+.container {
+  @include adapt-width;
+
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 48px 48px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  .titleContainer {
+    margin: 0 0 16px;
+    text-align: center;
+    @media (max-width: $break-point-1to2) {
+      text-align: left;
+    }
+    .title {
+      color: $charcoal-grey;
+      font-family: "Source Code Pro";
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 50px;
+      margin: 0 0 8px;
+    }
+  }
+
+  h2 {
+    margin: 48px 0 16px;
+    color: $charcoal-grey;
+    font-family: "Source Code Pro";
+    font-weight: bold;
+    line-height: 50px;
+  }
+
+  p {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #7c7f83;
+    margin-bottom: 16px;
+  }
+}

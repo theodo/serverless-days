@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import classes from "./styles.module.scss"
 import logo from "../../images/logo.svg"
 
@@ -14,6 +15,9 @@ const Header = () => (
       </li>
       <li>
         <a href="#sponsor">devenir sponsor</a>
+      </li>
+      <li>
+        <Link to="/code-de-conduite">code de conduite</Link>
       </li>
       <li>
         <button id="eventbrite-widget-modal-trigger-82099189887">Billetterie</button>

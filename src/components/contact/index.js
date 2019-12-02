@@ -3,7 +3,7 @@ import classes from "./styles.module.scss"
 import mailLogo from "../../images/mail.svg"
 import twitterLogo from "../../images/twitterLogo.svg"
 import instaLogo from "../../images/instaLogo.svg"
-const Location = ({ id }) => (
+const Contact = ({ id }) => (
   <div id={id} className={classes.bacgroundContainer}>
     <div className={classes.container}>
       <h2>Contact</h2>
@@ -25,4 +25,4 @@ const Location = ({ id }) => (
   </div>
 )
 
-export default Location
+export default Contact

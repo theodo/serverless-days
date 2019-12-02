@@ -5,9 +5,9 @@ import metro2 from "../../images/metro2.svg"
 import metro3 from "../../images/metro3.svg"
 import metro9 from "../../images/metro9.svg"
 
-const Location = () => (
+const Location = ({ id }) => (
   <div className={classes.backgroundContainer}>
-    <div className={classes.container}>
+    <div id={id} className={classes.container}>
       <div className={classes.informations}>
         <h2>Lieu</h2>
         <ol className={classes.locationInformations}>

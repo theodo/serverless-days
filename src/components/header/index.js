@@ -10,7 +10,7 @@ const Header = () => (
         <a href="#talks">programme</a>
       </li>
       <li>
-        <a href="#contact">lieu & contact</a>
+        <a href="#location">lieu & contact</a>
       </li>
       <li>
         <a href="#sponsor">devenir sponsor</a>

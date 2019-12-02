@@ -62,7 +62,7 @@ export default function Template({ data }) {
           ))}
       </ol> */}
       <Sponsors id="sponsor" />
-      <Location />
+      <Location id="location" />
       <Contact id="contact" />
 
       <Dialog open={dialogIsOpen} onClose={closeDialog} maxWidth="xl" fullWidth>

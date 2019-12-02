@@ -1,6 +1,48 @@
+@import "../variables";
+
 .talksList {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 32px 0 0 32px;
+  margin: 0 $mobile-margins;
+  padding: 84px 0 0;
+  @media (min-width: $break-point-1to2) {
+    margin: 0 auto;
+    justify-content: flex-start;
+    transform: translateX(16px);
+    max-width: $width-2column + 32px;
+    flex-direction: row;
+  }
+  @media (min-width: $break-point-2to3) {
+    max-width: $width-3column + 32px;
+  }
+  @media (min-width: $break-point-3to4) {
+    max-width: $width-4column + 32px;
+  }
+}
+.talkHeader {
+  list-style: none;
+  width: $talk-card-width;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 $mobile-margins 16px 0;
+  flex-direction: row;
+  @media (min-width: $break-point-1to2) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 $talk-card-margin-desktop $talk-card-margin-desktop 0;
+  }
+  img {
+    width: 147px;
+    height: 177px;
+    margin-right: 16px;
+  }
+  h2 {
+    font-family: "Source Code Pro", monospace;
+    font-size: 40px;
+    font-weight: bold;
+    color: $charcoal-grey;
+  }
 }

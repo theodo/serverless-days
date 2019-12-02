@@ -1,20 +1,19 @@
 @import "../../variables";
 
 .container {
-  padding: 84px 24px;
+  @include adapt-width;
+  padding: 84px 0;
   flex-direction: column;
-  @media (min-width: $breaking-point) {
-    padding: 84px 91px;
-    flex-direction: row;
-  }
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  @media (min-width: $break-point-1to2) {
+    flex-direction: row;
+  }
   .imageContainer {
     text-align: center;
     margin-bottom: 32px;
-    @media (min-width: $breaking-point) {
+    @media (min-width: $break-point-1to2) {
       text-align: left;
       margin-right: 86px;
       margin-bottom: 0;
@@ -27,7 +26,6 @@
       font-size: 40px;
       font-weight: bold;
       color: $charcoal-grey;
-      text-transform: uppercase;
     }
   }
   .informationContainer {
@@ -39,7 +37,7 @@
       font-size: 24px;
       font-weight: 600;
       color: $charcoal-grey;
-      margin-bottom: 16px;
+      margin: 0 0 16px;
     }
     p {
       font-family: Lato;
@@ -48,18 +46,24 @@
       color: $steel-grey;
       margin-bottom: 16px;
     }
-    button {
+    .button {
       color: #ffffff;
       font-family: Lato;
       font-size: 14px;
       font-weight: bold;
-      line-height: 17px;
       text-align: center;
+      text-decoration: none;
+      line-height: 17px;
       border: 0;
       padding: 8px 16px;
       border-radius: 4px;
       background-color: $primary;
       text-transform: uppercase;
+      min-height: 40px;
+      &:hover {
+        background-color: $cornflower-two;
+        cursor: pointer;
+      }
     }
   }
 }

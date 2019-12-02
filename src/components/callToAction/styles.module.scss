@@ -1,10 +1,8 @@
 @import "../../variables";
 
 .container {
-  padding: 80px 24px;
-  @media (min-width: $breaking-point) {
-    padding: 80px 91px;
-  }
+  @include adapt-width;
+  padding: 80px 0 0;
   background-color: $pale-grey;
   text-align: center;
   .text {
@@ -30,5 +28,10 @@
     border-radius: 4px;
     background-color: $primary;
     text-transform: uppercase;
+    min-height: 40px;
+    &:hover {
+      background-color: $cornflower-two;
+      cursor: pointer;
+    }
   }
 }

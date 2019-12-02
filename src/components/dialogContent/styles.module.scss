@@ -1,0 +1,111 @@
+@import "../../variables";
+$space: 48px;
+$mobile-space: 16px;
+
+.close {
+  background-color: #fff;
+  text-align: right;
+  padding: 24px 24px 0 0;
+  button {
+    background: none;
+    border: none;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.container {
+  padding: 0 $space $space $space;
+  @media (max-width: $break-point-1to2) {
+    padding: 0 $mobile-space $mobile-space $mobile-space;
+  }
+  background-color: #fff;
+  .hourContainer {
+    margin-bottom: 16px;
+    .hour {
+      padding: 7px 8px;
+      color: $cornflower-two;
+      background-color: rgba(98, 149, 255, 0.1);
+      font-family: Lato;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+  }
+  .informationContainer {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: $break-point-1to2) {
+      flex-direction: column-reverse;
+    }
+    .talkInformation {
+      flex-grow: 1;
+      margin-right: $space;
+      .text {
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.31;
+        color: $steel-grey;
+      }
+
+      .talkDescription {
+        margin-bottom: 24px;
+        .title {
+          font-family: "Source Code Pro", monospace;
+          font-size: 40px;
+          font-weight: bold;
+          line-height: 1.2;
+          color: $charcoal-grey;
+          margin-bottom: 24px;
+
+          @media (max-width: $break-point-1to2) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+    .speekerBio {
+      .biographie {
+        font-family: "Source Code Pro", monospace;
+        font-size: 16px;
+        font-weight: 500;
+        color: $charcoal-grey;
+        text-transform: uppercase;
+        padding: 24px 0 16px 0;
+        margin-bottom: 24px;
+        border-top: solid $steel-grey 1px;
+      }
+    }
+    .socialMediaContainer {
+    }
+  }
+  .speekerInformation {
+    width: 164px;
+    @media (max-width: $break-point-1to2) {
+      width: 100%;
+      display: flex;
+    }
+    .speekerPicture {
+      width: 164px;
+      height: 164px;
+      margin-bottom: 8px;
+      @media (max-width: $break-point-1to2) {
+        width: 82px;
+        height: 82px;
+        margin-right: 8px;
+      }
+    }
+    .speekerText {
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: bold;
+      color: $charcoal-grey;
+      .speekerCompany {
+        color: $steel-grey;
+      }
+    }
+  }
+}

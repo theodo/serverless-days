@@ -1,63 +1,122 @@
 @import "../../variables";
 
 .container {
-  margin: 0 32px 32px;
-  padding: 32px;
+  margin: 0 0 $talk-card-margin-mobile 0;
+  @media (min-width: $break-point-1to2) {
+    margin: 0 $talk-card-margin-desktop $talk-card-margin-desktop 0;
+  }
   list-style: none;
-  height: 350px;
-  width: 398px;
+  height: $talk-card-height;
+  width: $talk-card-width;
   border-radius: 4px;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.hour {
-  padding: 7px 8px;
-  color: $cornflower-two;
-  background-color: rgba(98, 149, 255, 0.1);
-  margin-bottom: 16px;
-}
-.title {
-  color: $charcoal-grey;
-  font-family: "Source Code Pro", monospace;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 29px;
-  margin-bottom: 16px;
-}
-.description {
-  color: #9a9ea2;
-  font-family: Lato;
-  font-size: 16px;
-  line-height: 21px;
-  margin-bottom: 16px;
+
+  &:hover {
+    box-shadow: 0 2px 20px 0 rgba(53, 62, 70, 0.15);
+    transform: translate(5px, -5px);
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  .informationContainer {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
+    .hour {
+      padding: 7px 8px;
+      font-family: Lato;
+      font-size: 16px;
+      color: $cornflower-two;
+      border-radius: 4px;
+    }
+    .hourContainer {
+      margin-bottom: 16px;
+      border-radius: 2px;
+    }
+    .title {
+      font-family: "Source Code Pro", monospace;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px;
+      margin-bottom: 16px;
+    }
+    .description {
+      font-family: Lato;
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 16px;
+    }
+
+    .descriptionContainer {
+      flex-grow: 1;
+    }
+    .authorContainer {
+      display: flex;
+      flex-direction: row;
+    }
+    .authorTextContainer {
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+    }
+    .author {
+      color: $charcoal-grey;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 17px;
+      margin: 0px;
+    }
+    .company {
+      color: #9a9ea2;
+      font-family: Lato;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 17px;
+    }
+  }
 }
 
-.descriptionContainer {
-  flex-grow: 1;
+.isParty {
+  position: relative;
+  background-color: $primary;
+
+  .hour {
+    color: $primary;
+    background-color: #fff;
+  }
+  .title {
+    color: #fff;
+  }
+  .description {
+    color: #fff;
+  }
 }
-.authorContainer {
-  display: flex;
-  flex-direction: row;
+.isNotParty {
+  .informationContainer {
+    height: 100%;
+    padding-bottom: 32px;
+
+    .hour {
+      color: $cornflower-two;
+      background-color: rgba(98, 149, 255, 0.1);
+    }
+    .title {
+      color: $charcoal-grey;
+    }
+    .description {
+      color: #9a9ea2;
+    }
+  }
 }
-.authorTextContainer {
-  display: flex;
-  flex-direction: column;
-  margin-left: 16px;
-}
-.author {
-  color: $charcoal-grey;
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 17px;
-  margin: 0px;
-}
-.company {
-  color: #9a9ea2;
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 17px;
+
+.partyPicture {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }

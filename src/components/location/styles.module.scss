@@ -4,36 +4,75 @@
   margin-top: 200px;
   margin-bottom: -150px;
   background-color: $primary;
-  padding: 0 24px;
-  @media (min-width: $breaking-point) {
-    padding: 0 91px;
+  padding: 0;
+
+  .container {
+    @include adapt-width;
+    border-radius: 4px;
+    position: relative;
+    top: -150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $break-point-1to2) {
+      flex-direction: row;
+    }
+    .informations {
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 52px 48px 0px 48px;
+      @media (min-width: $break-point-1to2) {
+        padding: 52px 48px;
+      }
+      h2 {
+        font-family: "Source Code Pro", monospace;
+        font-size: 40px;
+        font-weight: bold;
+        color: $charcoal-grey;
+        margin-bottom: 38px;
+      }
+
+      .locationInformations {
+        margin: 0;
+        list-style-type: none;
+
+        .locationInformationBlock {
+          margin-bottom: 38px;
+
+          .locationTitle {
+            color: $primary;
+            font-family: "Source Code Pro", monospace;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 8px;
+          }
+          .locationText {
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: bold;
+            color: $charcoal-grey;
+          }
+        }
+      }
+    }
+    .locationMap {
+      background-color: $charcoal-grey;
+      flex-grow: 2;
+      flex-basis: 0;
+      iframe {
+        min-height: 500px;
+      }
+    }
   }
 }
-.container {
-  position: relative;
-  top: -150px;
-  background-color: #fff;
-}
-.informations {
-  padding: 52px 48px;
-}
-.locationInformations {
-  margin: 0;
-  list-style-type: none;
-}
-.locationTitle {
-  color: $primary;
-  font-family: "Source Code Pro", monospace;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-}
+
 .transportationList {
   margin: 0;
   li {
     display: flex;
     align-items: center;
-    color: #333333;
+    color: $charcoal-grey;
     font-family: Lato;
     font-size: 16px;
     font-weight: bold;
@@ -49,7 +88,6 @@
     }
   }
 }
-
 .button {
   color: #fff;
   background-color: $primary;
@@ -62,6 +100,11 @@
   background-color: $primary;
   padding: 8px 16px;
   border: 0;
+  min-height: 40px;
+  &:hover {
+    background-color: $cornflower-two;
+    cursor: pointer;
+  }
 }
 
 .capitalize {

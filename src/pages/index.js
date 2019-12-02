@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useCallback } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -10,29 +10,66 @@ import Title from "../components/title"
 import CallForPaper from "../components/callForPaper"
 import CallToAction from "../components/callToAction"
 import Sponsors from "../components/sponsors"
+
+import DialogContent from "../components/dialogContent"
+
+import Dialog from "@material-ui/core/Dialog"
+
 import classes from "./index.module.scss"
+import talkLogo from "../images/talks.svg"
 
 export default function Template({ data }) {
+  const [dialogIsOpen, setDialogIsOpen] = useState(false)
+  const [dialogData, setDialogData] = useState(false)
+
   const {
     allMarkdownRemark: { edges },
   } = data
   const talks = edges.map(element => element.node.frontmatter)
+
+  const closeDialog = useCallback(() => {
+    setDialogIsOpen(false)
+    setDialogData(null)
+  }, [setDialogData, setDialogIsOpen])
+
+  const openDialog = useCallback(
+    dataIndex => {
+      setDialogIsOpen(true)
+      setDialogData(talks[dataIndex])
+    },
+    [setDialogData, setDialogIsOpen, talks]
+  )
   return (
     <Layout>
       <SEO />
       <Title />
-      {/* <CallForPaper /> */}
+      <CallToAction />
+      <CallForPaper id="talks" />
       {/* <ol className={classes.talksList} id="talks">
+        <li className={classes.talkHeader}>
+          <img alt="" src={talkLogo} />
+          <h2>Talks</h2>
+        </li>
         {talks
           .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))
-          .map(talk => (
-            <TalkCard {...talk} />
+          .map((talk, index) => (
+            <TalkCard
+              openDialog={() => {
+                openDialog(index)
+              }}
+              {...talk}
+            />
           ))}
-      </ol>
-      <CallToAction />
+      </ol> */}
       <Sponsors id="sponsor" />
-      <Location />
-      <Contact id="contact" /> */}
+      <Location id="location" />
+      <Contact id="contact" />
+
+      <Dialog open={dialogIsOpen} onClose={closeDialog} maxWidth="xl" fullWidth>
+        {dialogData && (
+          <DialogContent closeDialog={closeDialog} {...dialogData} />
+        )}
+      </Dialog>
     </Layout>
   )
 }
@@ -52,8 +89,11 @@ export const pageQuery = graphql`
             company
             picture {
               childImageSharp {
-                fixed(width: 43, height: 43) {
+                small: fixed(width: 43, height: 43, quality: 100) {
                   ...GatsbyImageSharpFixed
+                }
+                medium: fluid(maxWidth: 164, quality: 100) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -61,6 +101,7 @@ export const pageQuery = graphql`
             twitter
             instagram
             facebook
+            isParty
           }
         }
       }

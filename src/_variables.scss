@@ -1,4 +1,4 @@
-$breaking-point: 900px;
+$break-point-1to2: 900px;
 
 $primary: #5267ff;
 $cornflower-two: #6295ff;
@@ -6,7 +6,36 @@ $charcoal-grey: #353e46;
 $pale-grey: #eff4ff;
 $steel-grey: #7c7f83;
 
-$breaking-point: 1000px;
-
 $desktop-margins: 91px;
-$mobile-margins: 24px;
+$mobile-margins: 16px;
+$talk-card-margin-desktop: 32px;
+$talk-card-margin-mobile: 16px;
+
+$talk-card-height: 350px;
+$talk-card-width: 398px;
+
+$width-1column: $talk-card-width;
+$width-2column: 2 * $talk-card-width + $talk-card-margin-desktop;
+$width-3column: 3 * $talk-card-width + 2 * $talk-card-margin-desktop;
+$width-4column: 4 * $talk-card-width + 3 * $talk-card-margin-desktop;
+
+$break-point-1to2: $width-2column + 2 * $mobile-margins;
+$break-point-2to3: $width-3column + 2 * $desktop-margins;
+$break-point-3to4: $width-4column + 2 * $desktop-margins;
+
+@mixin adapt-width {
+  // max-width: $width-1column;
+  margin-right: $mobile-margins;
+  margin-left: $mobile-margins;
+  @media (min-width: $break-point-1to2) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $width-2column;
+  }
+  @media (min-width: $break-point-2to3) {
+    max-width: $width-3column;
+  }
+  @media (min-width: $break-point-3to4) {
+    max-width: $width-4column;
+  }
+}

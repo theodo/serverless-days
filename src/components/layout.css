@@ -622,15 +622,3 @@ pre tt:after {
     font-size: 100%;
   }
 }
-
-footer {
-  height: 72px;
-  background-color: #eff4ff;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-footer > p {
-  margin: 0 16px 0 0;
-}

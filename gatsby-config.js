@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Serverless Days`,
+    title: `Serverless Days Paris - 14 April 2020`,
     description: `La journée de conférence dédiée au serverless.`,
-    author: `Alexandre Fauquette with @gatsbyjs`,
+    author: `Theodo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,6 +18,13 @@ module.exports = {
       options: {
         name: `talks`,
         path: `${__dirname}/src/talks`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
       },
     },
     {
@@ -38,13 +45,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Serverless Days Paris - 24 April 2020`,
+        short_name: `sls days paris`,
         start_url: `/`,
         background_color: `#eff4ff`,
         theme_color: `#5267FF`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/unicorn_mascot.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sass`,

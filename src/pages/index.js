@@ -44,7 +44,7 @@ export default function Template({ data }) {
       <SEO />
       <Title />
       <CallToAction />
-      <CallForPaper />
+      <CallForPaper id="talks" />
       {/* <ol className={classes.talksList} id="talks">
         <li className={classes.talkHeader}>
           <img alt="" src={talkLogo} />

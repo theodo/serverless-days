@@ -2,8 +2,8 @@ import React from "react"
 import classes from "./styles.module.scss"
 import talkPicture from "../../images/talks.svg"
 
-const CallForPaper = () => (
-  <div className={classes.container}>
+const CallForPaper = ({ id }) => (
+  <div id={id} className={classes.container}>
     <div className={classes.imageContainer}>
       <img alt="" src={talkPicture} />
       <h2 className={classes.title}>Talks</h2>

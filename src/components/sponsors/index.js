@@ -12,11 +12,11 @@ const Sponsors = ({ id }) => (
       {/* <p className={classes.subtitle}>ils nous font confiance</p> */}
       <p className={classes.subtitle}>Soutenez Serverless Days Paris</p>
     </div>
-    {/* <ol className={classes.sponsors}>
+    <ol className={classes.sponsors}>
       <li>
         <img src={theodoLogo} alt="Theodo" />
       </li>
-      <li>
+      {/* <li>
         <img src={googleLogo} alt="Google" />
       </li>
       <li>
@@ -24,8 +24,8 @@ const Sponsors = ({ id }) => (
       </li>
       <li>
         <img src={microsoftLogo} alt="Microsoft" />
-      </li>
-    </ol> */}
+      </li> */}
+    </ol>
     <a href="mailto:paris+sponsoring@serverlessdays.io?subject=I wanna support serverless days paris 2020" className={classes.button}>devenir sponsor</a>
   </div>
 )

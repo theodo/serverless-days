@@ -8,13 +8,13 @@ const Header = () => (
     <img src={logo} alt="serverless days paris 2020" />
     <ol className={classes.shortcuts}>
       <li>
-        <a href="#talks">programme</a>
+        <Link to="/#talks">programme</Link>
       </li>
       <li>
-        <a href="#location">lieu & contact</a>
+        <Link to="/#location">lieu & contact</Link>
       </li>
       <li>
-        <a href="#sponsor">devenir sponsor</a>
+        <Link to="/#sponsor">devenir sponsor</Link>
       </li>
       <li>
         <Link to="/code-de-conduite">code de conduite</Link>

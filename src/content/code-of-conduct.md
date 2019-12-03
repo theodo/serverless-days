@@ -14,7 +14,7 @@ Notre conférence se veut une expérience sans harcèlement, quel que soit votre
 
 Par mail, contactez Benjamin <benjaming@theodo.fr> ou Diane <dianer@theodo.fr>.
 
-En cas d’urgence médicale, contactez Christopher <christopher.maneu@microsoft.com> 112
+En cas d’urgence médicale, contactez Christopher <christopher.maneu@microsoft.com> ou le 112.
 
 Sur place, les organisateurs porteront un t-shirt "staff".
 
@@ -35,4 +35,4 @@ Les membres de l'organisation seront ravis d'aider les participants à contacter
 
 Nous attendons des participants qu'ils suivent ces règles dans le bâtiment des conférences et des ateliers, ainsi que pendant les événements sociaux relatifs à la conférence.
 
-*Version originale et crédit: [http://2012.jsconf.us/#/about](http://2012.jsconf.us/#/about) & [The Ada Initiative](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy)Merci d'aider à la traduction et à l'amélioration de ce texte : [on github.com](https://github.com/confcodeofconduct/confcodeofconduct.com)Ce texte est sous licence [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US)*
+*Version originale et crédit: [http://2012.jsconf.us/#/about](http://2012.jsconf.us/#/about) & [The Ada Initiative](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy). Merci d'aider à la traduction et à l'amélioration de ce texte : [on github.com](https://github.com/confcodeofconduct/confcodeofconduct.com). Ce texte est sous licence [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US)*

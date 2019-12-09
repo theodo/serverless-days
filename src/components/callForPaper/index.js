@@ -9,13 +9,13 @@ const CallForPaper = ({ id }) => (
       <h2 className={classes.title}>Talks</h2>
     </div>
     <div className={classes.informationContainer}>
-      <h3>Program building...</h3>
+      <h3>Call for speakers running...</h3>
       <p>
         Bonnes pratiques, outils, services, venez partager votre expérience
         de Serverless avec le reste de la communauté ! Soumettez votre sujet
-        pour devenir conférencier.
+        pour devenir conférencier sur notre Call for Speakers.
       </p>
-      <a className={classes.button} href="https://www.papercall.io/serverlessdaysparis2020" className={classes.button}>Devenir speaker</a>
+      <a className={classes.button} href="https://www.papercall.io/serverlessdaysparis2020" className={classes.button} alt="Liens vers le call for speakers">Devenir Speaker</a>
     </div>
   </div>
 )

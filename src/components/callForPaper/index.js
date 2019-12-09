@@ -15,7 +15,7 @@ const CallForPaper = ({ id }) => (
         de Serverless avec le reste de la communauté ! Soumettez votre sujet
         pour devenir conférencier sur notre Call for Speakers.
       </p>
-      <a className={classes.button} href="https://www.papercall.io/serverlessdaysparis2020" className={classes.button} alt="Liens vers le call for speakers">Devenir Speaker</a>
+      <a className={classes.button} href="https://www.papercall.io/serverlessdaysparis2020" className={classes.button} alt="Lien vers le call for speakers">Postuler au CFP</a>
     </div>
   </div>
 )

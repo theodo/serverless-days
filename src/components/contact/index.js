@@ -1,13 +1,15 @@
 import React from "react"
+import { FormattedMessage } from "gatsby-plugin-intl"
+
 import classes from "./styles.module.scss"
 import mailLogo from "../../images/mail.svg"
 import twitterLogo from "../../images/twitterLogo.svg"
-import instaLogo from "../../images/instaLogo.svg"
+//import instaLogo from "../../images/instaLogo.svg"
 const Contact = ({ id }) => (
   <div id={id} className={classes.bacgroundContainer}>
     <div className={classes.container}>
-      <h2>Contact</h2>
-      <p>Pour plus d’informations contactez notre équipe d’organisateurs</p>
+      <h2><FormattedMessage id="contact.title"/></h2>
+      <p><FormattedMessage id="contact.content" /></p>
       <div className={classes.address}>
         <div className={classes.email}>
           <img src={mailLogo} alt="" />

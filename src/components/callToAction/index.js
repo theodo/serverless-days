@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import classes from "./styles.module.scss"
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 class CallToAction extends Component {
   click () {
@@ -9,11 +10,9 @@ class CallToAction extends Component {
   render() {
     return (
       <div className={classes.container}>
-        <p className={classes.text}>
-          Venez assister à une journée de conférence avec des experts, networker et
-          découvrir de nouveaux sujets …
+        <p className={classes.text}><FormattedMessage id="call_to_action.text" />
         </p>
-        <button className={classes.button} onClick={ this.click }>prendre sa place</button>
+        <button className={classes.button} onClick={ this.click }><FormattedMessage id="call_to_action.button.content" /></button>
       </div>
     )
   }

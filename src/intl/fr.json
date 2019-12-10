@@ -1,0 +1,52 @@
+{
+  "call_for_paper": {
+    "title": "Talks",
+    "subtitle": "Call for speakers running...",
+    "summary": "Bonnes pratiques, outils, services, venez partager votre expérience de Serverless avec le reste de la communauté ! Soumettez votre sujet pour devenir conférencier sur notre Call for Speakers.",
+    "cta": {
+      "alt":"Lien vers le call for speakers",
+      "content": "Postuler au CFP"
+    }
+  },
+  "call_to_action": {
+    "text": "Venez assister à une journée de conférence avec des experts, networker et découvrir de nouveaux sujets...",
+    "button": {
+      "content": "prendre sa place"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "Pour plus d’informations contactez notre équipe d’organisateurs"
+  },
+  "header": {
+    "talks": "programme",
+    "location": "lieu & contact",
+    "sponsor": "devenir sponsor",
+    "code-of-conduct": "code de conduite",
+    "tickets": "Billetterie"
+  },
+  "location": {
+    "title": "Lieu",
+    "how-to-go": "S'y rendre",
+    "map": {
+      "title": "carte du quartier de la conférence"
+    }
+  },
+  "sponsors": {
+    "platinium_title": "Sponsors Platinium",
+    "gold_title": "Sponsors Gold",
+    "silver_title": "Sponsors Silver",
+    "bronze_title": "Sponsors Bronze",
+    "subtitle": "Soutenez Serverless Days Paris"
+  },
+  "title": {
+    "title": "Serverless days",
+    "location-year": "Paris 2020",
+    "subtitle": "La journée de Conférence dédiée à l’architecture Serverless",
+    "rendez-vous": {
+      "when": "Rendez-vous le 24/04/2020",
+      "where": "au Pan Piper"
+    },
+    "call-to-action": "prendre sa place"
+  }
+}

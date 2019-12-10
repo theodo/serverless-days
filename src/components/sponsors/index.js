@@ -78,7 +78,9 @@ const Sponsors = ({ id }) => (
       </ol>
     </div>*/}
     <p className={classes.subtitle}><FormattedMessage id="sponsors.subtitle"/></p>
-    <a href="mailto:paris+sponsoring@serverlessdays.io?subject=I wanna support serverless days paris 2020&body=Tell us if you're interested in being one of the 15 sponsors sharing the spotlight during this first Paris edition! We have 4 different packages that you can sign-up for according to your budget and the visibility you wish to have. We would be happy to walk you through the details." className={classes.button}>devenir sponsor</a>
+    <a href="mailto:paris+sponsoring@serverlessdays.io?subject=I wanna support serverless days paris 2020&body=Tell us if you're interested in being one of the 15 sponsors sharing the spotlight during this first Paris edition! We have 4 different packages that you can sign-up for according to your budget and the visibility you wish to have. We would be happy to walk you through the details." className={classes.button}>
+      <FormattedMessage id="sponsors.call-to-action" />
+    </a>
   </div>
 )
 

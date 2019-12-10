@@ -1,10 +1,15 @@
 import React from "react"
-import { useIntl, FormattedMessage , Link } from "gatsby-plugin-intl"
+import { useIntl, FormattedMessage, Link, IntlContextConsumer, changeLocale } from "gatsby-plugin-intl"
 
 import classes from "./styles.module.scss"
 import logo from "../../images/logo.svg"
 
 const Header = () => {
+  const languageNames = {
+    "fr": "Français 🇫🇷",
+    "en": "English 🇬🇧"
+  }
+
   const intl = useIntl()
 
   let codeOfConduct = <Link to="/code-de-conduite"><FormattedMessage id="header.code-of-conduct"/></Link>
@@ -31,6 +36,27 @@ const Header = () => {
         </li>
         <li>
           <button id="eventbrite-widget-modal-trigger-82099189887"><FormattedMessage id="header.tickets"/></button>
+        </li>
+        <li>
+        <IntlContextConsumer>
+        {({ languages, language: currentLocale }) =>
+          languages.map(language => {
+            if (language === currentLocale) { 
+              return
+            }
+
+            return (
+              <a
+                key={language}
+                href="#"
+                onClick={() => changeLocale(language)}
+              >
+                {languageNames[language]}
+              </a>
+            )
+          })
+        }
+      </IntlContextConsumer>
         </li>
       </ol>
       <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>

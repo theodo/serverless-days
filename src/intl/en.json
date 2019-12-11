@@ -1,0 +1,53 @@
+{
+  "call_for_paper": {
+    "title": "Talks",
+    "subtitle": "Call for speakers running...",
+    "summary": "Share your experience with the servless community: best practices, products and services you've used with serverless technologies, you name it, we want to hear about it. Submit your talk to become one of our passionate speakers!",
+    "cta": {
+      "alt":"Link to the call for speakers",
+      "content": "Apply to our CFP"
+    }
+  },
+  "call_to_action": {
+    "text": "Come to network with serverless experts and learn from them during this one-day conference",
+    "button": {
+      "content": "Register now"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "Contact our organizing team for more informations"
+  },
+  "header": {
+    "talks": "program",
+    "location": "Location & contact",
+    "sponsor": "Become a partner",
+    "code-of-conduct": "code of conduct",
+    "tickets": "Register"
+  },
+  "location": {
+    "title": "Location",
+    "how-to-go": "How to get there",
+    "map": {
+      "title": "map of the nieghborhood of the venue"
+    }
+  },
+  "sponsors": {
+    "platinium_title": "Platinium Partners",
+    "gold_title": "Gold Partners",
+    "silver_title": "Silver Partners",
+    "bronze_title": "Bronze Partners",
+    "subtitle": "Support Serverless Days Paris",
+    "call-to-action": "Become Partner"
+  },
+  "title": {
+    "title": "Serverless days",
+    "location-year": "Paris 2020",
+    "subtitle": "One day, one track, about Serverless only",
+    "rendez-vous": {
+      "when": "It's happening on the 04/24/2020",
+      "where": "at Pan Piper"
+    },
+    "call-to-action": "Register now"
+  }
+}

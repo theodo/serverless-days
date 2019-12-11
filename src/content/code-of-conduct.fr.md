@@ -1,6 +1,7 @@
 ---
 title: "Code de conduite"
 path: /code-de-conduite
+slug: code-de-conduite
 ---
 
 

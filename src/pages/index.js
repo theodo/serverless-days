@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import TalkCard from "../components/talkCard"
+//import TalkCard from "../components/talkCard"
 import Location from "../components/location"
 import Contact from "../components/contact"
 import Title from "../components/title"
@@ -15,30 +15,30 @@ import DialogContent from "../components/dialogContent"
 
 import Dialog from "@material-ui/core/Dialog"
 
-import classes from "./index.module.scss"
-import talkLogo from "../images/talks.svg"
+//import classes from "./index.module.scss"
+//import talkLogo from "../images/talks.svg"
 
 export default function Template({ data }) {
   const [dialogIsOpen, setDialogIsOpen] = useState(false)
   const [dialogData, setDialogData] = useState(false)
 
-  const {
-    allMarkdownRemark: { edges },
-  } = data
-  const talks = edges.map(element => element.node.frontmatter)
+  // const {
+  //   allMarkdownRemark: { edges },
+  // } = data
+  //const talks = edges.map(element => element.node.frontmatter)
 
   const closeDialog = useCallback(() => {
     setDialogIsOpen(false)
     setDialogData(null)
   }, [setDialogData, setDialogIsOpen])
 
-  const openDialog = useCallback(
-    dataIndex => {
-      setDialogIsOpen(true)
-      setDialogData(talks[dataIndex])
-    },
-    [setDialogData, setDialogIsOpen, talks]
-  )
+  // const openDialog = useCallback(
+  //   dataIndex => {
+  //     setDialogIsOpen(true)
+  //     setDialogData(talks[dataIndex])
+  //   },
+  //   [setDialogData, setDialogIsOpen, talks]
+  // )
   return (
     <Layout>
       <SEO />

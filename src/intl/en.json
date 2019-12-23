@@ -33,11 +33,8 @@
     }
   },
   "sponsors": {
-    "platinium_title": "Platinium Partners",
-    "gold_title": "Gold Partners",
-    "silver_title": "Silver Partners",
-    "bronze_title": "Bronze Partners",
-    "subtitle": "Support Serverless Days Paris",
+    "title": "They support Serverless Days Paris 2020",
+    "subtitle": "You want to support us to?",
     "call-to-action": "Become Partner"
   },
   "title": {

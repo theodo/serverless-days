@@ -6,8 +6,8 @@ import logo from "../../images/logo.svg"
 
 const Header = () => {
   const languageNames = {
-    "fr": "Français 🇫🇷",
-    "en": "English 🇬🇧"
+    "fr": "FR 🇫🇷",
+    "en": "EN 🇬🇧"
   }
 
   const intl = useIntl()

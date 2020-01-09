@@ -35,9 +35,6 @@ const Header = () => {
           {codeOfConduct}
         </li>
         <li>
-          <button id="eventbrite-widget-modal-trigger-82099189887"><FormattedMessage id="header.tickets"/></button>
-        </li>
-        <li>
         <IntlContextConsumer>
         {({ languages, language: currentLocale }) =>
           languages.map(language => {
@@ -57,6 +54,9 @@ const Header = () => {
           })
         }
       </IntlContextConsumer>
+        </li>
+        <li>
+          <button id="eventbrite-widget-modal-trigger-82099189887"><FormattedMessage id="header.tickets"/></button>
         </li>
       </ol>
       <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>

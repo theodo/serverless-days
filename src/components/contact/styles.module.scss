@@ -6,6 +6,10 @@
     @include adapt-width;
 
     color: #fff;
+    font-family: "Source Code Pro", monospace;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
     padding: 56px 0 80px;
     @media (min-width: $break-point-1to2) {
       padding: 56px 0 80px;
@@ -17,11 +21,28 @@
       line-height: 50px;
       margin: 0 0 16px 0;
     }
+    .membersList {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: stretch;
+      margin-top: 16px;
+      
+      .member {
+        flex-basis: 100px;
+        text-align: center;
+        font-size: 15px;
+        margin: 0 5px;
+
+        .memberName {
+          text-transform: capitalize;
+        }
+
+      }
+    }
     p {
-      font-family: "Source Code Pro", monospace;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 20px;
       margin: 0 0 8px 0;
     }
     .address {

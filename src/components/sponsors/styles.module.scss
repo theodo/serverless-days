@@ -11,19 +11,16 @@
   align-items: center;
   flex-direction: column;
 
-  .listContainer {
-    margin: 0 0 16px;
+  .title {
+    color: $charcoal-grey;
+    font-family: "Source Code Pro";
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 16px 0;
     text-align: center;
     @media (max-width: $break-point-1to2) {
       text-align: left;
-    }
-    .title {
-      color: $charcoal-grey;
-      font-family: "Source Code Pro";
-      font-size: 40px;
-      font-weight: bold;
-      line-height: 50px;
-      margin: 0 0 8px;
     }
   }
 
@@ -46,14 +43,13 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 0;
+    margin: 0 auto;
     @media (max-width: $break-point-1to2) {
       flex-direction: column;
     }
     li {
       list-style: none;
-      margin: 0;
-      margin: 24px;
+      margin: 16px;
       img {
         height: 38px;
       }
@@ -65,15 +61,15 @@
   }
 
   .sponsorsGold li img {
-    height: 48px;
+    height: 58px;
   }
 
   .sponsorsSilver li img {
-    height: 38px;
+    height: 48px;
   }
 
   .sponsorsBronze li img {
-    height: 28px;
+    height: 38px;
   }
 
   .button {

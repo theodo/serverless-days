@@ -1,5 +1,5 @@
 ---
-name: "Diane de Roquefeuille"
+name: "Diane de Roquefeuil"
 bio: "Agile coach & biz-dev"
 company: "Theodo"
 twitter: "https://twitter.com/dianerqf"

@@ -7,35 +7,29 @@ import classes from "./styles.module.scss"
 import mailLogo from "../../images/mail.svg"
 import twitterLogo from "../../images/twitterLogo.svg"
 
-import adrien from "../../images/orgs/adrien.jpeg"
-import alexis from "../../images/orgs/alexis.png"
-import benjamin from "../../images/orgs/benjamin.jpg"
-import christopher from "../../images/orgs/christopher.png"
-import diane from "../../images/orgs/diane.jpeg"
-import guillaume from "../../images/orgs/guillaume.jpg"
-import matthieu from "../../images/orgs/matthieu.jpeg"
-import maxime from "../../images/orgs/maxime.jpeg"
-import sebastien from "../../images/orgs/sebastien.png"
-
 const Contact = ({ id }) => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(
+      allMarkdownRemark (
+        filter: {fileAbsolutePath: {regex: "/(orgs)/"  }}
         sort: {
-          fields: base,
+          fields: [frontmatter___name]
           order: ASC
-        },
-        filter: {
-          extension: { regex: "/(jpg)|(png)|(jpeg)/" }
-          relativeDirectory: { eq: "orgs" }
         }
       ) {
         edges {
           node {
-            base
-            childImageSharp {
-              fixed(width: 100, height: 100) {
-                ...GatsbyImageSharpFixed
+            frontmatter {
+              name
+              bio
+              company
+              twitter
+              picture {            
+                childImageSharp {
+                  fixed(width: 100, height: 100) {
+                    ...GatsbyImageSharpFixed
+                  }
+                }
               }
             }
           }
@@ -43,6 +37,8 @@ const Contact = ({ id }) => {
       }
     }
   `)
+  const orgs = data.allMarkdownRemark.edges.map(element => element.node.frontmatter)
+
 
   return ( 
     <div id={id} className={classes.bacgroundContainer}>
@@ -50,8 +46,8 @@ const Contact = ({ id }) => {
         <h2><FormattedMessage id="contact.title"/></h2>
         <p><FormattedMessage id="contact.content" /></p>
         <ul className={classes.membersList}>
-          { data.allFile.edges.map(image => (
-            <li className={classes.member}><Member name={image.node.base.split(".")[0]} picture={image.node.childImageSharp.fixed} /></li>
+          { orgs.map(organizer => (
+            <li className={classes.member}><Member member={organizer} /></li>
           )) }
         </ul>
         <div className={classes.address}>
@@ -74,14 +70,15 @@ const Contact = ({ id }) => {
 
 export default Contact
 
-const Member = ({name, picture}) => (
+const Member = ({member}) => (
   <Fragment>
     <Img
-      fixed={picture}
+      fixed={member.picture.childImageSharp.fixed}
       width="100px"
       height="100px"
       style={{ display: "block", margin: "0 auto 5px"}}
     />
-    <span className={classes.memberName}>{name}</span>
+    <p className={classes.memberName}>{member.name}</p>
+    <p className={classes.memberJob}>{member.bio}<span className={classes.memberCompany}> @{member.company}</span></p>
   </Fragment>
 )

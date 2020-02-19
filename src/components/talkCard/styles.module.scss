@@ -17,10 +17,11 @@
     transition: transform 0.2s;
     cursor: pointer;
   }
+  &:focus {
+    outline: none;
+  }
   .informationContainer {
-    padding-top: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 32px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,8 +51,8 @@
       line-height: 21px;
       margin-bottom: 16px;
     }
-
     .descriptionContainer {
+      padding: 0 32px;
       flex-grow: 1;
     }
     .authorContainer {
@@ -61,22 +62,25 @@
     .authorTextContainer {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       margin-left: 16px;
     }
     .author {
       color: $charcoal-grey;
       font-family: Lato;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: bold;
-      line-height: 17px;
       margin: 0px;
     }
-    .company {
+    .company, .job {
       color: #9a9ea2;
       font-family: Lato;
       font-size: 14px;
-      font-weight: bold;
       line-height: 17px;
+      min-height: 17px;
+    }
+    .job {
+      color: $charcoal-grey;
     }
   }
 }
@@ -84,6 +88,14 @@
 .isParty {
   position: relative;
   background-color: $primary;
+
+  .informationContainer {
+    padding: 32px;
+
+    .descriptionContainer {
+      padding: 0;
+    }
+  }
 
   .hour {
     color: $primary;
@@ -99,7 +111,6 @@
 .isNotParty {
   .informationContainer {
     height: 100%;
-    padding-bottom: 32px;
 
     .hour {
       color: $cornflower-two;

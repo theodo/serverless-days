@@ -4,8 +4,9 @@ import { FormattedMessage } from "gatsby-plugin-intl"
 import classes from "./styles.module.scss"
 import theodoLogo from "../../images/sponsorsLogo/Theodo.svg"
 import thundraLogo from "../../images/sponsorsLogo/Thundra.png"
-import googleLogo from "../../images/sponsorsLogo/Google.svg"
-import awsLogo from "../../images/sponsorsLogo/AWS.svg"
+import platformLogo from "../../images/sponsorsLogo/Platformsh.svg"
+// import googleLogo from "../../images/sponsorsLogo/Google.svg"
+// import awsLogo from "../../images/sponsorsLogo/AWS.svg"
 // import microsoftLogo from "../../images/sponsorsLogo/Microsoft.svg"
 
 const Sponsors = ({ id }) => (
@@ -22,21 +23,12 @@ const Sponsors = ({ id }) => (
         <img src={googleLogo} alt="Google" />
       </li>
     </ol>
+    */}
     <ol className={classes.sponsors + " " + classes.sponsorsSilver}>
       <li>
-        <img src={theodoLogo} alt="Theodo" />
-      </li>
-      <li>
-        <img src={googleLogo} alt="Google" />
-      </li>
-      <li>
-        <img src={awsLogo} alt="Amazone Web Sercices" />
-      </li>
-      <li>
-        <img src={microsoftLogo} alt="Microsoft" />
+        <img src={platformLogo} alt="Platform.sh" />
       </li>
     </ol>
-    */}
     <ol className={classes.sponsors + " " + classes.sponsorsBronze}>
       <li>
         <img src={thundraLogo} alt="Thundra" />

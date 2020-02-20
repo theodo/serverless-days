@@ -21,7 +21,7 @@
     outline: none;
   }
   .informationContainer {
-    padding: 32px 0 0;
+    padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -50,9 +50,12 @@
       font-size: 16px;
       line-height: 21px;
       margin-bottom: 16px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+
     }
     .descriptionContainer {
-      padding: 0 32px;
       flex-grow: 1;
     }
     .authorContainer {

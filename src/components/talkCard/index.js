@@ -3,7 +3,6 @@ import classes from "./styles.module.scss"
 import Img from "gatsby-image"
 import format from "date-fns/format"
 import partyPicture from "../../images/party.svg"
-import talkPending from "../../images/hourglass.png"
 
 const TalkCardItem = ({
   key,
@@ -51,7 +50,7 @@ const TalkCardItem = ({
           hour={hour}
           title={title} 
           description={description} 
-          picture={picture}
+          picture={partyPicture}
         />
       )}
     </li>
@@ -133,4 +132,4 @@ function isSpeakerReady(name, title) {
   return name !== "" && title !== ""
 }
 
-export default TalkCard
+export default TalkCardItem

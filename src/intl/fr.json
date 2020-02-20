@@ -16,7 +16,7 @@
   },
   "contact": {
     "title": "Contact",
-    "content": "Pour plus d’informations contactez notre équipe d’organisateurs"
+    "content": "Pour plus d’informations contactez nous"
   },
   "header": {
     "talks": "programme",
@@ -46,5 +46,8 @@
       "where": "au Pan Piper"
     },
     "call-to-action": "prendre sa place"
+  },
+  "team": {
+    "title": "L'équipe"
   }
 }

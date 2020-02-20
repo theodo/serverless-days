@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 //import TalkCard from "../components/talkCard"
 import Location from "../components/location"
 import Contact from "../components/contact"
+import Team from "../components/team"
 import Title from "../components/title"
 import CallForPaper from "../components/callForPaper"
 import CallToAction from "../components/callToAction"
@@ -62,6 +63,7 @@ export default function Template({ data }) {
           ))}
       </ol> */}
       <Sponsors id="sponsor" />
+      <Team id="team" />
       <Location id="location" />
       <Contact id="contact" />
 

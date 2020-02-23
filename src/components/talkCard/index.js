@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import classes from "./styles.module.scss"
 import Img from "gatsby-image"
 import format from "date-fns/format"

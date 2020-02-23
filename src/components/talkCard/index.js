@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import format from "date-fns/format"
 
 import partyPicture from "../../images/party.svg"
-import twitterLogo from "../../images/twitterLogoBlue.svg"
+import twitterLogo from "../../images/TwitterLogoBlue.svg"
 
 const TalkCardItem = ({
   key,

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import classes from "./styles.module.scss"
 import format from "date-fns/format"
 import close from "../../images/close.svg"
@@ -16,7 +16,7 @@ const DialogContent = ({
   isParty,
   closeDialog,
 }) => (
-  <>
+  <Fragment>
     <div className={classes.close}>
       <button onClick={closeDialog}>
         <img src={close} alt="exit" />
@@ -63,7 +63,7 @@ const DialogContent = ({
         )}
       </div>
     </div>
-  </>
+  </Fragment>
 )
 
 export default DialogContent

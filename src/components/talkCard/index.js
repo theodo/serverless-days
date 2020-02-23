@@ -19,7 +19,7 @@ const TalkCardItem = ({
   isParty,
   openDialog,
 }) => {
-  if (!isSpeakerReady(name, title)) {
+  if (isParty || !isSpeakerReady(name, title)) {
     return null
   }
 

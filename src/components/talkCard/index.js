@@ -81,7 +81,7 @@ const TalkCard = ({
   twitter
 }) => (
   <div className={classes.cardContainer}>
-    <TalkTime hour={hour} />
+    {/*<TalkTime hour={hour} />*/}
     <Img 
       fixed={picture.childImageSharp.large}
       alt={name}

@@ -96,6 +96,9 @@ export const pageQuery = graphql`
                 medium: fluid(maxWidth: 164, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
+                large: fixed(width: 398, height: 200, quality: 100) {
+                  ...GatsbyImageSharpFixed
+                }
               }
             }
             linkedin

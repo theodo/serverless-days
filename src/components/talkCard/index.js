@@ -2,7 +2,9 @@ import React, { Fragment } from "react"
 import classes from "./styles.module.scss"
 import Img from "gatsby-image"
 import format from "date-fns/format"
+
 import partyPicture from "../../images/party.svg"
+import twitterLogo from "../../images/twitterLogoBlue.svg"
 
 const TalkCardItem = ({
   key,
@@ -13,6 +15,7 @@ const TalkCardItem = ({
   job,
   company,
   picture,
+  twitter,
   isParty,
   openDialog,
 }) => {
@@ -43,6 +46,7 @@ const TalkCardItem = ({
           title={title} 
           description={description} 
           picture={picture}
+          twitter={twitter}
         />
       )}
       {isParty && (
@@ -57,61 +61,48 @@ const TalkCardItem = ({
   )
 }
 
+const TalkTime = ({hour}) => (
+  <time
+    dateTime={format(new Date(hour), "HH:mm")}
+    className={classes.hour}
+    >
+    {format(new Date(hour), "hh:mm a")}
+  </time>
+)
+
+
 const TalkCard = ({
   title, 
-  description, 
   hour, 
   name, 
   job, 
   company,
-  picture
+  picture,
+  twitter
 }) => (
-  <div className={classes.informationContainer}>
-    {/*<TalkTime hour={hour} />*/}
-    <div className={classes.descriptionContainer}>
+  <div className={classes.cardContainer}>
+    <TalkTime hour={hour} />
+    <Img 
+      fixed={picture.childImageSharp.large}
+      alt={name}
+      width="398"
+      height="250"
+    />
+    <div className={classes.dataContainer}>
+      <div className={classes.speaker}>
+        {name}
+        <a href={`https://twitter.com/${twitter}`}>
+          <img src={twitterLogo} alt="Twitter" width="25" height="25"/>
+        </a>
+      </div>
+      <div className={classes.job}>{job} { company != null && (`@${company}`)}</div>
       <h3 className={classes.title}>{title}</h3>
-      <NotNull nullable={description}><p className={classes.description}>{description}</p></NotNull>
-    </div>
-    <Speaker picture={picture} name={name} job={job} company={company} />
-  </div>
-)
-
-const TalkTime = ({hour}) => (
-  <p className={classes.hourContainer}>
-    <time
-      dateTime={format(new Date(hour), "HH:mm")}
-      className={classes.hour}
-      >
-      {format(new Date(hour), "hh:mm a")}
-    </time>
-  </p>
-)
-
-const Speaker = ({
-  name,
-  job,
-  company,
-  picture
-}) => (
-  <div className={classes.authorContainer}>
-    {picture != null && picture.childImageSharp != null && (
-      <Img
-        fixed={picture.childImageSharp.small}
-        alt=""
-        width="43"
-        height="43"
-        />
-    )}
-    <div className={classes.authorTextContainer}>
-      <NotNull nullable={name}><p className={classes.author}>{name}</p></NotNull>
-      <NotNull nullable={job}><p className={classes.job}>{job}</p></NotNull>
-      <p className={classes.company}>{company}</p>
     </div>
   </div>
 )
 
 const Party = ({hour, title, description, picture}) => (
-  <div className={classes.informationContainer}>
+  <div className={classes.cardContainer}>
     <TalkTime hour={hour} />
     <div className={classes.descriptionContainer}>
         <h3 className={classes.title}>{title}</h3>

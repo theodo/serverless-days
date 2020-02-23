@@ -20,70 +20,68 @@
   &:focus {
     outline: none;
   }
-  .informationContainer {
-    padding: 32px;
+
+
+  .hour {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 100;
+    background-color: rgba(98, 149, 255, 0.1);
+    padding: 7px 8px;
+    font-family: Lato;
+    font-size: 16px;
+    color: $cornflower-two;
+    border-radius: 4px;
+  }
+
+  .cardContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    border-radius: 4px;
+    
+    img {
+      border-radius: 4px 4px 0 0;
+    }
 
-    .hour {
-      padding: 7px 8px;
-      font-family: Lato;
-      font-size: 16px;
-      color: $cornflower-two;
-      border-radius: 4px;
+    .hour{
+      background-color: #fff;
     }
-    .hourContainer {
-      margin-bottom: 16px;
-      border-radius: 2px;
-    }
-    .title {
-      font-family: "Source Code Pro", monospace;
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 29px;
-      margin-bottom: 16px;
-    }
-    .description {
-      font-family: Lato;
-      font-size: 16px;
-      line-height: 21px;
-      margin-bottom: 16px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
 
-    }
-    .descriptionContainer {
-      flex-grow: 1;
-    }
-    .authorContainer {
-      display: flex;
-      flex-direction: row;
-    }
-    .authorTextContainer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-left: 16px;
-    }
-    .author {
-      color: $charcoal-grey;
+    .dataContainer {
+      border-radius: 0 0 4px 4px;
+      height: 150px;
+      padding: 16px;
       font-family: Lato;
-      font-size: 20px;
-      font-weight: bold;
-      margin: 0px;
-    }
-    .company, .job {
-      color: #9a9ea2;
-      font-family: Lato;
-      font-size: 14px;
-      line-height: 17px;
-      min-height: 17px;
-    }
-    .job {
-      color: $charcoal-grey;
+      background-color: #fff;
+
+      .speaker {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $primary;
+        
+        a {
+          vertical-align: middle;
+        }
+      }
+
+      .job {
+        color: $charcoal-grey;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 25px;
+      }
+
+      .title {
+        font-family: "Source Code Pro", monospace;
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary;
+        line-height: 25px;
+      }
     }
   }
 }
@@ -92,39 +90,22 @@
   position: relative;
   background-color: $primary;
 
-  .informationContainer {
+  .cardContainer {
     padding: 32px;
+    height: 350px;
 
     .descriptionContainer {
-      padding: 0;
+      margin-top: 56px;
+      font-family: Lato;
     }
   }
 
-  .hour {
-    color: $primary;
-    background-color: #fff;
-  }
   .title {
     color: #fff;
   }
+
   .description {
     color: #fff;
-  }
-}
-.isNotParty {
-  .informationContainer {
-    height: 100%;
-
-    .hour {
-      color: $cornflower-two;
-      background-color: rgba(98, 149, 255, 0.1);
-    }
-    .title {
-      color: $charcoal-grey;
-    }
-    .description {
-      color: #9a9ea2;
-    }
   }
 }
 

@@ -7,7 +7,8 @@ biographie:
 
   Yan is an AWS Serverless Hero and a regular speaker at user groups and conferences internationally, and he is also the author of Production-Ready Serverless and co-author of Serverless Architectures on AWS 2nd Edition, both by Manning. Yan also keeps an active blog at https://theburningmonk.com.
 name: "Yan Cui"
-job: "Independant consultant"
+job: "Developer Advocate"
+company: "Lumigo"
 picture: ../images/speakers/yan_cui.png
 twitter: "@theburningmonk"
 ---

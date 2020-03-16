@@ -49,5 +49,9 @@
   },
   "team": {
     "title": "Team"
+  },
+  "canceled": {
+    "title": "Serverless Days Paris 2020 are canceled 🦠",
+    "message": "The organizing team took the tough decision to cancel the event for this year. But stay tuned we will be back in 2021 and stay safe 💪"
   }
 }

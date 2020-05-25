@@ -1,18 +1,20 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { FormattedMessage } from "gatsby-plugin-intl"
-import Img from "gatsby-image"
 
 import classes from "./styles.module.scss"
 import mailLogo from "../../images/mail.svg"
 import twitterLogo from "../../images/twitterLogo.svg"
 
 const Contact = ({ id }) => {
-
-  return ( 
+  return (
     <div id={id} className={classes.bacgroundContainer}>
       <div className={classes.container}>
-        <h2><FormattedMessage id="contact.title"/></h2>
-        <p><FormattedMessage id="contact.content" /></p>
+        <h2>
+          <FormattedMessage id="contact.title" />
+        </h2>
+        <p>
+          <FormattedMessage id="contact.content" />
+        </p>
         <div className={classes.address}>
           <div className={classes.email}>
             <img src={mailLogo} alt="" />
@@ -23,7 +25,9 @@ const Contact = ({ id }) => {
             </address>
           </div>
           <div className={classes.socials}>
-            <a href="https://twitter.com/ServerlessParis"><img src={twitterLogo} alt="Twitter" /></a>
+            <a href="https://twitter.com/ServerlessParis">
+              <img src={twitterLogo} alt="Twitter" />
+            </a>
           </div>
         </div>
       </div>

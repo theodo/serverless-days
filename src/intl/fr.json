@@ -16,14 +16,11 @@
   },
   "contact": {
     "title": "Contact",
-    "content": "Pour plus d’informations contactez nous"
+    "content": "Pour plus d’informations, contactez l'équipe"
   },
   "header": {
-    "talks": "programme",
-    "location": "lieu & contact",
-    "sponsor": "devenir sponsor",
-    "code-of-conduct": "code de conduite",
-    "tickets": "Billetterie"
+    "home": "accueil",
+    "code-of-conduct": "code de conduite"
   },
   "location": {
     "title": "Lieu",
@@ -33,19 +30,17 @@
     }
   },
   "sponsors": {
-    "title": "Ils soutiennent Serverless Days Paris 2020",
-    "subtitle": "Vous aussi vous voulez soutenir Serverless Days Paris",
-    "call-to-action": "Devenir Sponsor"
+    "title": "Sponsors",
+    "content": "Ils nous font confiance",
+    "call-to-action": "Devenir sponsor"
   },
   "title": {
     "title": "Serverless days",
-    "location-year": "Paris 2020",
-    "subtitle": "La journée de Conférence dédiée à l’architecture Serverless",
+    "location-year": "Paris",
+    "subtitle": "Connectez-vous à la communauté serverless française grâce à nos conférences virtuelles tous les premiers mercredi du mois.",
     "rendez-vous": {
-      "when": "Rendez-vous le 24/04/2020",
-      "where": "au Pan Piper"
-    },
-    "call-to-action": "prendre sa place"
+      "when": "Rendez-vous Mercredi 3 juin, 18h (CET)"
+    }
   },
   "team": {
     "title": "L'équipe"

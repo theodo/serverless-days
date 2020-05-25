@@ -1,95 +1,46 @@
 @import "../../variables";
 
-.container {
-  @include adapt-width;
+.backgroundContainer {
+  background-color: #ffffff;
 
-  border-radius: 4px;
-  background-color: #fff;
-  padding: 48px 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-
-  .title {
-    color: $charcoal-grey;
-    font-family: "Source Code Pro";
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 50px;
-    margin: 16px 0;
-    text-align: center;
-    @media (max-width: $break-point-1to2) {
-      text-align: left;
-    }
-  }
-
-  .subtitle {
-    color: $steel-grey;
-    font-family: "Source Code Pro";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-bottom: 16px;
-    text-transform: uppercase;
-    @media (max-width: $break-point-1to2) {
-      margin-bottom: 32px;
-    }
-  }
-
-  .sponsors {
+  .container {
+    @include adapt-width;
     display: flex;
-    flex-grow: 1;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 0 auto;
-    @media (max-width: $break-point-1to2) {
+    color: black;
+    padding: 12px 0;
+    @include section-text;
+
+    .titleContainer {
+      display: flex;
       flex-direction: column;
-    }
-    li {
-      list-style: none;
-      margin: 16px;
-      img {
-        height: 38px;
+
+      .title {
+        @include section-text-title;
+      }
+
+      .subtitle {
+        margin: 0 0 8px 0;
       }
     }
-  }
 
-  .sponsorsPlatinium li img {
-    height: 68px;
-  }
+    .logos {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
 
-  .sponsorsGold li img {
-    height: 58px;
-  }
+      .logo {
+        max-width: 125px;
+      }
+    }
 
-  .sponsorsSilver li img {
-    height: 48px;
-  }
-
-  .sponsorsBronze li img {
-    height: 38px;
-  }
-
-  .button {
-    color: #ffffff;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    border: 0;
-    border-bottom-style: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    background-color: #000;
-    text-transform: uppercase;
-    text-decoration: none;
-    min-height: 40px;
-    &:hover {
-      background-color: $cornflower-two;
-      cursor: pointer;
+    .callToAction {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      align-self: center;
+      padding: 8px;
+      border-radius: 5px;
     }
   }
 }

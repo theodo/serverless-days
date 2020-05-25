@@ -27,15 +27,32 @@ $break-point-3to4: $width-4column + 2 * $desktop-margins;
   // max-width: $width-1column;
   margin-right: $mobile-margins;
   margin-left: $mobile-margins;
+
   @media (min-width: $break-point-1to2) {
     margin-right: auto;
     margin-left: auto;
     max-width: $width-2column;
   }
+
   @media (min-width: $break-point-2to3) {
     max-width: $width-3column;
   }
+
   @media (min-width: $break-point-3to4) {
     max-width: $width-4column;
   }
+}
+
+@mixin section-text {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+@mixin section-text-title {
+  font-family: "Source Code Pro", monospace;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
 }

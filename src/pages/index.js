@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import Canceled from "../components/canceled"
 
 export default function Template({ data }) {
-
   const {
     allMarkdownRemark: { edges },
   } = data
@@ -14,7 +13,10 @@ export default function Template({ data }) {
   return (
     <Layout>
       <SEO />
-      <Canceled />
+      <Title />
+      <Team id="team" />
+      <Contact id="contact" />
+      <Sponsors id="sponsor" />
     </Layout>
   )
 }

@@ -5,18 +5,12 @@ import classes from "./styles.module.scss"
 import titleImage from "../../images/titleImage.svg"
 
 class Title extends Component {
-  click() {
-    document
-      .getElementById("eventbrite-widget-modal-trigger-82099189887")
-      .click()
-  }
-
   render() {
     return (
       <div className={classes.backgroundContainer}>
         <div className={classes.container}>
           <div className={classes.informations}>
-            <h1>
+            <h1 className={classes.title}>
               <FormattedMessage id="title.title" />
               <br />
               <span className={classes.location}>

@@ -44,14 +44,14 @@ $break-point-3to4: $width-4column + 2 * $desktop-margins;
 }
 
 @mixin section-text {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Lato", monospace;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
 }
 
 @mixin section-text-title {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Lato", monospace;
   font-size: 40px;
   line-height: 50px;
   font-weight: 600;

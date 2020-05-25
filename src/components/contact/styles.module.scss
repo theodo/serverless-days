@@ -11,15 +11,15 @@
     font-weight: 600;
     line-height: 20px;
     padding: 56px 0;
+
     h2 {
-      font-family: "Source Code Pro", monospace;
-      font-size: 40px;
-      line-height: 50px;
-      margin: 0 0 16px 0;
+      @include section-text-title;
     }
+
     p {
-      margin: 0 0 8px 0;
+      @include section-text;
     }
+
     .address {
       display: flex;
       align-items: center;
@@ -29,16 +29,20 @@
         align-items: flex-start;
         flex-direction: column;
       }
+
       .email {
         display: flex;
         align-items: center;
+
         img {
           width: 24px;
           height: 24px;
           margin: 0 8px 0 0;
         }
+
         address {
           margin: 0;
+
           a {
             font-family: "Source Code Pro", monospace;
             color: #fff;
@@ -49,6 +53,7 @@
           }
         }
       }
+
       .socials {
         @media (max-width: $break-point-1to2) {
           width: 100%;
@@ -56,6 +61,7 @@
           text-align: right;
           flex-direction: column;
         }
+
         img {
           margin-left: 32px;
           height: 32px;

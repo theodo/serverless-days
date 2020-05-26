@@ -3,7 +3,19 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Canceled from "../components/canceled"
+import TalkCardItem from "../components/talkCard"
+import Location from "../components/location"
+import Contact from "../components/contact"
+import Team from "../components/team"
+import Title from "../components/title"
+import Sponsors from "../components/sponsors"
+
+import DialogContent from "../components/dialogContent"
+import Dialog from "@material-ui/core/Dialog"
+
+import classes from "./index.module.scss"
+import talkLogo from "../images/talks.svg"
+import Streams from "../components/streams"
 
 export default function Template({ data }) {
   const {
@@ -14,6 +26,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
+      <Streams id="streams" />
       <Team id="team" />
       <Contact id="contact" />
       <Sponsors id="sponsor" />

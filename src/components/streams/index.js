@@ -8,14 +8,14 @@ const Streams = ({ id }) => (
       <FormattedMessage id="streams.title" />
     </h2>
     <div className={classes.streams}>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube-nocookie.com/embed/eVKHBrrz7jY"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div className={classes.embedContainer}>
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/eVKHBrrz7jY"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
       <p className={classes.streamDesctription}>
         <FormattedMessage id="streams.description" />
       </p>

@@ -1,5 +1,7 @@
 @import "../../variables";
 
+$stream-mobile-breakpoint: $breakpoint-sm;
+
 .container {
   @include responsive-container;
 
@@ -19,9 +21,24 @@
     padding: 5 * $space-unit 0;
     align-items: center;
 
+    .embedContainer {
+      width: 100%;
+      max-width: 560px;
+
+      iframe {
+        width: 100%;
+        height: 315px;
+
+        @media (max-width: $stream-mobile-breakpoint) {
+          height: 150px;
+        }
+      }
+    }
+
     .callToAction,
     .streamDesctription {
-      width: 560px;
+      width: 100%;
+      max-width: 560px;
       margin-top: $space-unit;
     }
 

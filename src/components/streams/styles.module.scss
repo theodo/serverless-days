@@ -1,23 +1,32 @@
 @import "../../variables";
 
-.backgroundContainer {
-  background-color: $primary;
+.container {
+  @include responsive-container;
 
-  .container {
-    @include adapt-width;
+  padding-top: 4 * $space-unit;
+  padding-bottom: 4 * $space-unit;
+  color: black;
+  font-family: $text-font;
 
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 56px 0;
+  .title {
+    @include section-text-title;
+  }
 
-    h2 {
-      @include section-text-title;
+  .streams {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5 * $space-unit 0;
+    align-items: center;
+
+    .callToAction,
+    .streamDesctription {
+      width: 560px;
+      margin-top: $space-unit;
     }
 
-    p {
-      @include section-text;
+    .callToAction {
+      color: $primary;
     }
   }
 }

@@ -48,5 +48,10 @@
   "canceled": {
     "title": "Serverless Days Paris 2020 annulés 🦠",
     "message": "Le 13 mars 2020 l'équipe a pris la lourde décision d'annuler les Serverless Days compte tenu de la situation en France à cause du Coronavirus.\nMais ce n'est que partie remise parce que nous serons là en 2021, d'ici là prenez soin de vous 💪"
+  },
+  "streams": {
+    "title": "Revoir",
+    "description": "Retrouvez la première session remote qui a eu lieu le 3 Mai 2020",
+    "callToAction": "Pour participer en tant que speakers aux prochaines sessions, vous pouvez nous soumettre vos talks français ou anglais à paris@serverless.io"
   }
 }

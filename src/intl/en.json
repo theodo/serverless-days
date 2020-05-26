@@ -48,5 +48,10 @@
   "canceled": {
     "title": "Serverless Days Paris 2020 are canceled 🦠",
     "message": "The organizing team took the tough decision to cancel the event for this year. But stay tuned we will be back in 2021 and stay safe 💪"
+  },
+  "streams": {
+    "title": "Streams",
+    "description": "Retrouvez la première session remote qui a eu lieu le 3 Mai 2020",
+    "callToAction": "Pour participer en tant que speakers aux prochaines sessions, vous pouvez nous soumettre vos talks français ou anglais à paris@serverless.io"
   }
 }

@@ -15,6 +15,7 @@ $title-breakpoint: $breakpoint-m;
 
   .informations {
     font-family: $title-font;
+    min-width: 60%;
 
     .title {
       font-size: 50px;

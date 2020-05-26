@@ -1,71 +1,70 @@
 @import "../../variables";
 
-.bacgroundContainer {
+.container {
   background-color: $primary;
-  .container {
-    @include adapt-width;
+  @include responsive-container;
 
-    color: #fff;
-    font-family: "Source Code Pro", monospace;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 56px 0;
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 
-    h2 {
-      @include section-text-title;
+  h2 {
+    @include section-text-title;
+  }
+
+  p {
+    @include section-text;
+  }
+
+  .contactLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-sm) {
+      align-items: flex-start;
+      flex-direction: column;
     }
 
-    p {
-      @include section-text;
-    }
-
-    .address {
+    .email {
       display: flex;
       align-items: center;
-      justify-content: space-between;
 
+      img {
+        width: 24px;
+        height: 24px;
+        margin: 0 8px 0 0;
+      }
+
+      address {
+        margin: 0;
+
+        a {
+          font-family: "Source Code Pro", monospace;
+          color: #fff;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 20px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .socials {
       @media (max-width: $break-point-1to2) {
-        align-items: flex-start;
+        width: 100%;
+        margin-top: 16px;
+        text-align: right;
         flex-direction: column;
       }
 
-      .email {
-        display: flex;
-        align-items: center;
-
-        img {
-          width: 24px;
-          height: 24px;
-          margin: 0 8px 0 0;
-        }
-
-        address {
-          margin: 0;
-
-          a {
-            font-family: "Source Code Pro", monospace;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 20px;
-            text-decoration: none;
-          }
-        }
-      }
-
-      .socials {
-        @media (max-width: $break-point-1to2) {
-          width: 100%;
-          margin-top: 16px;
-          text-align: right;
-          flex-direction: column;
-        }
-
-        img {
-          margin-left: 32px;
-          height: 32px;
-        }
+      img {
+        margin-left: 32px;
+        height: 32px;
       }
     }
   }

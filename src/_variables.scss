@@ -23,6 +23,19 @@ $break-point-1to2: $width-2column + 2 * $mobile-margins;
 $break-point-2to3: $width-3column + 2 * $desktop-margins;
 $break-point-3to4: $width-4column + 2 * $desktop-margins;
 
+$breakpoint-sm: 480px;
+$breakpoint-m: 900px;
+$breakpoint-l: 1024px;
+$breakpoint-xl: 1280px;
+
+$space-unit: 8px;
+
+$container-width-m: 820px;
+$container-width-l: 980px;
+$container-width-xl: 1200px;
+
+$title-font: "Lato", monospace;
+
 @mixin adapt-width {
   // max-width: $width-1column;
   margin-right: $mobile-margins;
@@ -43,15 +56,26 @@ $break-point-3to4: $width-4column + 2 * $desktop-margins;
   }
 }
 
+@mixin responsive-container {
+  // max-width: $width-1column;
+  padding-right: $mobile-margins;
+  padding-left: $mobile-margins;
+
+  @media (min-width: $breakpoint-sm) {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
 @mixin section-text {
-  font-family: "Lato", monospace;
+  font-family: $title-font;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
 }
 
 @mixin section-text-title {
-  font-family: "Lato", monospace;
+  font-family: $title-font;
   font-size: 40px;
   line-height: 50px;
   font-weight: 600;

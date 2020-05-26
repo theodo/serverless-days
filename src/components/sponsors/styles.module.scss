@@ -1,46 +1,61 @@
 @import "../../variables";
 
-.backgroundContainer {
+$mobile-breakpoint: $breakpoint-m;
+
+.container {
+  @include responsive-container;
   background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  padding-top: 3 * $space-unit;
+  padding-bottom: 3 * $space-unit;
+  @include section-text;
 
-  .container {
-    @include adapt-width;
+  .titleContainer {
     display: flex;
-    color: black;
-    padding: 12px 0;
-    @include section-text;
+    flex-direction: column;
 
-    .titleContainer {
-      display: flex;
+    @media (max-width: $mobile-breakpoint) {
+      width: 100%;
+    }
+
+    .title {
+      @include section-text-title;
+    }
+
+    .subtitle {
+      margin: 0 0 8px 0;
+    }
+  }
+
+  .logos {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 2 * $space-unit;
+
+    @media (max-width: $mobile-breakpoint) {
       flex-direction: column;
-
-      .title {
-        @include section-text-title;
-      }
-
-      .subtitle {
-        margin: 0 0 8px 0;
-      }
+      width: 100%;
+      padding: 3 * $space-unit 2 * $space-unit;
     }
 
-    .logos {
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      padding: 0 50px;
-
-      .logo {
-        max-width: 125px;
-      }
+    .logo {
+      max-width: 125px;
     }
+  }
 
-    .callToAction {
-      text-decoration: none;
-      color: white;
-      background-color: black;
-      align-self: center;
-      padding: 8px;
-      border-radius: 5px;
+  .callToAction {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    align-self: center;
+    padding: 8px;
+    border-radius: 5px;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin: auto;
     }
   }
 }

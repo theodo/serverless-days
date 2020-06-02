@@ -15,7 +15,11 @@ $title-breakpoint: $breakpoint-m;
 
   .informations {
     font-family: $title-font;
-    min-width: 60%;
+    max-width: 50%;
+
+    @media (max-width: $title-breakpoint) {
+      max-width: 100%;
+    }
 
     .title {
       font-size: 50px;
@@ -24,6 +28,12 @@ $title-breakpoint: $breakpoint-m;
       font-weight: 600;
       text-transform: uppercase;
       white-space: nowrap;
+
+      @media (max-width: $title-breakpoint) {
+        font-size: 30px;
+        line-height: 30px;
+        white-space: unset;
+      }
 
       .location {
         color: $primary;
@@ -42,6 +52,15 @@ $title-breakpoint: $breakpoint-m;
       color: $primary;
       font-size: 16px;
       line-height: 20px;
+      margin-bottom: 3 * $space-unit;
+    }
+
+    .nextSessionButton {
+      text-decoration: none;
+      color: white;
+      padding: $space-unit;
+      background-color: $primary;
+      border-radius: 5px;
     }
   }
 

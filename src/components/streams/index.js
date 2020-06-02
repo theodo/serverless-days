@@ -20,7 +20,14 @@ const Streams = ({ id }) => (
         <FormattedMessage id="streams.description" />
       </p>
       <p className={classes.callToAction}>
-        <FormattedMessage id="streams.callToAction" />
+        <FormattedMessage
+          id="streams.callToAction"
+          values={{
+            mailLink: (
+              <a href="mailto:paris@serverless.io">paris@serverless.io</a>
+            ),
+          }}
+        />
       </p>
     </div>
   </div>

@@ -31,15 +31,16 @@
   },
   "sponsors": {
     "title": "Sponsors",
-    "content": "You want to support us, don't you?",
+    "content": "Partner with us to support our community!",
     "call-to-action": "Become a sponsor"
   },
   "title": {
     "title": "Serverless days",
     "location-year": "Paris",
-    "subtitle": "One day, one track, about Serverless only",
+    "subtitle": "Join the French Serverless community to learn, grow and network with experts and stay connected by attending our virtual meetups, the first wednesday of each month!",
     "rendez-vous": {
-      "when": "It's happening on the 06/03/2020"
+      "when": "Our next session is happening on the 06/03/2020 at 6pm (CET)",
+      "cta": "Sign-up"
     }
   },
   "team": {
@@ -51,7 +52,7 @@
   },
   "streams": {
     "title": "Streams",
-    "description": "Retrouvez la première session remote qui a eu lieu le 3 Mai 2020",
-    "callToAction": "Pour participer en tant que speakers aux prochaines sessions, vous pouvez nous soumettre vos talks français ou anglais à paris@serverless.io"
+    "description": "Re-live our first remote meetup with Yan Cui, AWS Hero, and Rita Kozlov, PM for Cloudflare Workers",
+    "callToAction": "If you wish to share your experience in future sessions, don't hesitate to submit your talks, in english or french, to {mailLink}"
   }
 }

@@ -19,11 +19,8 @@
     "content": "Contact us for more informations"
   },
   "header": {
-    "talks": "program",
-    "location": "Location & contact",
-    "sponsor": "Become a partner",
-    "code-of-conduct": "code of conduct",
-    "tickets": "Register"
+    "home": "home",
+    "code-of-conduct": "code of conduct"
   },
   "location": {
     "title": "Location",
@@ -33,19 +30,18 @@
     }
   },
   "sponsors": {
-    "title": "They support Serverless Days Paris 2020",
-    "subtitle": "You want to support us, don't you?",
-    "call-to-action": "Become Partner"
+    "title": "Sponsors",
+    "content": "Partner with us to support our community!",
+    "call-to-action": "Become a sponsor"
   },
   "title": {
     "title": "Serverless days",
-    "location-year": "Paris 2020",
-    "subtitle": "One day, one track, about Serverless only",
+    "location-year": "Paris",
+    "subtitle": "Join the French Serverless community to learn, grow and network with experts and stay connected by attending our virtual meetups, the first wednesday of each month!",
     "rendez-vous": {
-      "when": "It's happening on the 04/24/2020",
-      "where": "at Pan Piper"
-    },
-    "call-to-action": "Register now"
+      "when": "Our next session is happening on the 06/03/2020 at 6pm (CET)",
+      "cta": "Sign-up"
+    }
   },
   "team": {
     "title": "Team"
@@ -53,5 +49,10 @@
   "canceled": {
     "title": "Serverless Days Paris 2020 are canceled 🦠",
     "message": "The organizing team took the tough decision to cancel the event for this year. But stay tuned we will be back in 2021 and stay safe 💪"
+  },
+  "streams": {
+    "title": "Streams",
+    "description": "Re-live our first remote meetup with Yan Cui, AWS Hero, and Rita Kozlov, PM for Cloudflare Workers",
+    "callToAction": "If you wish to share your experience in future sessions, don't hesitate to submit your talks, in english or french, to {mailLink}"
   }
 }

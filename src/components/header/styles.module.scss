@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px $mobile-margins;
+
   @media (min-width: $break-point-1to2) {
     padding: 16px 32px;
   }
@@ -17,38 +18,20 @@
     display: none;
   }
   margin: 0;
+
   li {
     list-style-type: none;
     text-transform: uppercase;
     display: inline;
     margin: 0 56px 0 0;
+    font-family: "Lato", monospace;
+
     a {
       color: $charcoal-grey;
-      font-family: "Source Code Pro", monospace;
       font-size: 16px;
-      font-weight: 500;
-      letter-spacing: -0.9px;
-      line-height: 20px;
+      font-weight: bold;
       text-decoration: none;
       padding: 15px 0;
-    }
-    button {
-      color: #ffffff;
-      font-family: Lato;
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 17px;
-      text-align: center;
-      border: 0;
-      padding: 8px 16px;
-      border-radius: 4px;
-      background-color: $primary;
-      text-transform: uppercase;
-      min-height: 40px;
-      &:hover {
-        background-color: $cornflower-two;
-        cursor: pointer;
-      }
     }
   }
 }

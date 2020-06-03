@@ -5,36 +5,37 @@ import classes from "./styles.module.scss"
 import titleImage from "../../images/titleImage.svg"
 
 class Title extends Component {
-  click () {
-    document.getElementById('eventbrite-widget-modal-trigger-82099189887').click()
-  }
-
-  render () {
+  render() {
     return (
-      <div className={classes.backgroundContainer}>
-        <div className={classes.container}>
-          <div className={classes.informations}>
-            <h1>
-              <FormattedMessage id="title.title" />
-              <br />
-              <span className={classes.location}><FormattedMessage id="title.location-year"/></span>
-            </h1>
-            <div className={classes.mobileTitleImageContainer}>
-              <img alt="" src={titleImage} />
-            </div>
-            <h2 className={classes.subtitle}>
-              <FormattedMessage id="title.subtitle"/>
-            </h2>
-            <p className={classes.rendezVous}>
-              <FormattedMessage id="title.rendez-vous.when" />
-              <br />
-              <FormattedMessage id="title.rendez-vous.where" />
-            </p>
-            <button className={classes.button} onClick={ this.click }><FormattedMessage id="title.call-to-action" /></button>
-          </div>
-          <div className={classes.desktopTitleImageContainer}>
+      <div className={classes.container}>
+        <div className={classes.informations}>
+          <h1 className={classes.title}>
+            <FormattedMessage id="title.title" />
+            <br />
+            <span className={classes.location}>
+              <FormattedMessage id="title.location-year" />
+            </span>
+          </h1>
+          <div className={classes.mobileTitleImageContainer}>
             <img alt="" src={titleImage} />
           </div>
+          <h2 className={classes.subtitle}>
+            <FormattedMessage id="title.subtitle" />
+          </h2>
+          <p className={classes.rendezVous}>
+            <FormattedMessage id="title.rendez-vous.when" />
+            <br />
+          </p>
+          <a
+            target="_blank"
+            href="https://www.meetup.com/fr-FR/Paris-Serverless-Architecture-Meetup/events/270899988/"
+            className={classes.nextSessionButton}
+          >
+            <FormattedMessage id="title.rendez-vous.cta" />
+          </a>
+        </div>
+        <div className={classes.desktopTitleImageContainer}>
+          <img className={classes.desktopTitleImage} alt="" src={titleImage} />
         </div>
       </div>
     )

@@ -1,95 +1,61 @@
 @import "../../variables";
 
+$mobile-breakpoint: $breakpoint-m;
+
 .container {
-  @include adapt-width;
-
-  border-radius: 4px;
-  background-color: #fff;
-  padding: 48px 48px;
+  @include responsive-container;
+  background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  color: black;
+  padding-top: 3 * $space-unit;
+  padding-bottom: 3 * $space-unit;
+  @include section-text;
 
-  .title {
-    color: $charcoal-grey;
-    font-family: "Source Code Pro";
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 50px;
-    margin: 16px 0;
-    text-align: center;
-    @media (max-width: $break-point-1to2) {
-      text-align: left;
-    }
-  }
-
-  .subtitle {
-    color: $steel-grey;
-    font-family: "Source Code Pro";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-bottom: 16px;
-    text-transform: uppercase;
-    @media (max-width: $break-point-1to2) {
-      margin-bottom: 32px;
-    }
-  }
-
-  .sponsors {
+  .titleContainer {
     display: flex;
+    flex-direction: column;
+
+    @media (max-width: $mobile-breakpoint) {
+      width: 100%;
+    }
+
+    .title {
+      @include section-text-title;
+    }
+
+    .subtitle {
+      margin: 0 0 8px 0;
+    }
+  }
+
+  .logos {
     flex-grow: 1;
+    display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: 0 auto;
-    @media (max-width: $break-point-1to2) {
+    padding: 0 2 * $space-unit;
+
+    @media (max-width: $mobile-breakpoint) {
       flex-direction: column;
+      width: 100%;
+      padding: 3 * $space-unit 2 * $space-unit;
     }
-    li {
-      list-style: none;
-      margin: 16px;
-      img {
-        height: 38px;
-      }
+
+    .logo {
+      max-width: 125px;
     }
   }
 
-  .sponsorsPlatinium li img {
-    height: 68px;
-  }
-
-  .sponsorsGold li img {
-    height: 58px;
-  }
-
-  .sponsorsSilver li img {
-    height: 48px;
-  }
-
-  .sponsorsBronze li img {
-    height: 38px;
-  }
-
-  .button {
-    color: #ffffff;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    border: 0;
-    border-bottom-style: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    background-color: #000;
-    text-transform: uppercase;
+  .callToAction {
     text-decoration: none;
-    min-height: 40px;
-    &:hover {
-      background-color: $cornflower-two;
-      cursor: pointer;
+    color: white;
+    background-color: black;
+    align-self: center;
+    padding: 8px;
+    border-radius: 5px;
+
+    @media (max-width: $mobile-breakpoint) {
+      margin: auto;
     }
   }
 }

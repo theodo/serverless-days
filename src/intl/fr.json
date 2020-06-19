@@ -39,7 +39,7 @@
     "location-year": "Paris",
     "subtitle": "Connectez-vous à la communauté serverless française grâce à nos conférences virtuelles tous les premiers mercredi du mois.",
     "rendez-vous": {
-      "when": "Rendez-vous Mercredi 3 juin, 18h (CET)",
+      "when": "Rendez-vous Mercredi 1 Juillet, 18h (CET)",
       "cta": "S'inscrire à la prochaine session"
     }
   },
@@ -52,7 +52,7 @@
   },
   "streams": {
     "title": "Revoir",
-    "description": "Retrouvez la première session remote qui a eu lieu le 3 Mai 2020",
+    "description": "Retrouvez la deuxième session remote qui a eu lieu le 3 Juin 2020",
     "callToAction": "Pour participer en tant que speakers aux prochaines sessions, vous pouvez nous soumettre vos talks français ou anglais à {mailLink}"
   }
 }

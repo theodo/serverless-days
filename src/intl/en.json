@@ -39,7 +39,7 @@
     "location-year": "Paris",
     "subtitle": "Join the French Serverless community to learn, grow and network with experts and stay connected by attending our virtual meetups, the first wednesday of each month!",
     "rendez-vous": {
-      "when": "Our next session is happening on the 06/03/2020 at 6pm (CET)",
+      "when": "Our next session is happening on the 07/01/2020 at 6pm (CET)",
       "cta": "Sign-up"
     }
   },
@@ -52,7 +52,7 @@
   },
   "streams": {
     "title": "Streams",
-    "description": "Re-live our first remote meetup with Yan Cui, AWS Hero, and Rita Kozlov, PM for Cloudflare Workers",
+    "description": "Re-live our second remote meetup",
     "callToAction": "If you wish to share your experience in future sessions, don't hesitate to submit your talks, in english or french, to {mailLink}"
   }
 }

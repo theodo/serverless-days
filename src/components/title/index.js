@@ -28,7 +28,7 @@ class Title extends Component {
           </p>
           <a
             target="_blank"
-            href="https://www.meetup.com/fr-FR/Paris-Serverless-Architecture-Meetup/events/270899988/"
+            href="https://www.meetup.com/fr-FR/Paris-Serverless-Architecture-Meetup/events/271290160/"
             className={classes.nextSessionButton}
           >
             <FormattedMessage id="title.rendez-vous.cta" />

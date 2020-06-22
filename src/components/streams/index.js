@@ -10,7 +10,7 @@ const Streams = ({ id }) => (
     <div className={classes.streams}>
       <div className={classes.embedContainer}>
         <iframe
-          src="https://www.youtube-nocookie.com/embed/eVKHBrrz7jY"
+          src="https://www.youtube-nocookie.com/embed/w_7dz77P9DE"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen

@@ -22,17 +22,6 @@ class Title extends Component {
           <h2 className={classes.subtitle}>
             <FormattedMessage id="title.subtitle" />
           </h2>
-          <p className={classes.rendezVous}>
-            <FormattedMessage id="title.rendez-vous.when" />
-            <br />
-          </p>
-          <a
-            target="_blank"
-            href="https://www.meetup.com/fr-FR/Paris-Serverless-Architecture-Meetup/events/271290160/"
-            className={classes.nextSessionButton}
-          >
-            <FormattedMessage id="title.rendez-vous.cta" />
-          </a>
         </div>
         <div className={classes.desktopTitleImageContainer}>
           <img className={classes.desktopTitleImage} alt="" src={titleImage} />

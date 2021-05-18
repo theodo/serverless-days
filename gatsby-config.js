@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Serverless Days Paris - 24 April 2020`,
+    title: `Serverless Days Paris - 28 Septembre 2021`,
     description: `La journée de conférence dédiée au serverless.`,
     author: `Theodo`,
   },
@@ -52,7 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Serverless Days Paris - 24 April 2020`,
+        name: `Serverless Days Paris - 28 September 2021`,
         short_name: `sls days paris`,
         start_url: `/`,
         background_color: `#eff4ff`,

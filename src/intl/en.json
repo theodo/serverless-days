@@ -49,7 +49,6 @@
   },
   "streams": {
     "title": "Streams",
-    "description": "Re-live our second remote meetup",
-    "callToAction": "If you wish to share your experience in future sessions, don't hesitate to submit your talks, in english or french, to {mailLink}"
+    "description": "Re-live ServerlessDays 2020 sessions"
   }
 }

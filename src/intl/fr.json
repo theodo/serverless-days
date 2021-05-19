@@ -49,7 +49,6 @@
   },
   "streams": {
     "title": "Revoir",
-    "description": "Retrouvez la deuxième session remote qui a eu lieu le 3 Juin 2020",
-    "callToAction": "Pour participer en tant que speakers aux prochaines sessions, vous pouvez nous soumettre vos talks français ou anglais à {mailLink}"
+    "description": "Retrouvez les sessions des ServerlessDays 2020"
   }
 }

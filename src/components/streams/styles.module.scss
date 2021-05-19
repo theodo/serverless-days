@@ -17,11 +17,14 @@ $stream-mobile-breakpoint: $breakpoint-sm;
   .streams {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 5 * $space-unit 0;
     align-items: center;
 
     .embedContainer {
+      margin: 5 * $space-unit;
       width: 100%;
       max-width: 560px;
 

@@ -34,12 +34,18 @@ const Header = () => {
 
   return (
     <header className={classes.header}>
-      <img src={logo} alt="serverless days paris 2020" />
+      <img src={logo} alt="serverless days paris 2021" />
       <ol className={classes.shortcuts}>
         <li>
           <Link to="/">
             <FormattedMessage id="header.home" />
           </Link>
+        </li>
+        <li>
+          <Link to="/#cfp"><FormattedMessage id="header.call-for-paper"/></Link>
+        </li>
+        <li>
+          <Link to="/#streams"><FormattedMessage id="header.streams"/></Link>
         </li>
         <li>{codeOfConduct}</li>
         <li>

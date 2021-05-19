@@ -9,13 +9,14 @@ import Contact from "../components/contact"
 import Team from "../components/team"
 import Title from "../components/title"
 import Sponsors from "../components/sponsors"
+import CallForPaper from "../components/callForPaper"
+import Streams from "../components/streams"
 
 import DialogContent from "../components/dialogContent"
 import Dialog from "@material-ui/core/Dialog"
 
 import classes from "./index.module.scss"
 import talkLogo from "../images/talks.svg"
-import Streams from "../components/streams"
 
 export default function Template({ data }) {
   const {
@@ -26,6 +27,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
+      <CallForPaper id="cfp"/>
       <Streams id="streams" />
       <Team id="team" />
       <Contact id="contact" />

@@ -22,6 +22,7 @@ class Title extends Component {
           <h2 className={classes.subtitle}>
             <FormattedMessage id="title.subtitle" />
           </h2>
+          <button className={classes.button} onClick={ this.click }><FormattedMessage id="title.call-to-action" /></button>
         </div>
         <div className={classes.desktopTitleImageContainer}>
           <img className={classes.desktopTitleImage} alt="" src={titleImage} />

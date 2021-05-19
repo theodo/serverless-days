@@ -22,7 +22,9 @@ class Title extends Component {
           <h2 className={classes.subtitle}>
             <FormattedMessage id="title.subtitle" />
           </h2>
-          <button className={classes.button} onClick={ this.click }><FormattedMessage id="title.call-to-action" /></button>
+          <a className={classes.button} href="https://www.papercall.io/serverless-days-paris-2021">
+            <FormattedMessage id="title.call-to-action" />
+          </a>
         </div>
         <div className={classes.desktopTitleImageContainer}>
           <img className={classes.desktopTitleImage} alt="" src={titleImage} />

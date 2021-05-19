@@ -56,12 +56,14 @@ export default Team
 
 const Member = ({ member }) => (
   <Fragment>
-    <Img
-      fixed={member.picture.childImageSharp.fixed}
-      width="100px"
-      height="100px"
-      style={{ display: "block", margin: "0 auto 5px" }}
-    />
+    <a href={member.twitter}>
+      <Img
+        fixed={member.picture.childImageSharp.fixed}
+        width="100px"
+        height="100px"
+        style={{ display: "block", margin: "0 auto 5px" }}
+      />
+    </a>
     <div className={classes.memberName}>{member.name}</div>
     <div className={classes.memberJob}>
       {member.bio}

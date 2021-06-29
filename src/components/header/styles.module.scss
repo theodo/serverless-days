@@ -33,5 +33,13 @@
       text-decoration: none;
       padding: 15px 0;
     }
+    
+    .button {
+      text-decoration: none;
+      color: white;
+      padding: $space-unit;
+      background-color: $primary;
+      border-radius: 5px;
+    }
   }
 }

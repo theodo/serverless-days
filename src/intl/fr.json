@@ -39,8 +39,11 @@
   "title": {
     "title": "Serverless days",
     "location-year": "Paris 2021",
-    "subtitle": "Les ServerlessDays reviennent à Paris le 28 Septembre 2021. Le CFP est ouvert !",
-    "call-to-action": "Postuler au CFP"
+    "subtitle": "Les ServerlessDays reviennent à Paris le 28 Septembre 2021 à la Cité Internationale Universitaire de Paris",
+    "call-to-action": "Billeterie"
+  },
+  "tickets": {
+    "title": "Billeterie"
   },
   "team": {
     "title": "L'équipe"

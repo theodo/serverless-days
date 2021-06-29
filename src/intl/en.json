@@ -39,8 +39,11 @@
   "title": {
     "title": "Serverless days",
     "location-year": "Paris 2021",
-    "subtitle": "The ServerlessDays Paris will be hosted September 28th 2021. Call for speakers running!",
-    "call-to-action": "Apply to our CFP"
+    "subtitle": "The ServerlessDays Paris will be hosted September 28th 2021 at Cité Internationale Universitaire de Paris!",
+    "call-to-action": "Buy tickets"
+  },
+  "tickets": {
+    "title": "Buy tickets"
   },
   "team": {
     "title": "Team"

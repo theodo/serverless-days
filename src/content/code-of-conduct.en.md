@@ -4,7 +4,6 @@ path: /code-of-conduct
 slug: code-of-conduct
 ---
 
-
 All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
 
 ## The Quick Version
@@ -18,7 +17,6 @@ By email, you can contact ether Benjamin <benjaming@theodo.fr> or Diane <dianer@
 In case of medical emergency, contact Christopher <christopher.maneu@microsoft.com> or call 112.
 
 At the venue, organizers will wear "staff" t-shirt.
-
 
 ## The Less Quick Version
 
@@ -36,7 +34,6 @@ Conference staff will be happy to help participants contact hotel/venue security
 
 We expect participants to follow these rules at conference and workshop venues and conference-related social events.
 
-*Original source and credit: http://2012.jsconf.us/#/about & The Ada Initiative*
-*Please help by translating or improving: on github.com*
-*This work is licensed under a Creative Commons Attribution 3.0 Unported License*
-
+_Original source and credit: http://2012.jsconf.us/#/about & The Ada Initiative_
+_Please help by translating or improving: on github.com_
+_This work is licensed under a Creative Commons Attribution 3.0 Unported License_

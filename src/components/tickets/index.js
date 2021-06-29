@@ -10,9 +10,27 @@ const Tickets = ({ id }) => {
       <h2>
         <FormattedMessage id="tickets.title" />
       </h2>
-      <a title="Logiciel billetterie en ligne" href="https://www.weezevent.com/widget_multi.php?266452.1.1.bo" class="weezevent-widget-integration" target="_blank" data-src="https://www.weezevent.com/widget_multi.php?266452.1.1.bo" data-width="100%" data-height="100%" data-id="multi" data-resize="1" data-npb="0" data-width_auto="1">Billetterie Weezevent</a>
+      <a
+        title="Logiciel billetterie en ligne"
+        href="https://www.weezevent.com/widget_multi.php?266452.1.1.bo"
+        class="weezevent-widget-integration"
+        target="_blank"
+        data-src="https://www.weezevent.com/widget_multi.php?266452.1.1.bo"
+        data-width="100%"
+        data-height="100%"
+        data-id="multi"
+        data-resize="1"
+        data-npb="0"
+        data-width_auto="1"
+      >
+        Billetterie Weezevent
+      </a>
       <Helmet>
-        <script type="text/javascript" src="https://www.weezevent.com/js/widget/min/widget.min.js"></script>
+        <script
+          async
+          type="text/javascript"
+          src="https://www.weezevent.com/js/widget/min/widget.min.js"
+        ></script>
       </Helmet>
     </div>
   )

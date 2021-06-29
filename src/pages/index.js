@@ -28,9 +28,9 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
-      <Tickets id="tickets"/>
-      <CallForPaper id="cfp"/>
-      <Location id="location"/>
+      <Tickets id="tickets" />
+      <CallForPaper id="cfp" />
+      <Location id="location" />
       <Streams id="streams" />
       <Team id="team" />
       <Contact id="contact" />

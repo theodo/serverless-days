@@ -31,7 +31,7 @@ exports.createPages = async ({ actions, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: path.resolve(`src/templates/post.js`),
-        context: { slug: node.frontmatter.slug }
+        context: { slug: node.frontmatter.slug },
       })
     }
   })

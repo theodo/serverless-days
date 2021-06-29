@@ -1,5 +1,5 @@
 ---
-hour: '2020-04-24T09:30:00'
+hour: "2020-04-24T09:30:00"
 title: "🇬🇧 Beware the potholes on the road to serverless"
 description: ""
 biographie:

@@ -8,11 +8,15 @@ const Canceled = ({ id }) => {
   return (
     <div className={classes.backgroundContainer}>
       <div className={classes.container}>
-        <h2><FormattedMessage id="canceled.title"/></h2>
-        <p><FormattedMessage id="canceled.message"/></p>
+        <h2>
+          <FormattedMessage id="canceled.title" />
+        </h2>
+        <p>
+          <FormattedMessage id="canceled.message" />
+        </p>
       </div>
     </div>
   )
-} 
+}
 
 export default Canceled

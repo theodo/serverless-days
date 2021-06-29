@@ -38,22 +38,22 @@ const TalkCardItem = ({
       }}
     >
       {!isParty && (
-        <TalkCard 
+        <TalkCard
           hour={hour}
-          name={name} 
-          job={job} 
-          company={company} 
-          title={title} 
-          description={description} 
+          name={name}
+          job={job}
+          company={company}
+          title={title}
+          description={description}
           picture={picture}
           twitter={twitter}
         />
       )}
       {isParty && (
-        <Party 
+        <Party
           hour={hour}
-          title={title} 
-          description={description} 
+          title={title}
+          description={description}
           picture={partyPicture}
         />
       )}
@@ -61,28 +61,16 @@ const TalkCardItem = ({
   )
 }
 
-const TalkTime = ({hour}) => (
-  <time
-    dateTime={format(new Date(hour), "HH:mm")}
-    className={classes.hour}
-    >
+const TalkTime = ({ hour }) => (
+  <time dateTime={format(new Date(hour), "HH:mm")} className={classes.hour}>
     {format(new Date(hour), "hh:mm a")}
   </time>
 )
 
-
-const TalkCard = ({
-  title, 
-  hour, 
-  name, 
-  job, 
-  company,
-  picture,
-  twitter
-}) => (
+const TalkCard = ({ title, hour, name, job, company, picture, twitter }) => (
   <div className={classes.cardContainer}>
     {/*<TalkTime hour={hour} />*/}
-    <Img 
+    <Img
       fixed={picture.childImageSharp.large}
       alt={name}
       width="398"
@@ -92,27 +80,31 @@ const TalkCard = ({
       <div className={classes.speaker}>
         {name}
         <a href={`https://twitter.com/${twitter}`}>
-          <img src={twitterLogo} alt="Twitter" width="25" height="25"/>
+          <img src={twitterLogo} alt="Twitter" width="25" height="25" />
         </a>
       </div>
-      <div className={classes.job}>{job} { company != null && (`@${company}`)}</div>
+      <div className={classes.job}>
+        {job} {company != null && `@${company}`}
+      </div>
       <h3 className={classes.title}>{title}</h3>
     </div>
   </div>
 )
 
-const Party = ({hour, title, description, picture}) => (
+const Party = ({ hour, title, description, picture }) => (
   <div className={classes.cardContainer}>
     <TalkTime hour={hour} />
     <div className={classes.descriptionContainer}>
-        <h3 className={classes.title}>{title}</h3>
-        <NotNull nullable={description}><p className={classes.description}>{description}</p></NotNull>
-      </div>
+      <h3 className={classes.title}>{title}</h3>
+      <NotNull nullable={description}>
+        <p className={classes.description}>{description}</p>
+      </NotNull>
+    </div>
     <img src={picture} className={classes.partyPicture} alt="" />
   </div>
 )
 
-const NotNull = ({nullable, children}) => {
+const NotNull = ({ nullable, children }) => {
   if (nullable != null) {
     return children
   }

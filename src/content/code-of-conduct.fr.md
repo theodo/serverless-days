@@ -4,7 +4,6 @@ path: /code-de-conduite
 slug: code-de-conduite
 ---
 
-
 Tous les participants, conférenciers, sponsors et volontaires pour notre conférence doivent accepter le code de conduite suivant. Les organisateurs s'attacheront à faire respecter ce code durant l'événement. Nous attendons de la part de chaque participant une coopération pour assurer un environnement sain pour tous.
 
 ## La version rapide
@@ -18,7 +17,6 @@ Par mail, contactez Benjamin <benjaming@theodo.fr> ou Diane <dianer@theodo.fr>.
 En cas d’urgence médicale, contactez Christopher <christopher.maneu@microsoft.com> ou le 112.
 
 Sur place, les organisateurs porteront un t-shirt "staff".
-
 
 ## La version moins rapide
 
@@ -36,4 +34,4 @@ Les membres de l'organisation seront ravis d'aider les participants à contacter
 
 Nous attendons des participants qu'ils suivent ces règles dans le bâtiment des conférences et des ateliers, ainsi que pendant les événements sociaux relatifs à la conférence.
 
-*Version originale et crédit: [http://2012.jsconf.us/#/about](http://2012.jsconf.us/#/about) & [The Ada Initiative](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy). Merci d'aider à la traduction et à l'amélioration de ce texte : [on github.com](https://github.com/confcodeofconduct/confcodeofconduct.com). Ce texte est sous licence [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US)*
+_Version originale et crédit: [http://2012.jsconf.us/#/about](http://2012.jsconf.us/#/about) & [The Ada Initiative](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy). Merci d'aider à la traduction et à l'amélioration de ce texte : [on github.com](https://github.com/confcodeofconduct/confcodeofconduct.com). Ce texte est sous licence [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US)_

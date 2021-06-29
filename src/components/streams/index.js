@@ -8,7 +8,7 @@ const Streams = ({ id }) => (
       <FormattedMessage id="streams.title" />
     </h2>
     <p className={classes.streamDesctription}>
-        <FormattedMessage id="streams.description" />
+      <FormattedMessage id="streams.description" />
     </p>
     <div className={classes.streams}>
       <div className={classes.embedContainer}>

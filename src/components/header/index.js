@@ -42,10 +42,14 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="/#cfp"><FormattedMessage id="header.call-for-paper"/></Link>
+          <Link to="/#cfp">
+            <FormattedMessage id="header.call-for-paper" />
+          </Link>
         </li>
         <li>
-          <Link to="/#streams"><FormattedMessage id="header.streams"/></Link>
+          <Link to="/#streams">
+            <FormattedMessage id="header.streams" />
+          </Link>
         </li>
         <li>{codeOfConduct}</li>
         <li>

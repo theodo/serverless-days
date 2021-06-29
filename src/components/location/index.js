@@ -13,7 +13,9 @@ const Location = ({ id }) => {
     <div className={classes.backgroundContainer}>
       <div id={id} className={classes.container}>
         <div className={classes.informations}>
-          <h2><FormattedMessage id="location.title"/></h2>
+          <h2>
+            <FormattedMessage id="location.title" />
+          </h2>
           <ol className={classes.locationInformations}>
             <li className={classes.locationInformationBlock}>
               <p className={`${classes.locationTitle} ${classes.capitalize}`}>
@@ -26,25 +28,19 @@ const Location = ({ id }) => {
               </p>
             </li>
             <li className={classes.locationInformationBlock}>
-              <p className={classes.locationTitle}><FormattedMessage id="location.how-to-go"/></p>
+              <p className={classes.locationTitle}>
+                <FormattedMessage id="location.how-to-go" />
+              </p>
               <ul className={classes.transportationList}>
                 <li>
                   <img className={classes.logo} src={rerLogo} alt="" />
                   <span>Cité Universitaire</span>
-                  <img
-                    className={classes.logo}
-                    src={rerB}
-                    alt="rer ligne B"
-                  />
+                  <img className={classes.logo} src={rerB} alt="rer ligne B" />
                 </li>
                 <li>
                   <img className={classes.logo} src={tramLogo} alt="" />
                   <span>Cité Universitaire</span>
-                  <img
-                    className={classes.logo}
-                    src={tram3a}
-                    alt="tram T3a"
-                  />
+                  <img className={classes.logo} src={tram3a} alt="tram T3a" />
                 </li>
               </ul>
             </li>

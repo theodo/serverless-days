@@ -2,10 +2,10 @@ import React from "react"
 import { useIntl, FormattedMessage } from "gatsby-plugin-intl"
 
 import classes from "./styles.module.scss"
-import metroLogo from "../../images/metro-logo.svg"
-import metro2 from "../../images/metro2.svg"
-import metro3 from "../../images/metro3.svg"
-import metro9 from "../../images/metro9.svg"
+import rerLogo from "../../images/rer-logo.svg"
+import tramLogo from "../../images/tram-logo.svg"
+import rerB from "../../images/rerB.svg"
+import tram3a from "../../images/tram3a.svg"
 
 const Location = ({ id }) => {
   const intl = useIntl()
@@ -17,42 +17,33 @@ const Location = ({ id }) => {
           <ol className={classes.locationInformations}>
             <li className={classes.locationInformationBlock}>
               <p className={`${classes.locationTitle} ${classes.capitalize}`}>
-                Pan Piper
+                Cité Internationale Universitaire de Paris
               </p>
               <p className={classes.locationText}>
-                2-4 Impasse Lamier
+                17 Boulevard Jourdan
                 <br />
-                75011 Paris
+                75014 Paris
               </p>
             </li>
             <li className={classes.locationInformationBlock}>
               <p className={classes.locationTitle}><FormattedMessage id="location.how-to-go"/></p>
               <ul className={classes.transportationList}>
                 <li>
-                  <img className={classes.logo} src={metroLogo} alt="" />
-                  <span>Philippe-Auguste</span>
+                  <img className={classes.logo} src={rerLogo} alt="" />
+                  <span>Cité Universitaire</span>
                   <img
                     className={classes.logo}
-                    src={metro2}
-                    alt="metro ligne 2"
+                    src={rerB}
+                    alt="rer ligne B"
                   />
                 </li>
                 <li>
-                  <img className={classes.logo} src={metroLogo} alt="" />
-                  <span>Père Lachaise</span>
+                  <img className={classes.logo} src={tramLogo} alt="" />
+                  <span>Cité Universitaire</span>
                   <img
                     className={classes.logo}
-                    src={metro3}
-                    alt="metro ligne 3"
-                  />
-                </li>
-                <li>
-                  <img className={classes.logo} src={metroLogo} alt="" />
-                  <span>Voltaire ou Charonne</span>
-                  <img
-                    className={classes.logo}
-                    src={metro9}
-                    alt="metro ligne 9"
+                    src={tram3a}
+                    alt="tram T3a"
                   />
                 </li>
               </ul>
@@ -73,7 +64,7 @@ const Location = ({ id }) => {
             width="100%"
             height="100%"
             frameBorder="0"
-            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJM6USKPVt5kcRStjC9G4xbbY&key=AIzaSyAtVkGSGU7sFqPq_P_P3fx8NmnBmS-CY_U"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10508.054242717448!2d2.3385613000000105!3d48.819802700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c4282bc491b8270!2sCit%C3%A9%20Internationale%20Universitaire%20de%20Paris!5e0!3m2!1sen!2sfr!4v1624958933303!5m2!1sen!2sfr"
             allowFullScreen
           ></iframe>
         </div>

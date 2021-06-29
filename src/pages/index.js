@@ -28,6 +28,7 @@ export default function Template({ data }) {
       <SEO />
       <Title />
       <CallForPaper id="cfp"/>
+      <Location id="location"/>
       <Streams id="streams" />
       <Team id="team" />
       <Contact id="contact" />

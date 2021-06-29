@@ -73,6 +73,11 @@ const Header = () => {
             }
           </IntlContextConsumer>
         </li>
+        <li>
+          <Link to="/#tickets" className={classes.button}>
+            <FormattedMessage id="title.call-to-action" />
+          </Link>
+        </li>
       </ol>
       <script
         type="text/javascript"

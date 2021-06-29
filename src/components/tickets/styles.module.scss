@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.container {
+  @include responsive-container;
+
+  color: #000;
+  // background-color: #fff;
+  font-family: "Lato", monospace;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding-top: 3 * $space-unit;
+  padding-bottom: 3 * $space-unit;
+
+  h2 {
+    @include section-text-title;
+  }
+}

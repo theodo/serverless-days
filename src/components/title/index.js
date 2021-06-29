@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { FormattedMessage } from "gatsby-plugin-intl"
+import { FormattedMessage, Link } from "gatsby-plugin-intl"
 
 import classes from "./styles.module.scss"
 import titleImage from "../../images/titleImage.svg"
@@ -22,9 +22,7 @@ class Title extends Component {
           <h2 className={classes.subtitle}>
             <FormattedMessage id="title.subtitle" />
           </h2>
-          <a className={classes.button} href="https://www.papercall.io/serverless-days-paris-2021">
-            <FormattedMessage id="title.call-to-action" />
-          </a>
+          <Link to="/#tickets" className={classes.button}><FormattedMessage id="title.call-to-action"/></Link>
         </div>
         <div className={classes.desktopTitleImageContainer}>
           <img className={classes.desktopTitleImage} alt="" src={titleImage} />

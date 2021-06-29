@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import TalkCardItem from "../components/talkCard"
 import Location from "../components/location"
 import Contact from "../components/contact"
+import Tickets from "../components/tickets"
 import Team from "../components/team"
 import Title from "../components/title"
 import Sponsors from "../components/sponsors"
@@ -27,6 +28,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
+      <Tickets id="tickets"/>
       <CallForPaper id="cfp"/>
       <Location id="location"/>
       <Streams id="streams" />

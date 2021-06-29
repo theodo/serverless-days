@@ -1,10 +1,17 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Helmet } from "react-helmet"
 import { FormattedMessage } from "gatsby-plugin-intl"
 
 import classes from "./styles.module.scss"
 
 const Tickets = ({ id }) => {
+  const [loaded, setLoaded] = useState(false)
+  useEffect(() => {
+    if (!loaded) {
+      setLoaded(true)
+    }
+  })
+
   return (
     <div id={id} className={classes.container}>
       <h2>
@@ -25,13 +32,17 @@ const Tickets = ({ id }) => {
       >
         Billetterie Weezevent
       </a>
-      <Helmet>
-        <script
-          async
-          type="text/javascript"
-          src="https://www.weezevent.com/js/widget/min/widget.min.js"
-        ></script>
-      </Helmet>
+      {loaded ? (
+        <Helmet>
+          <script
+            async
+            type="text/javascript"
+            src="https://www.weezevent.com/js/widget/min/widget.min.js"
+          ></script>
+        </Helmet>
+      ) : (
+        <></>
+      )}
     </div>
   )
 }

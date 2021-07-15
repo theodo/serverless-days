@@ -42,13 +42,13 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="/#cfp">
-            <FormattedMessage id="header.call-for-paper" />
+          <Link to="/#tickets">
+            <FormattedMessage id="header.tickets" />
           </Link>
         </li>
         <li>
-          <Link to="/#streams">
-            <FormattedMessage id="header.streams" />
+          <Link to="/#talks">
+            <FormattedMessage id="header.talks" />
           </Link>
         </li>
         <li>{codeOfConduct}</li>

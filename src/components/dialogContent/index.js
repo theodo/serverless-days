@@ -35,7 +35,7 @@ const DialogContent = ({
         <div className={classes.talkInformation}>
           <div className={classes.talkDescription}>
             <h3 className={classes.title}>{title}</h3>
-            <p className={classes.text}>{description}</p>
+            <p className={classes.text} dangerouslySetInnerHTML={{ __html: description}} ></p>
           </div>
           {biographie && (
             <div className={classes.speekerBio}>

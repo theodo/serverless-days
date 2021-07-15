@@ -1,5 +1,5 @@
 ---
-hour: "2020-04-24T10:40:00"
+hour: "2021-09-28T10:40:00"
 title: "🇬🇧 Integration Testing Serverless Architectures, EventBridge and Beyond..."
 description:
     Event-driven architectures using Amazon’s EventBridge allow us to create highly scalable, loosely coupled systems. However, testing these architectures can be a great challenge. In this session, we'll explore different testing options in order to have confidence in our distributed systems!

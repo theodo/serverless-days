@@ -20,8 +20,8 @@
   },
   "header": {
     "home": "home",
-    "call-for-paper": "call for paper",
-    "streams": "2020 streams",
+    "tickets": "tickets",
+    "talks": "agenda",
     "code-of-conduct": "code of conduct"
   },
   "location": {

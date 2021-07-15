@@ -1,14 +1,13 @@
 ---
-hour: "2020-04-24T09:30:00"
-title: "🇬🇧 Beware the potholes on the road to serverless"
-description: ""
+hour: "2021-09-28T09:30:00"
+title: "🇬🇧 Local development for serverless is an anti-pattern"
+description:
+  In the serverless community, individuals and teams spend a lot of time and effort attempting to build an environment that is a replica of the cloud. Why? Because this is what we have always done. I am going to argue that this not only unnecessary in the serverless world but actually harmful.
 biographie:
-  Yan is an experienced engineer who has run production workload at scale in AWS for 10 years. He has been an architect and principal engineer with a variety of industries ranging from banking, e-commerce, sports streaming to mobile gaming. He has worked extensively with AWS Lambda in production, and has been helping companies around the world adopt AWS and serverless as a consultant.
-
-  Yan is an AWS Serverless Hero and a regular speaker at user groups and conferences internationally, and he is also the author of Production-Ready Serverless and co-author of Serverless Architectures on AWS 2nd Edition, both by Manning. Yan also keeps an active blog at https://theburningmonk.com.
-name: "Yan Cui"
+  A web developer of nearly 20 years; from humble beginnings doing a lot of work in multiple teams around South Africa and ending up in Portugal with his family, Gareth has seen the industry shift repeatedly from one paradigm to the next. After discovering the world of Serverless Gareth now finds himself lucky enough to work with the team at Serverless Inc, custodians of the open source Serverless Framework, as a Customer Success Engineer and Developer Advocate. On the off days he spends as much as he can with his wife and children.
+name: "Gareth McCumskey"
 job: "Developer Advocate"
-company: "Lumigo"
-picture: ../images/speakers/yan_cui.png
-twitter: "@theburningmonk"
+company: "Serverless Inc"
+picture: ../images/speakers/gareth_mccumskey.jpg
+twitter: "@garethmcc"
 ---

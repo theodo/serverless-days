@@ -12,9 +12,9 @@ Notre conférence se veut une expérience sans harcèlement, quel que soit votre
 
 ## Contact en cas d’incident
 
-Par mail, contactez Benjamin <benjaming@theodo.fr> ou Diane <dianer@theodo.fr>.
+Par mail, contactez Frédéric <fredericb@theodo.fr> ou Emilie <emilied@theodo.fr>.
 
-En cas d’urgence médicale, contactez Christopher <christopher.maneu@microsoft.com> ou le 112.
+En cas d’urgence médicale, contactez Sabri <sabribr@serverlessdayss-paris.io> ou le 112.
 
 Sur place, les organisateurs porteront un t-shirt "staff".
 

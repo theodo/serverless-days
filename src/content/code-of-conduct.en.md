@@ -12,9 +12,9 @@ Our conference is dedicated to providing a harassment-free conference experience
 
 ## Contact in case of emergency
 
-By email, you can contact ether Benjamin <benjaming@theodo.fr> or Diane <dianer@theodo.fr>.
+By email, you can contact ether Frédéric <fredericb@theodo.fr> or Emilie <emilied@theodo.fr>.
 
-In case of medical emergency, contact Christopher <christopher.maneu@microsoft.com> or call 112.
+In case of medical emergency, contact Sabri <sabribr@serverlessdays-paris.io> or call 112.
 
 At the venue, organizers will wear "staff" t-shirt.
 

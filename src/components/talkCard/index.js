@@ -69,7 +69,7 @@ const TalkTime = ({ hour }) => (
 
 const TalkCard = ({ title, hour, name, job, company, picture, twitter }) => (
   <div className={classes.cardContainer}>
-    {/*<TalkTime hour={hour} />*/}
+    {/* <TalkTime hour={hour} /> */}
     <Img
       fixed={picture.childImageSharp.large}
       alt={name}

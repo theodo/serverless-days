@@ -10,7 +10,6 @@ import Tickets from "../components/tickets"
 import Team from "../components/team"
 import Title from "../components/title"
 import Sponsors from "../components/sponsors"
-import CallForPaper from "../components/callForPaper"
 import Streams from "../components/streams"
 
 import DialogContent from "../components/dialogContent"
@@ -29,7 +28,6 @@ export default function Template({ data }) {
       <SEO />
       <Title />
       <Tickets id="tickets" />
-      <CallForPaper id="cfp" />
       <Location id="location" />
       <Streams id="streams" />
       <Team id="team" />

@@ -6,7 +6,7 @@ description:
 biographie:
   A web developer of nearly 20 years; from humble beginnings doing a lot of work in multiple teams around South Africa and ending up in Portugal with his family, Gareth has seen the industry shift repeatedly from one paradigm to the next. After discovering the world of Serverless Gareth now finds himself lucky enough to work with the team at Serverless Inc, custodians of the open source Serverless Framework, as a Customer Success Engineer and Developer Advocate. On the off days he spends as much as he can with his wife and children.
 name: "Gareth McCumskey"
-job: "Developer Advocate"
+job: "Customer Success Engineer"
 company: "Serverless Inc"
 picture: ../images/speakers/gareth_mccumskey.jpg
 twitter: "@garethmcc"

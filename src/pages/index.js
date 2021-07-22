@@ -44,7 +44,6 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
-      <Tickets id="tickets" />
       <ol className={classes.talksList} id="talks">
         <li className={classes.talkHeader}>
           <img alt="" src={talkLogo} />

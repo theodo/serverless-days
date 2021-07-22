@@ -66,11 +66,18 @@ export default function Template({ data }) {
       <Team id="team" />
       <Contact id="contact" />
       <Sponsors id="sponsor" />
-      {<Dialog open={dialogIsOpen} onClose={closeDialog} maxWidth="xl" fullWidth>
-        {dialogData && (
-          <DialogContent closeDialog={closeDialog} {...dialogData} />
-        )}
-      </Dialog>}
+      {
+        <Dialog
+          open={dialogIsOpen}
+          onClose={closeDialog}
+          maxWidth="xl"
+          fullWidth
+        >
+          {dialogData && (
+            <DialogContent closeDialog={closeDialog} {...dialogData} />
+          )}
+        </Dialog>
+      }
     </Layout>
   )
 }

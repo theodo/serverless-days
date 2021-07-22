@@ -105,10 +105,7 @@ export const pageQuery = graphql`
                 }
               }
             }
-            linkedin
             twitter
-            instagram
-            facebook
             isParty
           }
         }

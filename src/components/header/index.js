@@ -42,11 +42,6 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="/#tickets">
-            <FormattedMessage id="header.tickets" />
-          </Link>
-        </li>
-        <li>
           <Link to="/#talks">
             <FormattedMessage id="header.talks" />
           </Link>
@@ -74,9 +69,12 @@ const Header = () => {
           </IntlContextConsumer>
         </li>
         <li>
-          <Link to="/#tickets" className={classes.button}>
+          <a
+            href="https://www.weezevent.com/serverlessdays-paris-2021"
+            className={classes.button}
+          >
             <FormattedMessage id="title.call-to-action" />
-          </Link>
+          </a>
         </li>
       </ol>
       <script

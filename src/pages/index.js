@@ -44,7 +44,6 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
-      <Tickets id="tickets" />
       <ol className={classes.talksList} id="talks">
         <li className={classes.talkHeader}>
           <img alt="" src={talkLogo} />
@@ -67,11 +66,18 @@ export default function Template({ data }) {
       <Team id="team" />
       <Contact id="contact" />
       <Sponsors id="sponsor" />
-      {<Dialog open={dialogIsOpen} onClose={closeDialog} maxWidth="xl" fullWidth>
-        {dialogData && (
-          <DialogContent closeDialog={closeDialog} {...dialogData} />
-        )}
-      </Dialog>}
+      {
+        <Dialog
+          open={dialogIsOpen}
+          onClose={closeDialog}
+          maxWidth="xl"
+          fullWidth
+        >
+          {dialogData && (
+            <DialogContent closeDialog={closeDialog} {...dialogData} />
+          )}
+        </Dialog>
+      }
     </Layout>
   )
 }
@@ -105,10 +111,7 @@ export const pageQuery = graphql`
                 }
               }
             }
-            linkedin
             twitter
-            instagram
-            facebook
             isParty
           }
         }

@@ -1,25 +1,15 @@
 @import "../variables";
 
 .talksList {
+  @include responsive-container;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 $mobile-margins;
   padding: 84px 0 0;
-  @media (min-width: $break-point-1to2) {
-    margin: 0 auto;
-    justify-content: flex-start;
-    transform: translateX(16px);
-    max-width: $width-2column + 32px;
-    flex-direction: row;
-  }
-  @media (min-width: $break-point-2to3) {
-    max-width: $width-3column + 32px;
-  }
-  @media (min-width: $break-point-3to4) {
-    max-width: $width-4column + 32px;
-  }
 }
+
 .talkHeader {
   list-style: none;
   width: $talk-card-width;

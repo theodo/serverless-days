@@ -10,7 +10,7 @@ const Tickets = ({ id }) => {
     if (!loaded) {
       setLoaded(true)
     }
-  })
+  }, [setLoaded])
 
   return (
     <div id={id} className={classes.container}>

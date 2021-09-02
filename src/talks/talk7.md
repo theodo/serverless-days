@@ -7,6 +7,6 @@ Lors de la création du nouveau projet Unify, j'ai été conquis par l'ambition 
 name: "Younes Sadmi"
 job: "Lead Developeur"
 company: "Unify"
-picture: ../images/speakers/default.png
+picture: ../images/speakers/younes_sadmi.png
 twitter: ""
 ---

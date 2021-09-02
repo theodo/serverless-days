@@ -4,10 +4,10 @@ title: "🇫🇷 AWS Lambda - Stratégie de déploiement"
 description: "Déployer une AWS Lambda, le vendredi avant de partir en Week-end, vous en avez peur ?<br><br>
 A la fin de ce talk, vous n'aurez plus de crainte et vous allez pouvoir déployer vos Lambda sans risque à tout moment.<br><br>
 Au programme, nous allons voir les différentes stratégie de déploiement (All At Once, Linear, Canary), comment bien choisir la stratégie qu'il nous faut et surtout comment bien les mettre en place."
-biographie: "TBC"
+biographie: "Guillaume est un Architecte Solutions AWS, Team Lead AWS et AWS Community Builder chez Betclic Group depuis bientôt 4 ans."
 name: "Guillaume Lannebère"
 job: "Lead AWS"
 company: "Betclic"
-picture: ../images/speakers/default.png
+picture: ../images/speakers/guillaume_lannebere.png
 twitter: "guillan40"
 ---

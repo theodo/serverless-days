@@ -9,6 +9,9 @@ $mobile-space: 16px;
   button {
     background: none;
     border: none;
+    :hover {
+      cursor: pointer;
+    }
     img {
       width: 24px;
       height: 24px;

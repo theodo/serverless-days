@@ -14,7 +14,7 @@ const Title = () => {
     return () => {
       setLoaded(false)
     }
-  }, [loaded])
+  }, [])
   return (
     <div className={classes.container}>
       <div className={classes.informations}>

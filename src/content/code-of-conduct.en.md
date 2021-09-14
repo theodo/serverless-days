@@ -34,6 +34,5 @@ Conference staff will be happy to help participants contact hotel/venue security
 
 We expect participants to follow these rules at conference and workshop venues and conference-related social events.
 
-_Original source and credit: http://2012.jsconf.us/#/about & The Ada Initiative_
-_Please help by translating or improving: on github.com_
-_This work is licensed under a Creative Commons Attribution 3.0 Unported License_
+Original source and credit: [http://2012.jsconf.us/#/about](http://2012.jsconf.us/#/about) & [The Ada Initiative](https://geekfeminism.wikia.org/wiki/Conference \_ anti-harassment/Policy).  
+_Please help by translating or improving: on [on github.com](https://github.com/confcodeofconduct/confcodeofconduct.com)._ _This work is licensed under a [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/deed)_

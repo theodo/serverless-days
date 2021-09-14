@@ -34,4 +34,6 @@ Les membres de l'organisation seront ravis d'aider les participants à contacter
 
 Nous attendons des participants qu'ils suivent ces règles dans le bâtiment des conférences et des ateliers, ainsi que pendant les événements sociaux relatifs à la conférence.
 
-_Version originale et crédit: [http://2012.jsconf.us/#/about](http://2012.jsconf.us/#/about) & [The Ada Initiative](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy). Merci d'aider à la traduction et à l'amélioration de ce texte : [on github.com](https://github.com/confcodeofconduct/confcodeofconduct.com). Ce texte est sous licence [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US)_
+Version originale et crédit: [http://2012.jsconf.us/#/about](http://2012.jsconf.us/#/about) & [The Ada Initiative](https://geekfeminism.wikia.org/wiki/Conference \_ anti-harassment/Policy).  
+_Merci d'aider à la traduction et à l'amélioration de ce texte : [on github.com](https://github.com/confcodeofconduct/confcodeofconduct.com)._
+_Ce texte est sous licence [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/deed)_

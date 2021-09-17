@@ -73,7 +73,7 @@ const Sponsors = ({ id }) => {
         </div>
       </div>
       <hr className={classes.inKind} />
-      <p className={classes.sponsorType}>/In-Kind</p>
+      <p className={classes.sponsorType}>/Suppliers</p>
       <div className={classes.logos}>
         <img
           className={classes.logoInKind}
@@ -89,39 +89,12 @@ const Sponsors = ({ id }) => {
           contentLabel="Example Modal"
           style={ModalStyle}
         >
-          <a href="https://www.lescafesdemick.fr"> Les cafés de Mike </a>
-
-          <p className={classes.mickText}>
-            C'est à Londres en 2010 que Mick découvre la culture café déjà très
-            développée dans les coffee-shops de l'Est Londonien. Alors qu'à
-            Paris on doit souvent se contenter de café brûlé aux comptoirs des
-            brasseries, les Anglais, inspirés par les Australiens ou les
-            Néo-Zélandais, nombreux dans la City, se démènent pour faire
-            découvrir aux amateurs, les différentes origines et les modes de
-            préparation adaptés. Des baristas passionnés et des
-            micro-torréfacteurs composent une communauté convaincue que l'on
-            peut déguster les cafés pour leurs notes et leurs arômes comme on le
-            fait pour le vin en France. Mais c'est un voyage d'un an en Amérique
-            Latine qui finira par convaincre Mick de se lancer dans l'aventure
-            café. La rencontre avec des producteurs investis et la visite de
-            plusieurs plantations au Guatemala, en Colombie, au Pérou ou encore
-            au Brésil lui permettent de découvrir la richesse du travail
-            accompli en amont. La variété des processus de culture, de récolte,
-            de séchage et de dépulpage du grain font la richesse de production
-            du café. Chaque étape a son incidence sur le goût final en tasse. En
-            2018, les Cafés de Mick voient le jour, grâce au soutien du
-            collectif Beans On Fire et de l'atelier collaboratif qui porte le
-            même nom à Paris dans le 20e. Une torréfaction artisanale et
-            respectueuse de chaque origine : le but étant de révéler tous les
-            arômes et les subtilités de chaque grain en fonction de sa
-            provenance mais aussi du process de dépulpage (Lavé, Nature,
-            Honey...) Mick choisit ses cafés en travaillant main dans la main
-            avec des importateurs eux aussi passionnés et qui lui garantissent
-            la traçabilité des grains ainsi que l'équité en terme de revenu pour
-            les petits producteurs. À vous désormais de découvrir la palette
-            arômatique de cafés inspirés par les bons moments de la vie, ils
-            sont livrés gratuitement en vélo dans Paris !
-          </p>
+          <a href="https://www.lescafesdemick.fr">
+            <FormattedMessage id="sponsors.mick-title" />
+          </a>
+          <br />
+          <br />
+          <FormattedMessage id="sponsors.mick-desc" />
         </Modal>
       </div>
     </div>

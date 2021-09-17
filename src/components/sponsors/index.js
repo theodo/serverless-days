@@ -67,13 +67,13 @@ const Sponsors = ({ id }) => {
           </a>
           {/* <img className={classes.logoSilv2} src={faunadbLogo} alt="FaunaDb" /> */}
         </div>
+        <a href="https://www.theodo.fr/">
+          <div className={classes.logos}>
+            <p className={classes.sponsorType}>/Platinum</p>
 
-        <div className={classes.logos}>
-          <p className={classes.sponsorType}>/Platinum</p>
-          <a href="https://www.theodo.fr/">
             <img className={classes.logoPlat} src={theodoLogo} alt="Theodo" />
-          </a>
-        </div>
+          </div>
+        </a>
 
         <div className={classes.logos}>
           <p className={classes.sponsorType}>/Bronze</p>

@@ -58,21 +58,31 @@ const Sponsors = ({ id }) => {
       <div className={classes.logosContainer}>
         <div className={classes.logos}>
           <p className={classes.sponsorType}>/Silver</p>
-          <img className={classes.logoSilv1} src={datadogLogo} alt="DataDog" />
+          <a href="https://www.datadoghq.com/">
+            <img
+              className={classes.logoSilv1}
+              src={datadogLogo}
+              alt="DataDog"
+            />
+          </a>
           {/* <img className={classes.logoSilv2} src={faunadbLogo} alt="FaunaDb" /> */}
         </div>
 
         <div className={classes.logos}>
           <p className={classes.sponsorType}>/Platinum</p>
-          <img className={classes.logoPlat} src={theodoLogo} alt="Theodo" />
+          <a href="https://www.theodo.fr/">
+            <img className={classes.logoPlat} src={theodoLogo} alt="Theodo" />
+          </a>
         </div>
 
         <div className={classes.logos}>
           <p className={classes.sponsorType}>/Bronze</p>
-          <img className={classes.logoBronze} src={unifyLogo} alt="Unify" />
+          <a href="https://unifygroup.com/">
+            <img className={classes.logoBronze} src={unifyLogo} alt="Unify" />{" "}
+          </a>
         </div>
       </div>
-      <hr className={classes.inKind} />
+      <hr className={classes.inKindLine} />
       <p className={classes.sponsorType}>/Suppliers</p>
       <div className={classes.logos}>
         <img

@@ -5,8 +5,8 @@ $mobile-breakpoint: $breakpoint-m;
 .container {
   @include responsive-container;
   background-color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   color: black;
   padding-top: 3 * $space-unit;
   padding-bottom: 3 * $space-unit;
@@ -14,7 +14,11 @@ $mobile-breakpoint: $breakpoint-m;
 
   .titleContainer {
     display: flex;
-    flex-direction: column;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
 
     @media (max-width: $mobile-breakpoint) {
       width: 100%;
@@ -23,16 +27,24 @@ $mobile-breakpoint: $breakpoint-m;
     .title {
       @include section-text-title;
     }
-
-    .subtitle {
-      margin: 0 0 8px 0;
-    }
   }
 
+  .subtitle {
+    padding-bottom: 40px;
+  }
+
+  .logosContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
   .logos {
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0 2 * $space-unit;
 
     @media (max-width: $mobile-breakpoint) {
@@ -41,9 +53,43 @@ $mobile-breakpoint: $breakpoint-m;
       padding: 3 * $space-unit 2 * $space-unit;
     }
 
-    .logo {
-      max-width: 125px;
+    .logoPlat {
+      width: auto;
+      max-width: 400px;
+      height: auto;
+      max-height: 300px;
+      margin-bottom: 250px;
+      padding-top: 50px;
     }
+    .logoSilv1 {
+      width: auto;
+      max-width: 400px;
+      height: auto;
+      max-height: 200px;
+      margin-bottom: 20px;
+    }
+    .logoBronze {
+      width: auto;
+      max-width: 150px;
+      height: auto;
+      max-height: 100px;
+      margin-bottom: 20px;
+    }
+    .logoInKind {
+      width: auto;
+      max-width: 300px;
+      height: auto;
+      max-height: 300px;
+      margin-bottom: 20px;
+    }
+  }
+  .sponsorType {
+    color: #5267ff;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    // padding-left: 10px;
+    flex-grow: 1;
   }
 
   .callToAction {
@@ -57,5 +103,22 @@ $mobile-breakpoint: $breakpoint-m;
     @media (max-width: $mobile-breakpoint) {
       margin: auto;
     }
+  }
+  .inKind {
+    margin: 20px 0 40px 0;
+    width: 100%;
+    border-top: 2px solid;
+    border-color: #282828;
+  }
+  .mickText {
+    font-family: "Lato", monospace;
+    margin-left: 500px;
+  }
+  .mickLogo {
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    max-height: 200px;
+    margin-bottom: 20px;
   }
 }

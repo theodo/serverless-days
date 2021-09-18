@@ -57,5 +57,11 @@
   "streams": {
     "title": "Streams",
     "description": "Re-live ServerlessDays 2020 sessions"
+  },
+  "warmup": {
+    "title": "Warmup",
+    "description": "Taste ServerlessDays Paris 2021 before the event",
+    "robsession": "Want to see a preview of ServerlessDays Paris ? Join us live on Youtube September 21st at 7:30 PM CEST with Rob Sutter, Head of Developer Advocacy at Fauna for this ServerlessDays Warmup session. It includes Rob's 30-min talk \"Lambda is dead; long live serverless!\" and will be followed by a 30-min discussion panel.",
+    "call-to-action": "Watch Rob's warmup session"
   }
 }

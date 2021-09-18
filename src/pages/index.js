@@ -11,6 +11,7 @@ import Team from "../components/team"
 import Title from "../components/title"
 import Sponsors from "../components/sponsors"
 import Streams from "../components/streams"
+import Warmup from "../components/warmup"
 
 import DialogContent from "../components/dialogContent"
 import Dialog from "@material-ui/core/Dialog"
@@ -44,6 +45,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
+      <Warmup id="warmup" />
       <ol className={classes.talksList} id="talks">
         <li className={classes.talkHeader}>
           <img alt="" src={talkLogo} />

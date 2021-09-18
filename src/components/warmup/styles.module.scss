@@ -1,0 +1,68 @@
+@import "../../variables";
+
+$stream-mobile-breakpoint: $breakpoint-sm;
+
+.container {
+  @include responsive-container;
+
+  padding-top: 4 * $space-unit;
+  padding-bottom: 4 * $space-unit;
+  color: black;
+  font-family: $text-font;
+
+  .title {
+    @include section-text-title;
+  }
+
+  .subtitle {
+    color: $steel-grey;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 3 * $space-unit;
+    font-weight: 500;
+  }
+
+  .button {
+    text-decoration: none;
+    color: white;
+    padding: $space-unit;
+    background-color: $primary;
+    border-radius: 5px;
+  }
+
+  .streams {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5 * $space-unit 0;
+    align-items: center;
+
+    .embedContainer {
+      margin: 5 * $space-unit;
+      width: 100%;
+      max-width: 560px;
+
+      iframe {
+        width: 100%;
+        height: 315px;
+
+        @media (max-width: $stream-mobile-breakpoint) {
+          height: 150px;
+        }
+      }
+    }
+
+    .callToAction,
+    .warmupDesctription {
+      width: 100%;
+      max-width: 560px;
+      margin-top: $space-unit;
+    }
+
+    .callToAction {
+      color: $primary;
+    }
+  }
+}

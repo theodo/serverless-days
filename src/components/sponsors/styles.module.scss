@@ -56,10 +56,14 @@ $mobile-breakpoint: $breakpoint-m;
 
     .logoPlat {
       width: 300px;
-
-      margin-bottom: 250px;
+      margin-bottom: 100px;
       padding-top: 50px;
       cursor: pointer;
+    }
+    .logoGold {
+      width: 250px;
+      cursor: pointer;
+      margin-bottom: 100px;
     }
     .logoSilv1 {
       width: auto;

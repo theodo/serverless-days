@@ -3,6 +3,7 @@ import Modal from "react-modal"
 import { FormattedMessage } from "gatsby-plugin-intl"
 import classes from "./styles.module.scss"
 import theodoLogo from "../../images/sponsorsLogo/Theodo.svg"
+import cajooLogo from "../../images/sponsorsLogo/cajoo.jpeg"
 import datadogLogo from "../../images/sponsorsLogo/datadog.png"
 import unifyLogo from "../../images/sponsorsLogo/unify.jpg"
 import mickLogo from "../../images/sponsorsLogo/mick.png"
@@ -55,6 +56,13 @@ const Sponsors = ({ id }) => {
       <p className={classes.subtitle}>
         <FormattedMessage id="sponsors.content" />
       </p>
+      <a href="https://www.theodo.fr/">
+        <div className={classes.logos}>
+          <p className={classes.sponsorType}>/Platinum</p>
+
+          <img className={classes.logoPlat} src={theodoLogo} alt="Theodo" />
+        </div>
+      </a>
       <div className={classes.logosContainer}>
         <div className={classes.logos}>
           <p className={classes.sponsorType}>/Silver</p>
@@ -67,11 +75,11 @@ const Sponsors = ({ id }) => {
           </a>
           {/* <img className={classes.logoSilv2} src={faunadbLogo} alt="FaunaDb" /> */}
         </div>
-        <a href="https://www.theodo.fr/">
+        <a href="https://www.cajoo.eu/">
           <div className={classes.logos}>
-            <p className={classes.sponsorType}>/Platinum</p>
+            <p className={classes.sponsorType}>/Gold</p>
 
-            <img className={classes.logoPlat} src={theodoLogo} alt="Theodo" />
+            <img className={classes.logoGold} src={cajooLogo} alt="Cajoo" />
           </div>
         </a>
 

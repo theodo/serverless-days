@@ -1,5 +1,5 @@
 ---
-hour: "2021-09-28T11:45:00"
+hour: "2021-09-28T14:00:00"
 title: "🇫🇷 Cloud Run... tout ce qu'il faut sans K8S"
 description:
   "Docker est arrivé en 2016 en France permettant de packager nos applications facilement. Il a fallu maîtriser les concepts de Docker : commandes, isolation, optimisation des layers etc.<br><br>

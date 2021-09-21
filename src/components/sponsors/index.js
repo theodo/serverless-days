@@ -58,14 +58,14 @@ const Sponsors = ({ id }) => {
       </p>
       <a href="https://www.theodo.fr/">
         <div className={classes.logos}>
-          <p className={classes.sponsorType}>/Platinum</p>
+          <p className={classes.sponsorType}>Platinum</p>
 
           <img className={classes.logoPlat} src={theodoLogo} alt="Theodo" />
         </div>
       </a>
       <div className={classes.logosContainer}>
         <div className={classes.logos}>
-          <p className={classes.sponsorType}>/Silver</p>
+          <p className={classes.sponsorType}>Silver</p>
           <a href="https://www.datadoghq.com/">
             <img
               className={classes.logoSilv1}
@@ -77,21 +77,21 @@ const Sponsors = ({ id }) => {
         </div>
         <a href="https://www.cajoo.eu/">
           <div className={classes.logos}>
-            <p className={classes.sponsorType}>/Gold</p>
+            <p className={classes.sponsorType}>Gold</p>
 
             <img className={classes.logoGold} src={cajooLogo} alt="Cajoo" />
           </div>
         </a>
 
         <div className={classes.logos}>
-          <p className={classes.sponsorType}>/Bronze</p>
+          <p className={classes.sponsorType}>Bronze</p>
           <a href="https://unifygroup.com/">
             <img className={classes.logoBronze} src={unifyLogo} alt="Unify" />{" "}
           </a>
         </div>
       </div>
       <hr className={classes.inKindLine} />
-      <p className={classes.sponsorType}>/Suppliers</p>
+      <p className={classes.sponsorType}>Suppliers</p>
       <div className={classes.logos}>
         <img
           className={classes.logoInKind}

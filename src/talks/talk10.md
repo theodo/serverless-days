@@ -1,5 +1,5 @@
 ---
-hour: "2021-09-28T17:30:00"
+hour: "2021-09-28T14:45:00"
 title: "🇬🇧 Advanced Serverless Messaging Patterns"
 description: "Using the right messaging patterns between your services can help with durability, availability, and reducing custom code. This talk shows how to use AWS services to build robust messaging patterns into the foundation of your application architecture.  
 Introduce fan-out, queuing, and decoupling between your services and combine multiple services to create powerful architectures that make your workloads scale."

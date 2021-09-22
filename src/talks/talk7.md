@@ -1,5 +1,5 @@
 ---
-hour: "2021-09-28T12:00:00"
+hour: "2021-09-28T12:10:00"
 title: "🇫🇷 D’un monolithe PHP au serverless: retour d’expérience sur 6 mois de migration"
 description: "Pendant 6 mois, nous avons conçu et effectué la migration d’un monolithe PHP d’une vingtaine d’années vers une architecture micro service en serverless. En faisant coexister deux systèmes aux architectures très différentes, nous avons dû relever des défis techniques. Comment cela s’est-il passé ?"
 biographie: "Paul est architecte développeur, head of security team à Theodo et membre de l'OWASP. Après avoir suivi une formation en sécurité des systèmes d'information à Télécom ParisTech, il rejoint Theodo en 2013 et se passionne pour le développement web. Très vite, il se spécialise sur les problématiques de sécurité en aidant les équipes de Theodo à réussir leurs audits post-mise en production.

@@ -1,5 +1,5 @@
 ---
-hour: "2021-09-28T11:00:00"
+hour: "2021-09-28T11:35:00"
 title: "🇫🇷 The other side of the story: what it takes to build & operate a Serverless engine"
 description: "Using serverless certainly comes with its own set of challenges, but there is another side of the story which is not often told: how serverless platforms are built and what are their technological limitations.
 At Koyeb, we’re a cloud service provider building a serverless platform. I will walk you through how we built our own serverless engine, the key decisions we had to make and what our architecture looks like. We now have a purpose-built stack based on Nomad, Firecracker, and Kuma.

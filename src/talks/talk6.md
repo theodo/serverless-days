@@ -1,5 +1,5 @@
 ---
-hour: "2021-09-28T17:30:00"
+hour: "2021-09-28T16:55:00"
 title: "🇫🇷 AWS Lambda - Stratégie de déploiement"
 description: "Déployer une AWS Lambda, le vendredi avant de partir en Week-end, vous en avez peur ?<br><br>
 A la fin de ce talk, vous n'aurez plus de crainte et vous allez pouvoir déployer vos Lambda sans risque à tout moment.<br><br>

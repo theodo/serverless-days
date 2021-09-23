@@ -20,7 +20,7 @@
   },
   "header": {
     "home": "accueil",
-    "tickets": "billeterie",
+    "tickets": "billetterie",
     "talks": "programme",
     "code-of-conduct": "code de conduite"
   },
@@ -42,10 +42,10 @@
     "title": "Serverless days",
     "location-year": "Paris 2021",
     "subtitle": "Les ServerlessDays reviennent à Paris le 28 Septembre 2021 à la Cité Internationale Universitaire de Paris",
-    "call-to-action": "Billeterie"
+    "call-to-action": "Billetterie"
   },
   "tickets": {
-    "title": "Billeterie"
+    "title": "Billetterie"
   },
   "team": {
     "title": "L'équipe"

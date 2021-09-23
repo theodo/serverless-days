@@ -8,6 +8,7 @@ import datadogLogo from "../../images/sponsorsLogo/datadog.png"
 import unifyLogo from "../../images/sponsorsLogo/unify.jpg"
 import mickLogo from "../../images/sponsorsLogo/mick.png"
 // import faunadbLogo from "../../images/sponsorsLogo/faunadb.svg"
+import aircallLogo from "../../images/sponsorsLogo/aircall.jpg"
 
 const ModalStyle = {
   overlay: {
@@ -87,6 +88,13 @@ const Sponsors = ({ id }) => {
           <p className={classes.sponsorType}>Bronze</p>
           <a href="https://unifygroup.com/">
             <img className={classes.logoBronze} src={unifyLogo} alt="Unify" />{" "}
+          </a>
+          <a href="https://aircall.io/fr/">
+            <img
+              className={classes.logoBronze}
+              src={aircallLogo}
+              alt="Aircall"
+            />{" "}
           </a>
         </div>
       </div>

@@ -1,7 +1,7 @@
 ---
 name: "Matthieu Napoli"
-bio: "Founder"
-company: "null"
+bio: "Product Manager"
+company: "Serverless Framework"
 twitter: "https://twitter.com/matthieunapoli"
 picture: "../images/orgs/matthieu.jpeg"
 ---

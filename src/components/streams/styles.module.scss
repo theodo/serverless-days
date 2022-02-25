@@ -7,7 +7,7 @@ $stream-mobile-breakpoint: $breakpoint-sm;
 
   padding-top: 4 * $space-unit;
   padding-bottom: 4 * $space-unit;
-  color: black;
+  color: white;
   font-family: $text-font;
 
   .title {
@@ -26,11 +26,11 @@ $stream-mobile-breakpoint: $breakpoint-sm;
     .embedContainer {
       margin: 5 * $space-unit;
       width: 100%;
-      max-width: 560px;
+      max-width: 800px;
 
       iframe {
         width: 100%;
-        height: 315px;
+        height: 500px;
 
         @media (max-width: $stream-mobile-breakpoint) {
           height: 150px;

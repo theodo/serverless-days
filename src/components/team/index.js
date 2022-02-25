@@ -67,7 +67,9 @@ const Member = ({ member }) => (
     <div className={classes.memberName}>{member.name}</div>
     <div className={classes.memberJob}>
       {member.bio}
-      <span className={classes.memberCompany}> @{member.company}</span>
+      <span className={classes.memberCompany}>
+        <br /> @{member.company}
+      </span>
     </div>
   </Fragment>
 )

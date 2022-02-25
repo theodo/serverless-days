@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from "react"
-import { Helmet } from "react-helmet"
+import React from "react"
+// { useEffect, useState } from "react"
+// import { Helmet } from "react-helmet"
 import { FormattedMessage, Link } from "gatsby-plugin-intl"
 
 import classes from "./styles.module.scss"
 import titleImage from "../../images/titleImage.svg"
 
 const Title = () => {
-  const [loaded, setLoaded] = useState(false)
-  useEffect(() => {
-    if (!loaded) {
-      setLoaded(true)
-    }
-    return () => {
-      setLoaded(false)
-    }
-  }, [setLoaded])
+  // const [loaded, setLoaded] = useState(false)
+  // useEffect(() => {
+  //   if (!loaded) {
+  //     setLoaded(true)
+  //   }
+  //   return () => {
+  //     setLoaded(false)
+  //   }
+  // }, [setLoaded])
   return (
     <div className={classes.container}>
       <div className={classes.informations}>
@@ -31,7 +32,7 @@ const Title = () => {
         <h2 className={classes.subtitle}>
           <FormattedMessage id="title.subtitle" />
         </h2>
-        <a
+        {/* <a
           title="Logiciel billetterie en ligne"
           href="https://www.weezevent.com/widget_multi.php?266452.1.1.bo"
           class="weezevent-widget-integration"
@@ -56,7 +57,7 @@ const Title = () => {
           </Helmet>
         ) : (
           <></>
-        )}
+        )} */}
       </div>
       <div className={classes.desktopTitleImageContainer}>
         <img className={classes.desktopTitleImage} alt="" src={titleImage} />

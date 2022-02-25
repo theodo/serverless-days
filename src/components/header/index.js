@@ -68,14 +68,14 @@ const Header = () => {
             }
           </IntlContextConsumer>
         </li>
-        <li>
+        {/* <li>
           <a
             href="https://www.weezevent.com/serverlessdays-paris-2021"
             className={classes.button}
           >
             <FormattedMessage id="title.call-to-action" />
           </a>
-        </li>
+        </li> */}
       </ol>
       <script
         type="text/javascript"

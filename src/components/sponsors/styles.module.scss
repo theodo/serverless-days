@@ -33,70 +33,61 @@ $mobile-breakpoint: $breakpoint-m;
     padding-bottom: 40px;
   }
 
-  .logosContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  .logos {
-    flex-grow: 1;
-    flex-basis: 0;
+  .sponsorsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 2 * $space-unit;
+    gap: 15px;
+  }
+  .sponsor {
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // padding: 0 2 * $space-unit;
 
     @media (max-width: $mobile-breakpoint) {
       flex-direction: column;
       width: 100%;
       padding: 3 * $space-unit 2 * $space-unit;
     }
+  }
 
-    .logoPlat {
-      width: 300px;
-      margin-bottom: 100px;
-      padding-top: 50px;
-      cursor: pointer;
-    }
-    .logoGold {
-      width: 250px;
-      cursor: pointer;
-      margin-bottom: 100px;
-    }
-    .logoSilv1 {
-      width: auto;
-      max-width: 400px;
-      height: auto;
-      max-height: 200px;
-      margin-bottom: 20px;
-      cursor: pointer;
-    }
-    .logoBronze {
-      width: auto;
-      max-width: 180px;
-      height: auto;
-      max-height: 100px;
-      margin-bottom: 20px;
-      cursor: pointer;
-    }
-    .logoInKind {
-      width: auto;
-      max-width: 300px;
-      height: auto;
-      max-height: 300px;
-      margin-bottom: 20px;
-      cursor: pointer;
-    }
+  .secondSponsors {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 150px;
+
+    // align-items: center;
+    // justify-content: center;
+  }
+
+  .logo {
+    width: 250px;
+    // padding-top: 50px;
+    cursor: pointer;
+    // margin-left: 100px;
+  }
+  .bigLogo {
+    width: 350px;
+    padding-bottom: 30px;
+  }
+  .mediumLogo {
+    width: 300px;
+    margin-bottom: 180px;
+
+    // margin-right: 70px;
   }
   .sponsorType {
     color: #5267ff;
     font-size: 34px;
     font-weight: bold;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     // padding-left: 10px;
-    flex-grow: 1;
+    // flex-grow: 1;
   }
 
   .callToAction {

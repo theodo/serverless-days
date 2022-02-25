@@ -13,41 +13,12 @@ const Streams = ({ id }) => (
     <div className={classes.streams}>
       <div className={classes.embedContainer}>
         <iframe
-          src="https://www.youtube.com/embed/eVKHBrrz7jY"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/videoseries?list=PLp4wchugWzHuDS60WBFsxJ29YHlksIsxI"
+          title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div className={classes.embedContainer}>
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/w_7dz77P9DE"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div className={classes.embedContainer}>
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/cXI753VsIzs"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div className={classes.embedContainer}>
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/L6Zwg6Cjy30"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div className={classes.embedContainer}>
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/hGwx0zSK23A"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
       </div>

@@ -3,12 +3,8 @@ import Modal from "react-modal"
 import { FormattedMessage } from "gatsby-plugin-intl"
 import classes from "./styles.module.scss"
 import theodoLogo from "../../images/sponsorsLogo/Theodo.svg"
-import cajooLogo from "../../images/sponsorsLogo/cajoo.jpeg"
-import datadogLogo from "../../images/sponsorsLogo/datadog.png"
-import unifyLogo from "../../images/sponsorsLogo/unify.jpg"
-import mickLogo from "../../images/sponsorsLogo/mick.png"
-// import faunadbLogo from "../../images/sponsorsLogo/faunadb.svg"
-import aircallLogo from "../../images/sponsorsLogo/aircall.jpg"
+import ovrseaLogo from "../../images/sponsorsLogo/ovrsea.png"
+import lumigoLogo from "../../images/sponsorsLogo/lumigo.png"
 
 const ModalStyle = {
   overlay: {
@@ -57,34 +53,37 @@ const Sponsors = ({ id }) => {
       <p className={classes.subtitle}>
         <FormattedMessage id="sponsors.content" />
       </p>
-      <a href="https://www.theodo.fr/">
-        <div className={classes.logos}>
+      <div className={classes.sponsorsContainer}>
+        <div className={classes.sponsor}>
           <p className={classes.sponsorType}>Platinum</p>
-
-          <img className={classes.logoPlat} src={theodoLogo} alt="Theodo" />
-        </div>
-      </a>
-      <div className={classes.logosContainer}>
-        <div className={classes.logos}>
-          <p className={classes.sponsorType}>Silver</p>
-          <a href="https://www.datadoghq.com/">
+          <a href="https://www.theodo.fr/">
             <img
-              className={classes.logoSilv1}
-              src={datadogLogo}
-              alt="DataDog"
+              className={(classes.logo, classes.bigLogo)}
+              src={theodoLogo}
+              alt="Theodo"
             />
           </a>
-          {/* <img className={classes.logoSilv2} src={faunadbLogo} alt="FaunaDb" /> */}
         </div>
-        <a href="https://www.cajoo.eu/">
-          <div className={classes.logos}>
+        <div className={classes.secondSponsors}>
+          <div className={classes.sponsor}>
             <p className={classes.sponsorType}>Gold</p>
-
-            <img className={classes.logoGold} src={cajooLogo} alt="Cajoo" />
+            <a href="https://lumigo.io/">
+              <img
+                className={(classes.logo, classes.mediumLogo)}
+                src={lumigoLogo}
+                alt="Lumigo"
+              />
+            </a>
           </div>
-        </a>
+          <div className={classes.sponsor}>
+            <p className={classes.sponsorType}>Silver</p>
+            <a href="https://www.ovrsea.com/fr/">
+              <img className={classes.logo} src={ovrseaLogo} alt="Ovrsea" />
+            </a>
+          </div>
+        </div>
 
-        <div className={classes.logos}>
+        {/* <div className={classes.logos}>
           <p className={classes.sponsorType}>Bronze</p>
           <a href="https://unifygroup.com/">
             <img className={classes.logoBronze} src={unifyLogo} alt="Unify" />{" "}
@@ -96,9 +95,9 @@ const Sponsors = ({ id }) => {
               alt="Aircall"
             />{" "}
           </a>
-        </div>
+        </div> */}
       </div>
-      <hr className={classes.inKindLine} />
+      {/* <hr className={classes.inKindLine} />
       <p className={classes.sponsorType}>Suppliers</p>
       <div className={classes.logos}>
         <img
@@ -122,7 +121,7 @@ const Sponsors = ({ id }) => {
           <br />
           <FormattedMessage id="sponsors.mick-desc" />
         </Modal>
-      </div>
+      </div> */}
     </div>
   )
 }

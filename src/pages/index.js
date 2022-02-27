@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import TalkCardItem from "../components/talkCard"
 import Location from "../components/location"
 import Contact from "../components/contact"
-import Tickets from "../components/tickets"
+// import Tickets from "../components/tickets"
 import Team from "../components/team"
 import Title from "../components/title"
 import Sponsors from "../components/sponsors"
@@ -45,11 +45,11 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
-      <Warmup id="warmup" />
+      {/* <Warmup id="warmup" /> */}
       <ol className={classes.talksList} id="talks">
         <li className={classes.talkHeader}>
           <img alt="" src={talkLogo} />
-          <h2>Talks</h2>
+          <h2>Talks 2021</h2>
         </li>
         {talks
           .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))

@@ -20,7 +20,6 @@
   },
   "header": {
     "home": "accueil",
-    "tickets": "billetterie",
     "talks": "programme",
     "code-of-conduct": "code de conduite"
   },
@@ -40,12 +39,8 @@
   },
   "title": {
     "title": "Serverless days",
-    "location-year": "Paris 2021",
-    "subtitle": "Les ServerlessDays reviennent à Paris le 28 Septembre 2021 à la Cité Internationale Universitaire de Paris",
-    "call-to-action": "Billetterie"
-  },
-  "tickets": {
-    "title": "Billetterie"
+    "location-year": "Paris 2022",
+    "subtitle": "Les ServerlessDays reviennent à Paris le mercredi 22 Juin 2022 à la Bellevilloise!"
   },
   "team": {
     "title": "L'équipe"
@@ -56,7 +51,7 @@
   },
   "streams": {
     "title": "Revoir",
-    "description": "Retrouvez les sessions des ServerlessDays 2020"
+    "description": "Retrouvez la playlist des sessions de l'édition 2021!"
   },
   "warmup": {
     "title": "Warmup",

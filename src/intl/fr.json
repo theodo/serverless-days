@@ -42,6 +42,9 @@
     "location-year": "Paris 2022",
     "subtitle": "Les ServerlessDays reviennent à Paris le mercredi 22 Juin 2022 à la Bellevilloise!"
   },
+  "countdown": {
+    "message": "Ouverture de la billetterie:"
+  },
   "team": {
     "title": "L'équipe"
   },

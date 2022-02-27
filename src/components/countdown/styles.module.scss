@@ -1,0 +1,55 @@
+@import "../../variables";
+.countdown {
+  display: flex;
+  flex-direction: column;
+
+  .countdownMessage {
+    color: white;
+    padding-bottom: 10px;
+  }
+  .counter {
+    display: flex;
+    gap: 1rem;
+    align-self: center;
+    margin-bottom: 200px;
+    font-family: Lato;
+
+    .counterItem {
+      width: 100px;
+      height: 90px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.25rem;
+      background: $primary;
+      gap: 20px;
+      padding-top: 20px;
+
+      span.label {
+        font-size: 0.8rem;
+        color: black;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 0.1rem;
+        background: white;
+      }
+
+      span.value {
+        width: 100%;
+        padding: 0 0.5rem;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+      }
+
+      @media (max-width: 500px) {
+        span.value {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}

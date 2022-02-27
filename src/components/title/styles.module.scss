@@ -6,8 +6,12 @@ $title-breakpoint: $breakpoint-m;
   @include responsive-container;
   background-color: white;
   display: flex;
+  gap: 130px;
+  height: 96vh;
   padding-top: 10 * $space-unit;
   padding-bottom: 10 * $space-unit;
+  background-image: url("../../images/sls.jpg");
+  background-size: cover;
 
   @media (max-width: $title-breakpoint) {
     flex-direction: column;
@@ -15,7 +19,7 @@ $title-breakpoint: $breakpoint-m;
 
   .informations {
     font-family: $title-font;
-    max-width: 50%;
+    min-width: 50%;
 
     @media (max-width: $title-breakpoint) {
       max-width: 100%;
@@ -25,7 +29,8 @@ $title-breakpoint: $breakpoint-m;
       font-size: 50px;
       line-height: 50px;
       margin-bottom: 2 * $space-unit;
-      font-weight: 600;
+      color: rgb(241, 238, 238);
+      font-weight: 800;
       text-transform: uppercase;
       white-space: nowrap;
 
@@ -41,7 +46,7 @@ $title-breakpoint: $breakpoint-m;
     }
 
     .subtitle {
-      color: $steel-grey;
+      color: $pale-grey;
       font-size: 16px;
       line-height: 20px;
       margin-bottom: 3 * $space-unit;
@@ -84,5 +89,8 @@ $title-breakpoint: $breakpoint-m;
     @media (max-width: $title-breakpoint) {
       display: none;
     }
+  }
+  .countdown {
+    padding-top: 100px;
   }
 }

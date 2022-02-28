@@ -44,6 +44,9 @@
     "subtitle": "The ServerlessDays Paris will be hosted on June 22nd 2022 at la Bellevilloise!",
     "call-to-action": "Buy tickets"
   },
+  "countdown": {
+    "message": "Tickets opening:"
+  },
   "tickets": {
     "title": "Buy tickets"
   },

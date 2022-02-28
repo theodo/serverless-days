@@ -4,7 +4,7 @@ import React from "react"
 import { FormattedMessage, Link } from "gatsby-plugin-intl"
 
 import classes from "./styles.module.scss"
-import titleImage from "../../images/titleImage.svg"
+import Countdown from "../countdown"
 
 const Title = () => {
   // const [loaded, setLoaded] = useState(false)
@@ -26,9 +26,9 @@ const Title = () => {
             <FormattedMessage id="title.location-year" />
           </span>
         </h1>
-        <div className={classes.mobileTitleImageContainer}>
+        {/* <div className={classes.mobileTitleImageContainer}>
           <img alt="" src={titleImage} />
-        </div>
+        </div> */}
         <h2 className={classes.subtitle}>
           <FormattedMessage id="title.subtitle" />
         </h2>
@@ -59,9 +59,13 @@ const Title = () => {
           <></>
         )} */}
       </div>
-      <div className={classes.desktopTitleImageContainer}>
-        <img className={classes.desktopTitleImage} alt="" src={titleImage} />
+      <div className={classes.countdown}>
+        <Countdown></Countdown>
       </div>
+
+      {/* <div className={classes.desktopTitleImageContainer}>
+        <img className={classes.desktopTitleImage} alt="" src={titleImage} />
+      </div> */}
     </div>
   )
 }

@@ -9,6 +9,7 @@ $stream-mobile-breakpoint: $breakpoint-sm;
   padding-bottom: 4 * $space-unit;
   color: white;
   font-family: $text-font;
+  background-color: $primary;
 
   .title {
     @include section-text-title;

@@ -45,6 +45,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
+      <Location id="location" />
       {/* <Warmup id="warmup" /> */}
       <ol className={classes.talksList} id="talks">
         <li className={classes.talkHeader}>
@@ -63,7 +64,6 @@ export default function Template({ data }) {
             />
           ))}
       </ol>
-      <Location id="location" />
       <Streams id="streams" />
       <Team id="team" />
       <Contact id="contact" />

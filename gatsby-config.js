@@ -52,7 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Serverless Days Paris - 28 September 2021`,
+        name: `Serverless Days Paris - 22 June 2022`,
         short_name: `sls days paris`,
         start_url: `/`,
         background_color: `#eff4ff`,

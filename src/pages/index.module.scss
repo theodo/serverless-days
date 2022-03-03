@@ -2,7 +2,6 @@
 
 .talksList {
   @include responsive-container;
-
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -16,6 +15,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-top: 30px;
   margin: 0 $mobile-margins 16px 0;
   flex-direction: row;
   @media (min-width: $break-point-1to2) {

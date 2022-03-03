@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Serverless Days Paris - 28 Septembre 2021`,
+    title: `Serverless Days Paris - 22 Juin 2022`,
     description: `La journée de conférence dédiée au serverless.`,
     author: `Theodo`,
   },

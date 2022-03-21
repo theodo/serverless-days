@@ -44,12 +44,11 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
-      <Location id="location" />
       {/* <Warmup id="warmup" /> */}
       <ol className={classes.talksList} id="talks">
         <li className={classes.talkHeader}>
           <img alt="" src={talkLogo} />
-          <h2>Talks 2021</h2>
+          <h2>Talks</h2>
         </li>
         {talks
           .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))
@@ -63,6 +62,7 @@ export default function Template({ data }) {
             />
           ))}
       </ol>
+      <Location id="location" />
       <Streams id="streams" />
       <Team id="team" />
       <Contact id="contact" />

@@ -45,6 +45,9 @@
   "countdown": {
     "message": "Ouverture de la billetterie:"
   },
+  "tickets": {
+    "title": "Billetterie"
+  },
   "team": {
     "title": "L'équipe"
   },

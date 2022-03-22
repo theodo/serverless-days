@@ -10,7 +10,7 @@ $title-breakpoint: $breakpoint-m;
   height: 96vh;
   padding-top: 10 * $space-unit;
   padding-bottom: 10 * $space-unit;
-  background-image: url("../../images/sls.jpg");
+  background-image: url("../../images/sls-stage.png");
   background-size: cover;
 
   @media (max-width: $title-breakpoint) {
@@ -91,6 +91,8 @@ $title-breakpoint: $breakpoint-m;
     }
   }
   .countdown {
-    padding-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
   }
 }

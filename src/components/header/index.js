@@ -42,6 +42,11 @@ const Header = () => {
           </Link>
         </li>
         <li>
+          <a href="https://my.weezevent.com/serverlessdays-paris-2022" target="_blank">
+            <FormattedMessage id="tickets.title" />
+          </a>
+        </li>
+        <li>
           <Link to="/#talks">
             <FormattedMessage id="header.talks" />
           </Link>

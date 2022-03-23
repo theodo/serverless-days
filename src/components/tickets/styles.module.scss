@@ -17,22 +17,39 @@
   }
 }
 
+.close {
+  background-color: #fff;
+  text-align: right;
+  padding: 24px 24px 0 0;
+  button {
+    background: none;
+    border: none;
+    :hover {
+      cursor: pointer;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
 .button {
   cursor: pointer;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
-  background: $primary;
-  color: white;
+  background: white;
+  color: $primary;
   padding: 2 * $space-unit;
   font-weight: 800;
   text-transform: uppercase;
   white-space: nowrap;
   border-radius: 4px;
-  border: 2px solid white;
 }
 
 .responsiveModalContainer {
+  height: 80vh;
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;

@@ -1,6 +1,9 @@
 @import "../../variables";
 
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   background-color: #ffffff;
   display: flex;
   flex-direction: row;

@@ -44,6 +44,7 @@ $mobile-breakpoint: $breakpoint-m;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 100px;
 
     @media (max-width: $mobile-breakpoint) {
       flex-direction: column;
@@ -52,6 +53,10 @@ $mobile-breakpoint: $breakpoint-m;
     }
   }
 
+  .inLineSponsors {
+    display: flex;
+    align-items: center;
+  }
   .secondSponsors {
     display: flex;
     flex-direction: row;
@@ -65,11 +70,15 @@ $mobile-breakpoint: $breakpoint-m;
   }
   .bigLogo {
     width: 350px;
-    padding-bottom: 30px;
+    max-height: 150px;
+    padding: 30px;
   }
   .mediumLogo {
     width: 300px;
-    margin-bottom: 180px;
+    margin-bottom: 50px;
+  }
+  .smallLogo {
+    width: 200px;
   }
   .sponsorType {
     color: #5267ff;

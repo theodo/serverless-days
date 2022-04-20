@@ -57,6 +57,10 @@ function SEO({ description, lang, meta }) {
           content: `https://paris.serverlessdays.io${thumbnail}`,
         },
         {
+          property: `twitter:image`,
+          content: `https://paris.serverlessdays.io${thumbnail}`,
+        },
+        {
           name: `twitter:site`,
           content: `@ServerlessParis`
         },

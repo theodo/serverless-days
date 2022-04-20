@@ -54,11 +54,11 @@ function SEO({ description, lang, meta }) {
         },
         {
           property: `og:image`,
-          content: 'https://paris.serverlessdays.io' + thumbnail,
+          content: `https://paris.serverlessdays.io${thumbnail}`,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,

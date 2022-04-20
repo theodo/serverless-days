@@ -54,7 +54,7 @@ function SEO({ description, lang, meta }) {
         },
         {
           property: `og:image`,
-          content: thumbnail,
+          content: 'https://paris.serverlessdays.io' + thumbnail,
         },
         {
           name: `twitter:card`,

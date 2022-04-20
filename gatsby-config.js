@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Serverless Days Paris - 22 Juin 2022`,
-    description: `La journée de conférence dédiée au serverless.`,
-    author: `Theodo`,
+    title: `ServerlessDays Paris - June 22nd 2022`,
+    description: `One day, one track, 12 amazings speakers, everything about serverless, at la Bellevilloise! Join us June 22nd - Tickets, agenda and more details available!`,
+    author: `@Theodo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

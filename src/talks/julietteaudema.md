@@ -7,5 +7,5 @@ name: "Juliette Audema"
 job: "Software Engineer"
 company: "Aircall"
 picture: ../images/speakers/juliette_audema.png
-twitter: "@ajuliette_dev"
+twitter: "@ajuliettedev"
 ---

@@ -6,6 +6,6 @@ biographie: Massimo is an Azure Technical Trainer in Microsoft. His goal is to h
 name: "Massimo Bonanni"
 job: "Cloud Architect"
 company: "Microsoft"
-picture: ../images/speakers/massimo_bonanni.jpeg
+picture: ../images/speakers/massimo_bonanni.png
 twitter: "@massimobonanni"
 ---

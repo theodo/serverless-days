@@ -6,6 +6,6 @@ biographie: Guillaume est Google Developer Expert sur Cloud Platform et travaill
 name: "Guillaume Blaquiere"
 job: "Cloud Architect"
 company: "Accenture"
-picture: ../images/speakers/guillaume_blaquiere.jpeg
+picture: ../images/speakers/guillaume_blaquiere.jpg
 twitter: "@gblaquiere"
 ---

@@ -25,7 +25,8 @@ export default function Template({ data }) {
   const {
     allMarkdownRemark: { edges },
   } = data
-  const talks = edges.map(element => element.node.frontmatter)
+  const talks = edges.map(element => element.node.frontmatter).filter((talk) => !talk.warmup)
+  const warmupTalks = edges.map(element => element.node.frontmatter).filter((talk) => talk.warmup)
 
   const closeDialog = useCallback(() => {
     setDialogIsOpen(false)
@@ -33,18 +34,32 @@ export default function Template({ data }) {
   }, [setDialogData, setDialogIsOpen])
 
   const openDialog = useCallback(
-    dataIndex => {
+    (dataIndex, dataset) => {
       setDialogIsOpen(true)
-      setDialogData(talks[dataIndex])
+      setDialogData(dataset[dataIndex])
     },
-    [setDialogData, setDialogIsOpen, talks]
+    [setDialogData, setDialogIsOpen]
   )
 
   return (
     <Layout>
       <SEO />
       <Title />
-      {/* <Warmup id="warmup" /> */}
+      <Warmup id="warmup">
+        <ol className={classes.talksList} id="warmup">
+          {warmupTalks
+            .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))
+            .map((talk, index) => (
+              <TalkCardItem
+                openDialog={() => {
+                  openDialog(index, warmupTalks)
+                }}
+                {...talk}
+                key={talk.hour}
+              />
+            ))}
+        </ol>
+      </Warmup>
       <ol className={classes.talksList} id="talks">
         <li className={classes.talkHeader}>
           <img alt="" src={talkLogo} />
@@ -55,7 +70,7 @@ export default function Template({ data }) {
           .map((talk, index) => (
             <TalkCardItem
               openDialog={() => {
-                openDialog(index)
+                openDialog(index, talks)
               }}
               {...talk}
               key={talk.hour}
@@ -114,6 +129,7 @@ export const pageQuery = graphql`
             }
             twitter
             isParty
+            warmup
           }
         }
       }

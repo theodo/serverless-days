@@ -8,4 +8,5 @@ job: "Cloud Architect"
 company: "Microsoft"
 picture: ../images/speakers/massimo_bonanni.png
 twitter: "@massimobonanni"
+warmup: true
 ---

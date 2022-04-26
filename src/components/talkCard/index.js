@@ -1,6 +1,7 @@
 import React from "react"
 import classes from "./styles.module.scss"
 import Img from "gatsby-image"
+import { FormattedDate, FormattedTime } from "gatsby-plugin-intl"
 import format from "date-fns/format"
 
 import partyPicture from "../../images/party.svg"
@@ -17,6 +18,7 @@ const TalkCardItem = ({
   picture,
   twitter,
   isParty,
+  warmup,
   openDialog,
 }) => {
   if (isParty || !isSpeakerReady(name, title)) {
@@ -47,6 +49,7 @@ const TalkCardItem = ({
           description={description}
           picture={picture}
           twitter={twitter}
+          warmup={warmup}
         />
       )}
       {isParty && (
@@ -63,13 +66,20 @@ const TalkCardItem = ({
 
 const TalkTime = ({ hour }) => (
   <time dateTime={format(new Date(hour), "HH:mm")} className={classes.hour}>
-    {format(new Date(hour), "hh:mm a")}
+    <FormattedTime value={new Date(hour)} />
   </time>
 )
 
-const TalkCard = ({ title, hour, name, job, company, picture, twitter }) => (
+const TalkDate = ({ hour }) => (
+  <time dateTime={format(new Date(hour), "dd MMMM")} className={classes.hour}>
+    {/* <FormattedDate value={new Date(hour)} /> */}
+    June 2022
+  </time>
+)
+
+const TalkCard = ({ title, hour, name, job, company, picture, twitter, warmup }) => (
   <div className={classes.cardContainer}>
-    {/* <TalkTime hour={hour} /> */}
+    { warmup ? <TalkDate hour={hour} /> : <TalkTime hour={hour} /> }
     <Img
       fixed={picture.childImageSharp.large}
       alt={name}

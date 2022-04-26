@@ -3,6 +3,7 @@ import classes from "./styles.module.scss"
 import format from "date-fns/format"
 import close from "../../images/close.svg"
 import Img from "gatsby-image"
+import { FormattedDate, FormattedTime } from "gatsby-plugin-intl"
 
 const DialogContent = ({
   hour,
@@ -14,6 +15,7 @@ const DialogContent = ({
   biographie,
   picture,
   isParty,
+  warmup,
   closeDialog,
 }) => (
   <Fragment>
@@ -28,7 +30,7 @@ const DialogContent = ({
           dateTime={format(new Date(hour), "HH:mm")}
           className={classes.hour}
         >
-          {format(new Date(hour), "hh:mm a")}
+          { warmup ? "June 2022" : <FormattedTime value={hour} /> }
         </time>
       </p>
       <div className={classes.informationContainer}>

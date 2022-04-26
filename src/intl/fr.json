@@ -61,8 +61,8 @@
   },
   "warmup": {
     "title": "Warmup",
-    "description": "Session live en amont des ServerlessDays Paris 2021",
-    "robsession": "Vous voulez assister en avant-première aux ServerlessDays Paris ? Rob Sutter sera live sur Youtube le 21 Septembre 2021 à 19:30 CEST pour une warmup session. Rob est Head of Developer Advocacy chez Fauna, il nous parlera de \"Lambda is dead; long live serverless!\"",
+    "description": "Session live en amont des ServerlessDays Paris 2022",
+    "robsession": "Vous voulez assister en avant-première aux ServerlessDays Paris ? En Juin - date exacte à venir - Massimo Bonanni et Guillaume Lannebère seront live sur Youtube pour une warmup session",
     "call-to-action": "Regarder la warmup session de Rob Sutter"
   }
 }

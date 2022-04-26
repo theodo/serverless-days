@@ -3,11 +3,12 @@
 $stream-mobile-breakpoint: $breakpoint-sm;
 
 .container {
+  background-color: $primary;
   @include responsive-container;
 
   padding-top: 4 * $space-unit;
   padding-bottom: 4 * $space-unit;
-  color: black;
+  color: white;
   font-family: $text-font;
 
   .title {
@@ -15,7 +16,7 @@ $stream-mobile-breakpoint: $breakpoint-sm;
   }
 
   .subtitle {
-    color: $steel-grey;
+    color: white;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 3 * $space-unit;
@@ -37,7 +38,6 @@ $stream-mobile-breakpoint: $breakpoint-sm;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5 * $space-unit 0;
     align-items: center;
 
     .embedContainer {

@@ -8,4 +8,5 @@ job: "Cloud Architect"
 company: "Betclic"
 picture: ../images/speakers/guillaume_lannebere.jpeg
 twitter: "guillan40"
+warmup: true
 ---

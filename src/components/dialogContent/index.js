@@ -30,7 +30,7 @@ const DialogContent = ({
           dateTime={format(new Date(hour), "HH:mm")}
           className={classes.hour}
         >
-          { warmup ? "June 2022" : <FormattedTime value={hour} /> }
+          { warmup ? <><FormattedDate value={new Date(hour)} month="long" day="numeric" /> - <FormattedTime value={new Date(hour)} /></> : <FormattedTime value={hour} /> }
         </time>
       </p>
       <div className={classes.informationContainer}>

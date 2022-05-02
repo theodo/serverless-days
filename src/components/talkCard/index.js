@@ -72,8 +72,7 @@ const TalkTime = ({ hour }) => (
 
 const TalkDate = ({ hour }) => (
   <time dateTime={format(new Date(hour), "dd MMMM")} className={classes.hour}>
-    {/* <FormattedDate value={new Date(hour)} /> */}
-    June 2022
+    <FormattedDate value={new Date(hour)} month="long" day="numeric" /><br/><FormattedTime value={new Date(hour)} />
   </time>
 )
 

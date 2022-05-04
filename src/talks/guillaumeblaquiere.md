@@ -5,7 +5,7 @@ description: La sécurité est un challenge commun à tous. Des pattern standard
 biographie: Guillaume est Google Developer Expert sur Cloud Platform et travaille chez Carrefour en tant que Group Data Architect. Développeur Java depuis plus de 15 ans, et malgré des précédents postes à responsabilités, il a toujours conservé son envie de créer, de développer, de découvrir et de tester de nouvelles solutions, notamment dans le Cloud, le machine learning ou les langages Go et Python. Passionné d’innovation et certifié 3x Google Cloud, writer et speaker sur son temps libre, il est fasciné par le serverless et les problèmes “traditionnels” qu’il résout. Plus généralement, il aime aider les personnes bloquées sur Google Cloud.
 name: "Guillaume Blaquiere"
 job: "Cloud Architect"
-company: "Accenture"
+company: "Carrefour"
 picture: ../images/speakers/guillaume_blaquiere.jpg
 twitter: "@gblaquiere"
 ---

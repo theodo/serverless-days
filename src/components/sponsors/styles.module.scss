@@ -104,10 +104,42 @@ $mobile-breakpoint: $breakpoint-m;
     border-top: 2px solid;
     border-color: #282828;
   }
-  a:hover,
+
   a:visited,
   a:link,
   a:active {
     text-decoration: none;
   }
+}
+
+.close {
+  background-color: #fff;
+  text-align: right;
+  padding: 24px 24px 0 0;
+  button {
+    background: none;
+    border: none;
+    :hover {
+      cursor: pointer;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.modalContainer {
+  margin-bottom: 30px;
+  font-family: "Lato", monospace;
+}
+
+.modalLogo {
+ height: 100px;
+ align-self: center;
+ padding: 10px 0px 10px 20px
+}
+
+img:hover {
+  cursor: pointer;
 }

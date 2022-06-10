@@ -11,6 +11,7 @@ import Title from "../components/title"
 import Sponsors from "../components/sponsors"
 import Streams from "../components/streams"
 import Warmup from "../components/warmup"
+import Media from "../components/media"
 
 import DialogContent from "../components/dialogContent"
 import Dialog from "@material-ui/core/Dialog"
@@ -25,8 +26,12 @@ export default function Template({ data }) {
   const {
     allMarkdownRemark: { edges },
   } = data
-  const talks = edges.map(element => element.node.frontmatter).filter((talk) => !talk.warmup)
-  const warmupTalks = edges.map(element => element.node.frontmatter).filter((talk) => talk.warmup)
+  const talks = edges
+    .map(element => element.node.frontmatter)
+    .filter(talk => !talk.warmup)
+  const warmupTalks = edges
+    .map(element => element.node.frontmatter)
+    .filter(talk => talk.warmup)
 
   const closeDialog = useCallback(() => {
     setDialogIsOpen(false)
@@ -82,6 +87,7 @@ export default function Template({ data }) {
       <Team id="team" />
       <Contact id="contact" />
       <Sponsors id="sponsor" />
+      <Media id="media" />
       {
         <Dialog
           open={dialogIsOpen}

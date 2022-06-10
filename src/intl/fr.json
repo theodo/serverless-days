@@ -38,7 +38,9 @@
     "aws": "For over 15 years, Amazon Web Services has been the world’s most comprehensive and broadly adopted cloud offering. AWS has been continually expanding its services to support virtually any cloud workload, and it now has more than 200 fully featured services for compute, storage, databases, networking, analytics, machine learning and artificial intelligence (AI), Internet of Things (IoT), mobile, security, hybrid, virtual and augmented reality (VR and AR), media, and application development, deployment, and management from 84 Availability Zones within 26 geographic regions, with announced plans for 24 more Availability Zones and eight more AWS Regions in Australia, Canada, India, Israel, New Zealand, Spain, Switzerland, and the United Arab Emirates. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—trust AWS to power their infrastructure, become more agile, and lower costs.{br}To learn more about AWS, visit aws.amazon.com.",
     "lumigo": "In Paris, Casablanca, London and New York, we are currently a team of 380+ software engineers specialised in Full-stack Javascript (React, VueJS, Node...) for web apps and APIs, Python for financial/data projects, Symfony for e-commerce and React-Native for cross-platform mobile.",
     "ovrsea": "Our methodology, born out of experience on 500+ of projects, is focused on maximum business efficiency and frees our clients from all the worries related to technical delivery. We let them focus on their product strategy and accelerate the growth of their company.",
-    "zenika": "Zenika is an IT consulting firm with 550 employees that help companies in their digital transformation. The company has offices in France, Canada, Singapore and now in Morocco. As a link between the organic and digital worlds, our expertise begins with an interface and ends with data storage and exploitation, in agile, devops and secure mode. Sharing, transparency and conviviality are values that belong to Zenika, so it is natural that our community is strongly committed to open source and responsible digital."
+    "zenika": "Zenika is an IT consulting firm with 550 employees that help companies in their digital transformation. The company has offices in France, Canada, Singapore and now in Morocco. As a link between the organic and digital worlds, our expertise begins with an interface and ends with data storage and exploitation, in agile, devops and secure mode. Sharing, transparency and conviviality are values that belong to Zenika, so it is natural that our community is strongly committed to open source and responsible digital.",
+    "contrast": "In a world of outdated, disconnected security tools that create friction, slow developers down and clog up the development pipeline, Contrast breaks through with a new unified approach that empowers security and development teams to get secure code moving seamlessly through the complete software development lifecycle, enabling their businesses to take full advantage of the fast-moving application economy.",
+    "scaleway": "Founded in 1999, Scaleway helps developers and businesses to build, deploy and scale applications to any infrastructure. Located in Paris, Amsterdam & Warsaw, Scaleway’s complete cloud ecosystem is used by 25,000+ businesses, including European startups, who choose Scaleway for its multi-AZ redundancy, smooth developer experience, carbon-neutral data centers & native tools for managing multi-cloud architectures."
   },
   "title": {
     "title": "Serverless days Paris 🦄🇫🇷🗼",
@@ -67,5 +69,9 @@
     "description": "Session live en amont des ServerlessDays Paris 2022",
     "robsession": "Vous voulez assister en avant-première aux ServerlessDays Paris ? Le 1er et 8 Juin, Massimo Bonanni et Guillaume Lannebère seront live sur Youtube pour une warmup session",
     "call-to-action": "Regarder la warmup session de Rob Sutter"
+  },
+  "media": {
+    "title": "Media",
+    "content": "Ils nous suivront durant cet événement !"
   }
 }

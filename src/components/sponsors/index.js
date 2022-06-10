@@ -6,6 +6,9 @@ import awsLogo from "../../images/sponsorsLogo/AWS.svg"
 import ovrseaLogo from "../../images/sponsorsLogo/ovrsea.png"
 import lumigoLogo from "../../images/sponsorsLogo/lumigo.png"
 import zenikaLogo from "../../images/sponsorsLogo/zenika.png"
+import contrastLogo from "../../images/sponsorsLogo/contrast.png"
+import scalewayLogo from "../../images/sponsorsLogo/scaleway.png"
+
 import Dialog from "@material-ui/core/Dialog"
 import DialogContent from "@material-ui/core/DialogContent"
 import close from "../../images/close.svg"
@@ -16,6 +19,8 @@ const nameImageMapping = {
   lumigo: { image: lumigoLogo, url: "https://lumigo.io" },
   ovrsea: { image: ovrseaLogo, url: "https://ovrsea.com" },
   zenika: { image: zenikaLogo, url: "https://zenika.com" },
+  contrast: { image: contrastLogo, url: "https://www.contrastsecurity.com/" },
+  scaleway: { image: scalewayLogo, url: "https://scaleway.com" },
 }
 
 const SponsorModal = ({ closeModal, modalData }) => {
@@ -108,6 +113,12 @@ const Sponsors = ({ id }) => {
               alt="Lumigo"
               onClick={() => openModal("lumigo")}
             />
+            <img
+              className={(classes.logo, classes.mediumLogo)}
+              src={contrastLogo}
+              alt="Contrast"
+              onClick={() => openModal("contrast")}
+            />
           </div>
           <div className={classes.sponsor}>
             <p className={classes.sponsorType}>Silver</p>
@@ -119,14 +130,22 @@ const Sponsors = ({ id }) => {
             />
           </div>
         </div>
-        <div className={classes.logos}>
+        <div className={classes.bronzeLogos}>
           <p className={classes.sponsorType}>Bronze</p>
-          <img
-            className={(classes.logo, classes.smallLogo)}
-            src={zenikaLogo}
-            alt="Zenika"
-            onClick={() => openModal("zenika")}
-          />
+          <div className={classes.inLineSponsors}>
+            <img
+              className={(classes.logo, classes.smallLogo)}
+              src={zenikaLogo}
+              alt="Zenika"
+              onClick={() => openModal("zenika")}
+            />
+            <img
+              className={(classes.logo, classes.smallLogo)}
+              src={scalewayLogo}
+              alt="Scaleway"
+              onClick={() => openModal("scaleway")}
+            />
+          </div>
         </div>
         {modalIsOpen && (
           <SponsorModal closeModal={closeModal} modalData={modalData} />

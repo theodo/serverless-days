@@ -25,11 +25,25 @@
   .mediaLogos {
     padding-top: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    gap: 50px;
     img {
       stroke: transparent;
+      align-self: center;
+      text-align: center;
     }
   }
+}
+
+.modalContainer {
+  margin-bottom: 30px;
+  font-family: "Lato", monospace;
+}
+
+.modalLogo {
+ height: 100px;
+ align-self: center;
+ padding: 10px 0px 10px 20px
 }

@@ -42,15 +42,15 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <a href="https://my.weezevent.com/serverlessdays-paris-2022" target="_blank">
-            <FormattedMessage id="tickets.title" />
+          <a href="https://sessionize.com/serverlessdays-paris-2023/" target="_blank">
+            <FormattedMessage id="call_for_paper.cta.content" />
           </a>
         </li>
-        <li>
+        {/* <li>
           <Link to="/#talks">
             <FormattedMessage id="header.talks" />
           </Link>
-        </li>
+        </li> */}
         <li>{codeOfConduct}</li>
         <li>
           <IntlContextConsumer>

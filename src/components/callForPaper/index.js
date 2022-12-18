@@ -22,8 +22,9 @@ const CallForPaper = ({ id }) => {
         </p>
         <a
           className={classes.button}
-          href="https://www.papercall.io/serverless-days-paris-2021"
+          href="https://sessionize.com/serverlessdays-paris-2023/"
           alt={intl.formatMessage({ id: "call_for_paper.cta.alt" })}
+          target="_blank"
         >
           <FormattedMessage id="call_for_paper.cta.content" />
         </a>

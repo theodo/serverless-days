@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `ServerlessDays Paris - June 22nd 2022`,
-    description: `One day, one track, 12 amazings speakers, everything about serverless, at la Bellevilloise! Join us June 22nd - Tickets, agenda and more details available!`,
+    title: `ServerlessDays Paris - June 7th 2023`,
+    description: `One day, one track, everything about serverless, at la Bellevilloise! Join us June 7th - CFP currently open!`,
     author: `@Theodo`,
   },
   plugins: [
@@ -52,7 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Serverless Days Paris - 22 June 2022`,
+        name: `Serverless Days Paris - 7 June 2023`,
         short_name: `sls days paris`,
         start_url: `/`,
         background_color: `#eff4ff`,

@@ -3,14 +3,13 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import TalkCardItem from "../components/talkCard"
+import CallForPaper from "../components/callForPaper"
 import Location from "../components/location"
 import Contact from "../components/contact"
 import Team from "../components/team"
 import Title from "../components/title"
 import Sponsors from "../components/sponsors"
 import Streams from "../components/streams"
-import Warmup from "../components/warmup"
 import Media from "../components/media"
 
 import DialogContent from "../components/dialogContent"
@@ -50,38 +49,7 @@ export default function Template({ data }) {
     <Layout>
       <SEO />
       <Title />
-      <Warmup id="warmup">
-        <ol className={classes.talksList} id="warmup">
-          {warmupTalks
-            .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))
-            .map((talk, index) => (
-              <TalkCardItem
-                openDialog={() => {
-                  openDialog(index, warmupTalks)
-                }}
-                {...talk}
-                key={talk.hour}
-              />
-            ))}
-        </ol>
-      </Warmup>
-      <ol className={classes.talksList} id="talks">
-        <li className={classes.talkHeader}>
-          <img alt="" src={talkLogo} />
-          <h2>Talks</h2>
-        </li>
-        {talks
-          .sort((talk1, talk2) => new Date(talk1.hour) - new Date(talk2.hour))
-          .map((talk, index) => (
-            <TalkCardItem
-              openDialog={() => {
-                openDialog(index, talks)
-              }}
-              {...talk}
-              key={talk.hour}
-            />
-          ))}
-      </ol>
+      <CallForPaper />
       <Location id="location" />
       <Streams id="streams" />
       <Team id="team" />

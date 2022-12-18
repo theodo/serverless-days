@@ -1,6 +1,6 @@
 {
   "call_for_paper": {
-    "title": "Talks",
+    "title": "Participate",
     "subtitle": "Call for speakers running...",
     "summary": "Share your experience with the servless community: best practices, products and services you've used with serverless technologies, you name it, we want to hear about it. Submit your talk to become one of our passionate speakers!",
     "cta": {
@@ -48,8 +48,8 @@
   },
   "title": {
     "title": "Serverless days paris 🦄🇫🇷🗼",
-    "location-year": "June 22nd 2022",
-    "subtitle": "The ServerlessDays Paris will be hosted on June 22nd 2022 at la Bellevilloise!",
+    "location-year": "June 7th 2023",
+    "subtitle": "The ServerlessDays Paris will be hosted on June 7th 2023 at la Bellevilloise!",
     "call-to-action": "Buy tickets"
   },
   "countdown": {
@@ -67,7 +67,7 @@
   },
   "streams": {
     "title": "Stream",
-    "description": "Re-live ServerlessDays 2021 sessions with the playlist of our talks!"
+    "description": "Re-live ServerlessDays 2022 sessions with the playlist of our talks!"
   },
   "warmup": {
     "title": "Warmup",

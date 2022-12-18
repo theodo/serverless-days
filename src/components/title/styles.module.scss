@@ -10,7 +10,7 @@ $title-breakpoint: $breakpoint-m;
   height: 96vh;
   padding-top: 10 * $space-unit;
   padding-bottom: 10 * $space-unit;
-  background-image: url("../../images/sls-stage.png");
+  background-image: url("../../images/2022.jpg");
   background-size: cover;
 
   @media (max-width: $title-breakpoint) {
@@ -28,8 +28,9 @@ $title-breakpoint: $breakpoint-m;
     .title {
       font-size: 50px;
       line-height: 50px;
-      margin-bottom: 2 * $space-unit;
-      color: rgb(241, 238, 238);
+      color: $primary;
+      padding: 2 * $space-unit;
+      background-color: $pale-grey;
       font-weight: 800;
       text-transform: uppercase;
       white-space: nowrap;
@@ -46,11 +47,17 @@ $title-breakpoint: $breakpoint-m;
     }
 
     .subtitle {
-      color: $pale-grey;
+      color: $primary;
+      background-color: $pale-grey;
       font-size: 16px;
       line-height: 20px;
+      padding: 2 * $space-unit;
       margin-bottom: 3 * $space-unit;
       font-weight: 500;
+
+      @media (max-width: $title-breakpoint) {
+        margin-top: 2 * $space-unit;
+      }
     }
 
     .rendezVous {

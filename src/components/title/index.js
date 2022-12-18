@@ -2,7 +2,7 @@ import React from "react"
 import { FormattedMessage } from "gatsby-plugin-intl"
 
 import classes from "./styles.module.scss"
-import Tickets from "../tickets"
+// import Tickets from "../tickets"
 
 const Title = () => {
   return (
@@ -19,9 +19,9 @@ const Title = () => {
           <FormattedMessage id="title.subtitle" />
         </h2>
       </div>
-      <div className={classes.countdown}>
+      {/* <div className={classes.countdown}>
         <Tickets />
-      </div>
+      </div> */}
     </div>
   )
 }

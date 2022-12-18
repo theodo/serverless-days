@@ -1,6 +1,6 @@
 {
   "call_for_paper": {
-    "title": "Talks",
+    "title": "Participer",
     "subtitle": "Call for speakers running...",
     "summary": "Bonnes pratiques, outils, services, venez partager votre expérience de Serverless avec le reste de la communauté ! Soumettez votre sujet pour devenir conférencier sur notre Call for Speakers.",
     "cta": {
@@ -46,8 +46,8 @@
   },
   "title": {
     "title": "Serverless days Paris 🦄🇫🇷🗼",
-    "location-year": "22 juin 2022",
-    "subtitle": "Les ServerlessDays reviennent à Paris le mercredi 22 Juin 2022 à la Bellevilloise!"
+    "location-year": "7 juin 2023",
+    "subtitle": "Les ServerlessDays reviennent à Paris le mercredi 7 Juin 2023 à la Bellevilloise!"
   },
   "countdown": {
     "message": "Ouverture de la billetterie:"
@@ -64,7 +64,7 @@
   },
   "streams": {
     "title": "Revoir",
-    "description": "Retrouvez la playlist des sessions de l'édition 2021!"
+    "description": "Retrouvez la playlist des sessions de l'édition 2022!"
   },
   "warmup": {
     "title": "Warmup",
